@@ -18,6 +18,8 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(cap1.Measure());  // Measure the capacitance (in pF), print to Serial Monitor
+  float c = cap1.Measure();
+  Serial.print(c);  // Measure the capacitance (in pF), print to Serial Monitor
+  Serial.println("pF");
   delay(1000);                     // Wait for 1 second, then repeat
 }
