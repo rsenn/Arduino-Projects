@@ -12,15 +12,17 @@
 // Capacitor under test.
 // Note that for electrolytics the first pin (in this case D7)
 // should be positive, the second (in this case A2) negative.
-Capacitor cap1(7,A2);
+Capacitor cap1(7, A2);
 
-void setup() {
+void
+setup() {
   Serial.begin(9600);
 }
 
-void loop() {
+void
+loop() {
   float c = cap1.Measure();
-  Serial.print(c);  // Measure the capacitance (in pF), print to Serial Monitor
+  Serial.print(c); // Measure the capacitance (in pF), print to Serial Monitor
   Serial.println("pF");
-  delay(1000);                     // Wait for 1 second, then repeat
+  delay(1000); // Wait for 1 second, then repeat
 }
