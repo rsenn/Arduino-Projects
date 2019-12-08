@@ -1,0 +1,6 @@
+[submodule "build/arduino-mk"]
+	path = build/arduino-mk
+	url = https://github.com/littlebee/arduino-mk
+[submodule "ArduPic32"]
+	path = ArduPic32
+	url = https://github.com/rsenn/ArduPic32.git
