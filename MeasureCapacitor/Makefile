@@ -7,4 +7,4 @@ LIBRARYPATH += $(HOME)/Arduino/libraries
 
 include ../build/arduino-mk/arduino.mk
 
-CPPFLAGS += -std=c++17 -I $(LIBRARYPATH)/Capacitor/src
+CPPFLAGS += -std=c++1y -I $(LIBRARYPATH)/Capacitor/src
