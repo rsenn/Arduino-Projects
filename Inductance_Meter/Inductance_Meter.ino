@@ -1,4 +1,3 @@
-#include <Capacitor.h>
 
 // Code Created by Arafa Microsys (Eng.Hossam Arafa)
 // www.youtube.com/arafamicrosystems
