@@ -4,3 +4,12 @@
 [submodule "ArduPic32"]
 	path = ArduPic32
 	url = https://github.com/rsenn/ArduPic32.git
+[submodule "Integrated-Component-Tester"]
+	path = Integrated-Component-Tester
+	url = https://github.com/tigerw/Integrated-Component-Tester-Arduino
+[submodule "Base-Ohm-meter"]
+	path = Base-Ohm-meter
+	url = https://github.com/skndungu/Arduino-Base-Ohm-meter
+[submodule "Ohmmeter"]
+	path = Ohmmeter
+	url = https://github.com/acchavanabhi/Ohmmeter
