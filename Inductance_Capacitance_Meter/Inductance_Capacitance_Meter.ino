@@ -10,6 +10,18 @@ volatile bool busy = false;
 volatile bool ledState = false;
 
 const int TCNT2init = 10;
+/*
+#include <PCD8544.h>
+
+  PCD8544 lcd(13,   // clock       (display pin 7)
+              11,   // data-in     (display pin 6)
+                5,   // data select (display pin 5
+                6,   // reset       (display pin 4
+               7);  // enable      (display pin 3
+*/
+#include <Nokia_LCD.h>
+
+Nokia_LCD lcd(13 /* CLK */, 11 /* DIN */, 5 /* DC */, 7 /* CE */, 6 /* RST */);
 
 //#include <MsTimer2.h>
 #include <elapsedMillis.h>
@@ -108,8 +120,8 @@ InitTimer2(void) {
   TCCR2B = 0x00;     // No clock source (Timer/Counter stopped)
   TCNT2 = TCNT2init; // Register : the Timer/Counter (TCNT2) and Output Compare
                      // Register (OCR2A and OCR2B) are 8-bit Reset Timer Count
-  TCCR2A = 0x00; // TCCR2A - Timer/Counter Control Register A
-                 // All bits to zero -> Normal operation
+  TCCR2A = 0x00;     // TCCR2A - Timer/Counter Control Register A
+                     // All bits to zero -> Normal operation
   TCCR2B &= 0b11111000;
   TCCR2B |= 0b00000001; // Prescale 128 (Timer/Counter started)
   TIMSK2 |=
@@ -179,6 +191,20 @@ setup() {
   InitTimer1();
   // InitTimer2();
   setBusy(false);
+
+  // Initialize the screen
+  lcd.begin();
+  // Set the contrast
+  lcd.setContrast(60); // Good values are usualy between 40 and 60
+  // Clear the screen by filling it with black pixels
+  lcd.clear(true);
+  delay(2000);
+
+  // Set the cursor on the beginning of the 6th row (the last one)
+  lcd.setCursor(0, 5);
+  // Write something on the specific row
+  lcd.print("Hello world!");
+
   // Serial.println("Ind.Meter 1uH-1H");
   Serial.println("Connect Inductor to Pin D8, D9");
   Serial.println("Connect Capacitor to Pin D7, A2");
