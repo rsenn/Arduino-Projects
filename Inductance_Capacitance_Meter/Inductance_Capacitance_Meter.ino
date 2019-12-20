@@ -111,6 +111,8 @@ setup() {
   pinMode(8, INPUT);
   pinMode(9, OUTPUT);
   pinMode(13, OUTPUT);
+  pinMode(3, OUTPUT);
+  analogWrite(3, 120);
   InitTimer1();
   // InitTimer2();
 
@@ -258,7 +260,7 @@ measureFrequency() {
 
   print("f = ");
   print(buffer); // print result
-  println("Hz");
+  println(" Hz");
 }
 
 /**
@@ -271,7 +273,7 @@ measureVoltage(int numChannels) {
   const float mul = (5.0 / 1023.0);
 
   lcd.setCursor(0, 3);
-  lcd.print("V =");
+  lcd.print("U =");
 
   for(int i = 0; i < numChannels; ++i) {
     float voltage = (float)analogRead(A0 + i) * mul;
@@ -284,7 +286,7 @@ measureVoltage(int numChannels) {
      Serial.print(i);
       Serial.print("=");*/
     print(buffer);
-    print("V");
+    print(" V");
   }
   println("");
 }
@@ -297,21 +299,45 @@ measureCapacitance() {
   float c = cap1.Measure();
 
   dtostrf(c, 3, 2, buffer);
-
-  Serial.print(buffer);
-  Serial.println("pF");
-
   lcd.setCursor(0, 2);
-  lcd.print("C = ");
-  lcd.print(buffer);
-  lcd.print("pF");
 
+  lcd.print("C = ");
+  print(buffer);
+  println(" pF");
+}
+
+void
+animateProgress() {
+  bool animTime = (timeElapsed / (busy ? 100 : 1000)) & 1;
+  static int animStep;
+
+  // const char* animChars[4] = {"[ - ]","[ \\ ]","[ | ]","[ / ]"};
+  const char* animChars[] = {
+      "  ..o     ",
+      "   ..o    ",
+      "    ..o   ",
+      "     ..o  ",
+      "      ..o ",
+      "       o..",
+      "      o.. ",
+      "     o..  ",
+      "    o..   ",
+      "   o..    ",
+      "  o..     ",
+      " ..o      ",
+  };
+  const int animSteps = sizeof(animChars) / sizeof(animChars[0]);
+  digitalWrite(13, animTime & 1);
+
+  lcd.setCursor(0, 0);
+  lcd.print(animChars[animStep++ % animSteps]);
   lcd.display();
+
+  delay(100);
 }
 
 void
 loop() {
-  digitalWrite(13, (timeElapsed / (busy ? 100 : 1000)) & 1);
 
   if(!busy) {
     if(timeElapsed > interval) {
@@ -334,7 +360,7 @@ loop() {
           break;
 
         case VOLTAGE:
-          measureVoltage(2);
+          measureVoltage(1);
           timeElapsed = 0;
           break;
 
@@ -376,4 +402,8 @@ loop() {
       setBusy(false);
     }
   }
+  analogWrite(3, 120);
+  pinMode(3, OUTPUT);
+
+  animateProgress();
 }
