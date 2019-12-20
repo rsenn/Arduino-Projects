@@ -1,28 +1,23 @@
 #pragma once
 #include "Definitions.h"
 
-class Resistor
-{
-public:  
-  static bool DetectResistor()
-  {
-    for (size_t Index = 0; Index != ArrayCount(MutuallyExclusivePins); ++Index)
-    {
-      auto
-        FirstPin = MutuallyExclusivePins[Index].First,
-        SecondPin = MutuallyExclusivePins[Index].Second,
-        ThirdPin = MutuallyExclusivePins[Index].Third;
-      
-      if (IsReadingValid(SetUpAndExclusivelyMeasureCurrent(FirstPin, SecondPin, ThirdPin)))
-      {
-        Display::GetInstance().setCursor(48, 16);        
+class Resistor {
+public:
+  static bool
+  DetectResistor() {
+    for(size_t Index = 0; Index != ArrayCount(MutuallyExclusivePins); ++Index) {
+      auto FirstPin = MutuallyExclusivePins[Index].First, SecondPin = MutuallyExclusivePins[Index].Second,
+           ThirdPin = MutuallyExclusivePins[Index].Third;
+
+      if(IsReadingValid(SetUpAndExclusivelyMeasureCurrent(FirstPin, SecondPin, ThirdPin))) {
+        Display::GetInstance().setCursor(48, 16);
         Display::GetInstance().println("Resistor");
 
         // Resistance
         auto Resistance = SetUpAndMeasureResistance(FirstPin, SecondPin);
         Display::GetInstance().setCursor(48, 32);
         Display::GetInstance().println(String("R: ") + DoubleToString(Resistance) + static_cast<char>(233));
-  
+
         // Voltage drop
         auto VDrop = MeasureVoltage(FirstPin, SecondPin);
         Display::GetInstance().setCursor(48, 40);
@@ -37,9 +32,9 @@ public:
         Display::GetInstance().print(SecondPin);
 
         Display::GetInstance().drawBitmap(0, 16, RESISTOR, 48, 48, WHITE);
-        
+
         StaticJsonBuffer<JSON_OBJECT_SIZE(3)> Buffer;
-        auto & Root = Buffer.createObject();
+        auto& Root = Buffer.createObject();
         Root["Component"] = "Resistor";
         Root["Resistance"] = Resistance;
         Root["Voltage drop"] = VDrop;
@@ -47,29 +42,27 @@ public:
         return true;
       }
     }
-  
+
     return false;
   }
 
 private:
-  static double SetUpAndMeasureResistance(uint8_t FromPin, uint8_t ToPin)
-  {
+  static double
+  SetUpAndMeasureResistance(uint8_t FromPin, uint8_t ToPin) {
     digitalWrite(FromPin, HIGH);
     digitalWrite(ToPin, LOW);
     delay(StablisationDelay);
-    
+
     double AverageResistance = 0;
-    for (auto Counter = 0; Counter != 100; ++Counter)
-    {
+    for(auto Counter = 0; Counter != 100; ++Counter) {
       double ProbedComponentVoltage = MeasureVoltage(FromPin, ToPin);
       double Current = (RefVoltage - ProbedComponentVoltage) / (PinResistances[FromPin] + PinResistances[ToPin]);
       AverageResistance += ProbedComponentVoltage / Current;
     }
-    
+
     digitalWrite(FromPin, LOW);
     digitalWrite(ToPin, LOW);
-    
+
     return (AverageResistance / 100.f);
   }
 };
-

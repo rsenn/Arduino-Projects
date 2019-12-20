@@ -1,10 +1,9 @@
 #pragma once
 
-class Battery
-{
+class Battery {
 public:
-  static double MeasureBatteryCapacity()
-  {
+  static double
+  MeasureBatteryCapacity() {
     /*
       // Read 1.1V reference against AVcc
       // set the reference to Vcc and the measurement to the internal 1.1V reference
@@ -24,12 +23,11 @@ public:
       {
         continue;
       }
-      
+
       auto Result = ADC;
       return ((1.1f * 1023.f) / Result);
       */
 
-      return 3.3;
+    return 3.3;
   }
 };
-

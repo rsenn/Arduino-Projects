@@ -1,4 +1,5 @@
 
+
 // Code Created by Arafa Microsys (Eng.Hossam Arafa)
 // www.youtube.com/arafamicrosystems
 // www.facebook.com/arafa.microsys
@@ -18,6 +19,9 @@ unsigned int interval = 1000;
 // Note that for electrolytics the first pin (in this case D7)
 // should be positive, the second (in this case A2) negative.
 Capacitor cap1(7, A2);
+
+#include <FreqCounter.h>
+unsigned long frq;
 
 // Counts overflovs
 volatile uint16_t Tovf, Tovf1;
@@ -115,9 +119,11 @@ setup() {
   pinMode(8, INPUT);
   pinMode(9, OUTPUT);
   InitTimer1();
-  //Serial.println("Ind.Meter 1uH-1H");
-  Serial.println("Connect Inductor to Pin 8, 9");
+  // Serial.println("Ind.Meter 1uH-1H");
+  Serial.println("Connect Inductor to Pin D8, D9");
   Serial.println("Connect Capacitor to Pin D7, A2");
+  Serial.println("Connect Frequency to Pin D5");
+  Serial.println("Connect Voltage to Pin A0 - A3");
 }
 
 void
@@ -154,10 +160,32 @@ loop() {
   }
   mark++;
 
-  if(timeElapsed > interval) {
+  if(timeElapsed > interval * 3) {
+    const float mul = (5.0 / 1023.0);
+    for(int i = 0; i < 4; ++i) {
+      float voltage = (float)analogRead(A0 + i) * mul;
+      Serial.print("A");
+      Serial.print(i);
+      Serial.print(" = ");
+      Serial.print(voltage);
+      Serial.println("V");
+    }
+
+    timeElapsed = 0; // reset the counter to 0 so the counting starts over...
+
+  } else if(timeElapsed > interval * 2) {
+
+    FreqCounter::f_comp = 8;         // Set compensation to 12
+    FreqCounter::start(100);         // Start counting with gatetime of 100ms
+    while(FreqCounter::f_ready == 0) // wait until counter ready
+
+      frq = FreqCounter::f_freq; // read result
+    Serial.print(frq);           // print result
+    Serial.println("Hz");
+
+  } else if(timeElapsed > interval) {
     float c = cap1.Measure();
     Serial.print(c); // Measure the capacitance (in pF), print to Serial Monitor
     Serial.println("pF");
-    timeElapsed = 0; // reset the counter to 0 so the counting starts over...
   }
 }

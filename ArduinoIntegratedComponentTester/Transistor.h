@@ -2,39 +2,34 @@
 #include "Definitions.h"
 #include "Bitmaps.h"
 
-class Transistor
-{
+class Transistor {
 public:
-  static bool DetectNPN()
-  {
+  static bool
+  DetectNPN() {
     auto PriorCurrent = SetUpAndExclusivelyMeasureCurrent(2, 4, 3);
-    
+
     digitalWrite(2, HIGH);
     digitalWrite(4, LOW);
     digitalWrite(3, HIGH);
     delay(StablisationDelay);
-    
-    auto NewCurrent = MeasureCurrent(2, 4);    
+
+    auto NewCurrent = MeasureCurrent(2, 4);
     auto TransistorMeasurements = MeasureHFEAndVCE();
-    
+
     digitalWrite(3, LOW);
     digitalWrite(2, LOW);
     digitalWrite(4, LOW);
 
-  
     // Check that:
     // NewCurrent is greater than PriorCurrent - subtraction is greater than zero
-    // Former is significantly larger than the latter - subtraction is greater than a positive constant (defined by IsCurrentReadingValid)
-    // Prevents confusion when other components are connected and there are small fluctuations between readings that are actually (in theory) equal
-    if (IsReadingValid((NewCurrent - PriorCurrent) * 10.f) && (TransistorMeasurements.First >= 100.f))
-    {
+    // Former is significantly larger than the latter - subtraction is greater than a positive constant (defined by
+    // IsCurrentReadingValid) Prevents confusion when other components are connected and there are small fluctuations
+    // between readings that are actually (in theory) equal
+    if(IsReadingValid((NewCurrent - PriorCurrent) * 10.f) && (TransistorMeasurements.First >= 100.f)) {
       Display::GetInstance().setCursor(48, 16);
-      if (TransistorMeasurements.First > 500.f)
-      {
+      if(TransistorMeasurements.First > 500.f) {
         Display::GetInstance().println("DLTN BJT-NPN");
-      }
-      else
-      {      
+      } else {
         Display::GetInstance().println("BJT-NPN");
       }
 
@@ -62,11 +57,11 @@ public:
       // Emitter
       Display::GetInstance().setCursor(23, 55);
       Display::GetInstance().print(4);
-      
+
       Display::GetInstance().drawBitmap(0, 16, BJT_NPN, 48, 48, WHITE);
-      
+
       StaticJsonBuffer<JSON_OBJECT_SIZE(4)> Buffer;
-      auto & Root = Buffer.createObject();
+      auto& Root = Buffer.createObject();
       Root["Component"] = "NPN Transistor";
       Root["Gain"] = TransistorMeasurements.First;
       Root["Collector-emitter voltage"] = TransistorMeasurements.Second;
@@ -74,18 +69,18 @@ public:
       FirmataConnection::SendResultToHost(Root);
       return true;
     }
-    
+
     return false;
   }
 
 private:
-  static Pair<double, double> MeasureHFEAndVCE()
-  {
-    return { /* HFE */ MeasureCurrent(2, 4) / MeasureCurrent(3, 4), /* Vce */ MeasureVoltage(2, 4) };
+  static Pair<double, double>
+  MeasureHFEAndVCE() {
+    return {/* HFE */ MeasureCurrent(2, 4) / MeasureCurrent(3, 4), /* Vce */ MeasureVoltage(2, 4)};
   }
 
-  static double FindActivationVoltage()
-  {
+  static double
+  FindActivationVoltage() {
     digitalWrite(2, HIGH);
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
@@ -93,11 +88,9 @@ private:
     auto PriorCurrent = MeasureCurrent(2, 4);
     unsigned char Value = 0;
 
-    for (; Value != 255; ++Value)
-    {
+    for(; Value != 255; ++Value) {
       analogWrite(3, Value);
-      if (IsReadingValid(MeasureCurrent(2, 4) - PriorCurrent))
-      {
+      if(IsReadingValid(MeasureCurrent(2, 4) - PriorCurrent)) {
         break;
       }
     }
@@ -109,4 +102,3 @@ private:
     return (Value / 255.f) * RefVoltage;
   }
 };
-
