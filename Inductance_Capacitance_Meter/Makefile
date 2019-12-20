@@ -5,3 +5,6 @@ ARDUINO_LIBS = Arduino-Frequency-Counter-Library elapsedMillis Capacitor Nokia_5
 USER_LIB_PATH = /home/roman/Arduino/libraries
 
 include /usr/share/arduino/Arduino.mk
+LOCAL_INO_SRCS :=
+LOCAL_SRCS      := $(wildcard *.cpp)
+

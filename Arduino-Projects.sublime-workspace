@@ -1,568 +1,335 @@
 {
-	"auto_complete":
-	{
-		"selected_items":
-		[
-		]
-	},
-	"buffers":
-	[
-		{
-			"contents": " ",
-			"settings":
-			{
-				"buffer_size": 1,
-				"line_ending": "Unix"
-			}
-		}
-	],
-	"build_system": "",
-	"build_system_choices":
-	[
-		[
-			[
-				[
-					"Packages/Makefile/Make.sublime-build",
-					""
-				],
-				[
-					"Packages/Makefile/Make.sublime-build",
-					"Clean"
-				]
-			],
-			[
-				"Packages/Makefile/Make.sublime-build",
-				"Clean"
-			]
-		]
-	],
-	"build_varint": "",
-	"command_palette":
-	{
-		"height": 400.0,
-		"last_filter": "out",
-		"selected_items":
-		[
-			[
-				"out",
-				"Browse Mode: Outline (Right)"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"schemee",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"install pa",
-				"Package Control: Install Package"
-			],
-			[
-				"remove pa",
-				"Package Control: Remove Package"
-			],
-			[
-				"scheme",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
-				"schemed",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
-				"gdb",
-				"SublimeGDB: Stop Debugging"
-			],
-			[
-				"instal pa",
-				"Package Control: Install Package"
-			],
-			[
-				"schemd",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
-				"install pac",
-				"Package Control: Install Package"
-			],
-			[
-				"add re",
-				"Package Control: Add Repository"
-			],
-			[
-				"install ",
-				"Package Control: Install Package"
-			],
-			[
-				"adva",
-				"Package Control: Advanced Install Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"instalp",
-				"Package Control: Install Package"
-			],
-			[
-				"schemeed",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
-				"adv",
-				"Package Control: Advanced Install Package"
-			],
-			[
-				"html",
-				"HTMLPrettify"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"install p",
-				"Package Control: Install Package"
-			],
-			[
-				"install pack",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: install",
-				"Package Control: Install Package"
-			],
-			[
-				"edit ",
-				"Color Scheme Editor: Edit current color scheme"
-			],
-			[
-				"INSTALL",
-				"Package Control: Install Package"
-			],
-			[
-				"INST",
-				"Package Control: Install Package"
-			],
-			[
-				"REMOVE",
-				"Package Control: Remove Package"
-			],
-			[
-				"SCHEMED",
-				"Color Scheme Editor: Edit current color scheme"
-			],
-			[
-				"edit",
-				"SchemeEditor: Edit installed scheme"
-			],
-			[
-				"color",
-				"Color Scheme Editor: Edit current color scheme"
-			],
-			[
-				"install p$",
-				"Package Control: Install Package"
-			],
-			[
-				"remove pac",
-				"Package Control: Remove Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"DELETE",
-				"Delete Blank Lines"
-			],
-			[
-				"moon",
-				"Browse Mode: Outline (Left)"
-			],
-			[
-				"outline",
-				"Browse Mode: Outline (Right)"
-			],
-			[
-				"lua",
-				"Set Syntax: Lua"
-			],
-			[
-				"moonscr",
-				"Build With: Compile MoonScript"
-			],
-			[
-				"moons",
-				"Set Syntax: MoonScript"
-			],
-			[
-				"repository",
-				"Package Control: Remove Repository"
-			],
-			[
-				"REPOS",
-				"Package Control: Add Repository"
-			]
-		],
-		"width": 736.0
-	},
-	"console":
-	{
-		"height": 265.0,
-		"history":
-		[
-			"sublime.log_commands(True)",
-			"sublime.log_commands(False)",
-			"sublime.log_commands(True)"
-		]
-	},
-	"distraction_free":
-	{
-		"menu_visible": true,
-		"show_minimap": false,
-		"show_open_files": false,
-		"show_tabs": false,
-		"side_bar_visible": false,
-		"status_bar_visible": false
-	},
-	"expanded_folders":
-	[
-		"/home/roman/Dokumente/Sources/Arduino-Projects"
-	],
-	"file_history":
-	[
-	],
-	"find":
-	{
-		"height": 29.0
-	},
-	"find_in_files":
-	{
-		"height": 258.0,
-		"where_history":
-		[
-			"/home/roman/Dokumente/Sources/c-utils,*.c,*.h",
-			"/home/roman/Dokumente/Sources/c-utils,*.c",
-			""
-		]
-	},
-	"find_state":
-	{
-		"case_sensitive": false,
-		"find_history":
-		[
-			"setBusy",
-			"busy",
-			"setBusy",
-			"busy =",
-			"MsTimer",
-			"Counter",
-			"CounterV",
-			"Counter",
-			"Serial",
-			"setup",
-			"TimerTh",
-			"TimerT",
-			"TimerTh",
-			"Timer",
-			"mode++",
-			"mode ",
-			"mode",
-			"Timer1",
-			"output_part",
-			"stereo",
-			"Package",
-			"spad",
-			"board",
-			"bounds",
-			"update_bounds",
-			"build_part",
-			"output_part",
-			"bounds",
-			"output_part",
-			"component n",
-			"output_pa",
-			"output_part",
-			"putdoub",
-			"output_part",
-			"=\"C1",
-			"0.12",
-			"_part",
-			"pad1",
-			"_part",
-			"output_part",
-			"get_doub",
-			"output_part",
-			"_",
-			"clean_pkg",
-			"output_part",
-			"clean_pkgname",
-			"clean_p",
-			"clean_pack",
-			"dump_part",
-			"output_part",
-			"->packa",
-			"struct part",
-			"dump_part",
-			"build_part",
-			"Part:",
-			"pkgname\\.",
-			"\\&pkgname",
-			"pkgname",
-			"build_part",
-			"element",
-			"E2.5-4/V",
-			"name=\"C1\"",
-			"<inst",
-			"<comp",
-			"<packa.*\"SPAD..\"",
-			"\"SPAD..\"",
-			"\"SPAD....\"",
-			"\"SPAD",
-			"SPAD",
-			"<package.*SPAD",
-			"package.*SPAD",
-			"SPAD",
-			"package=",
-			"SPAD",
-			"spad",
-			"replacec",
-			"replace",
-			"E2.5-4/V",
-			"E2",
-			"lower",
-			"tolower",
-			"R3",
-			"R3\\.",
-			"byte_chrs",
-			"putspad",
-			"spad",
-			"strlist_foreach",
-			"foreach",
-			"_net",
-			"pad",
-			"output_net",
-			"dump_part",
-			"Net:",
-			"byte_diff",
-			"cmp_ref",
-			"strlist_sort",
-			"sort",
-			"strlist_sort",
-			"val_custom",
-			"diff",
-			"str_",
-			"sort.c",
-			"from",
-			"subst",
-			"stralloc_",
-			"strlist_sort",
-			"strlist_sor",
-			"output_net",
-			"MAP_VISIT_ALL",
-			"Part:",
-			"output_net",
-			"part_ref",
-			"output_",
-			"strlist",
-			"output_net",
-			"strlist_count",
-			"output_net",
-			"Part:",
-			"struct strlist",
-			"strlist",
-			"strlist_sort",
-			"strlist.*sort",
-			"conn_sa",
-			"output_net",
-			"MAP_VISIT_ALL",
-			"Part:",
-			"output_net",
-			"Part:"
-		],
-		"highlight": false,
-		"in_selection": false,
-		"preserve_case": false,
-		"regex": true,
-		"replace_history":
-		[
-			"pkgname->",
-			"pkgname",
-			"output_net",
-			"MAP_NEW(\\1)",
-			"&output",
-			"output",
-			"buffer_2",
-			"buffer_1->",
-			"ppsrc",
-			"path_output",
-			"'",
-			"parse",
-			"MACH"
-		],
-		"reverse": false,
-		"show_context": false,
-		"use_buffer2": true,
-		"whole_word": false,
-		"wrap": true
-	},
-	"groups":
-	[
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"rainbowth.lispy": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		}
-	],
-	"incremental_find":
-	{
-		"height": 29.0
-	},
-	"input":
-	{
-		"height": 79.0
-	},
-	"layout":
-	{
-		"cells":
-		[
-			[
-				0,
-				0,
-				1,
-				1
-			]
-		],
-		"cols":
-		[
-			0.0,
-			1.0
-		],
-		"rows":
-		[
-			0.0,
-			1.0
-		]
-	},
-	"menu_visible": true,
-	"output.CSS Extended Completions":
-	{
-		"height": 0.0
-	},
-	"output.SublimeLinter":
-	{
-		"height": 0.0
-	},
-	"output.SublimeLinter Messages":
-	{
-		"height": 194.0
-	},
-	"output.doc":
-	{
-		"height": 0.0
-	},
-	"output.exec":
-	{
-		"height": 319.0
-	},
-	"output.find_results":
-	{
-		"height": 0.0
-	},
-	"output.stino_build_panel":
-	{
-		"height": 0.0
-	},
-	"output.stino_panel":
-	{
-		"height": 0.0
-	},
-	"output.unsaved_changes":
-	{
-		"height": 96.0
-	},
-	"pinned_build_system": "Build debug",
-	"project": "/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Projects.sublime-project",
-	"replace":
-	{
-		"height": 54.0
-	},
-	"save_all_on_build": true,
-	"select_file":
-	{
-		"height": 0.0,
-		"last_filter": "",
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"select_project":
-	{
-		"height": 500.0,
-		"last_filter": "",
-		"selected_items":
-		[
-		],
-		"width": 380.0
-	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"last_filter": "",
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"selected_group": 0,
-	"settings":
-	{
-	},
-	"show_minimap": true,
-	"show_open_files": false,
-	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 291.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+  "auto_complete": {
+    "selected_items": []
+  },
+  "buffers": [
+    {
+      "contents": " ",
+      "settings": {
+        "buffer_size": 1,
+        "line_ending": "Unix"
+      }
+    }
+  ],
+  "build_system": "",
+  "build_system_choices": [
+    [
+      [
+        ["Packages/Makefile/Make.sublime-build", ""],
+        ["Packages/Makefile/Make.sublime-build", "Clean"]
+      ],
+      ["Packages/Makefile/Make.sublime-build", "Clean"]
+    ]
+  ],
+  "build_varint": "",
+  "command_palette": {
+    "height": 400.0,
+    "last_filter": "out",
+    "selected_items": [
+      ["out", "Browse Mode: Outline (Right)"],
+      ["install", "Package Control: Install Package"],
+      ["schemee", "SchemeEditor: Edit Current Scheme"],
+      ["instal", "Package Control: Install Package"],
+      ["install pa", "Package Control: Install Package"],
+      ["remove pa", "Package Control: Remove Package"],
+      ["scheme", "SchemeEditor: Edit Current Scheme"],
+      ["schemed", "SchemeEditor: Edit Current Scheme"],
+      ["gdb", "SublimeGDB: Stop Debugging"],
+      ["instal pa", "Package Control: Install Package"],
+      ["schemd", "SchemeEditor: Edit Current Scheme"],
+      ["install pac", "Package Control: Install Package"],
+      ["add re", "Package Control: Add Repository"],
+      ["install ", "Package Control: Install Package"],
+      ["adva", "Package Control: Advanced Install Package"],
+      ["remove", "Package Control: Remove Package"],
+      ["instalp", "Package Control: Install Package"],
+      ["schemeed", "SchemeEditor: Edit Current Scheme"],
+      ["adv", "Package Control: Advanced Install Package"],
+      ["html", "HTMLPrettify"],
+      ["Package Control: ", "Package Control: Install Package"],
+      ["install p", "Package Control: Install Package"],
+      ["install pack", "Package Control: Install Package"],
+      ["Package Control: install", "Package Control: Install Package"],
+      ["edit ", "Color Scheme Editor: Edit current color scheme"],
+      ["INSTALL", "Package Control: Install Package"],
+      ["INST", "Package Control: Install Package"],
+      ["REMOVE", "Package Control: Remove Package"],
+      ["SCHEMED", "Color Scheme Editor: Edit current color scheme"],
+      ["edit", "SchemeEditor: Edit installed scheme"],
+      ["color", "Color Scheme Editor: Edit current color scheme"],
+      ["install p$", "Package Control: Install Package"],
+      ["remove pac", "Package Control: Remove Package"],
+      ["inst", "Package Control: Install Package"],
+      ["DELETE", "Delete Blank Lines"],
+      ["moon", "Browse Mode: Outline (Left)"],
+      ["outline", "Browse Mode: Outline (Right)"],
+      ["lua", "Set Syntax: Lua"],
+      ["moonscr", "Build With: Compile MoonScript"],
+      ["moons", "Set Syntax: MoonScript"],
+      ["repository", "Package Control: Remove Repository"],
+      ["REPOS", "Package Control: Add Repository"]
+    ],
+    "width": 736.0
+  },
+  "console": {
+    "height": 265.0,
+    "history": ["sublime.log_commands(True)", "sublime.log_commands(False)", "sublime.log_commands(True)"]
+  },
+  "distraction_free": {
+    "menu_visible": true,
+    "show_minimap": false,
+    "show_open_files": false,
+    "show_tabs": false,
+    "side_bar_visible": false,
+    "status_bar_visible": false
+  },
+  "expanded_folders": ["/home/roman/Dokumente/Sources/Arduino-Projects"],
+  "file_history": [],
+  "find": {
+    "height": 29.0
+  },
+  "find_in_files": {
+    "height": 258.0,
+    "where_history": ["/home/roman/Dokumente/Sources/c-utils,*.c,*.h", "/home/roman/Dokumente/Sources/c-utils,*.c", ""]
+  },
+  "find_state": {
+    "case_sensitive": false,
+    "find_history": [
+      "setBusy",
+      "busy",
+      "setBusy",
+      "busy =",
+      "MsTimer",
+      "Counter",
+      "CounterV",
+      "Counter",
+      "Serial",
+      "setup",
+      "TimerTh",
+      "TimerT",
+      "TimerTh",
+      "Timer",
+      "mode++",
+      "mode ",
+      "mode",
+      "Timer1",
+      "output_part",
+      "stereo",
+      "Package",
+      "spad",
+      "board",
+      "bounds",
+      "update_bounds",
+      "build_part",
+      "output_part",
+      "bounds",
+      "output_part",
+      "component n",
+      "output_pa",
+      "output_part",
+      "putdoub",
+      "output_part",
+      "=\"C1",
+      "0.12",
+      "_part",
+      "pad1",
+      "_part",
+      "output_part",
+      "get_doub",
+      "output_part",
+      "_",
+      "clean_pkg",
+      "output_part",
+      "clean_pkgname",
+      "clean_p",
+      "clean_pack",
+      "dump_part",
+      "output_part",
+      "->packa",
+      "struct part",
+      "dump_part",
+      "build_part",
+      "Part:",
+      "pkgname\\.",
+      "\\&pkgname",
+      "pkgname",
+      "build_part",
+      "element",
+      "E2.5-4/V",
+      "name=\"C1\"",
+      "<inst",
+      "<comp",
+      "<packa.*\"SPAD..\"",
+      "\"SPAD..\"",
+      "\"SPAD....\"",
+      "\"SPAD",
+      "SPAD",
+      "<package.*SPAD",
+      "package.*SPAD",
+      "SPAD",
+      "package=",
+      "SPAD",
+      "spad",
+      "replacec",
+      "replace",
+      "E2.5-4/V",
+      "E2",
+      "lower",
+      "tolower",
+      "R3",
+      "R3\\.",
+      "byte_chrs",
+      "putspad",
+      "spad",
+      "strlist_foreach",
+      "foreach",
+      "_net",
+      "pad",
+      "output_net",
+      "dump_part",
+      "Net:",
+      "byte_diff",
+      "cmp_ref",
+      "strlist_sort",
+      "sort",
+      "strlist_sort",
+      "val_custom",
+      "diff",
+      "str_",
+      "sort.c",
+      "from",
+      "subst",
+      "stralloc_",
+      "strlist_sort",
+      "strlist_sor",
+      "output_net",
+      "MAP_VISIT_ALL",
+      "Part:",
+      "output_net",
+      "part_ref",
+      "output_",
+      "strlist",
+      "output_net",
+      "strlist_count",
+      "output_net",
+      "Part:",
+      "struct strlist",
+      "strlist",
+      "strlist_sort",
+      "strlist.*sort",
+      "conn_sa",
+      "output_net",
+      "MAP_VISIT_ALL",
+      "Part:",
+      "output_net",
+      "Part:"
+    ],
+    "highlight": false,
+    "in_selection": false,
+    "preserve_case": false,
+    "regex": true,
+    "replace_history": ["pkgname->", "pkgname", "output_net", "MAP_NEW(\\1)", "&output", "output", "buffer_2", "buffer_1->", "ppsrc", "path_output", "'", "parse", "MACH"],
+    "reverse": false,
+    "show_context": false,
+    "use_buffer2": true,
+    "whole_word": false,
+    "wrap": true
+  },
+  "groups": [
+    {
+      "selected": 0,
+      "sheets": [
+        {
+          "buffer": 0,
+          "semi_transient": false,
+          "settings": {
+            "buffer_size": 1,
+            "regions": {},
+            "selection": [[1, 1]],
+            "settings": {
+              "rainbowth.lispy": false,
+              "syntax": "Packages/Text/Plain text.tmLanguage"
+            },
+            "translation.x": 0.0,
+            "translation.y": 0.0,
+            "zoom_level": 1.0
+          },
+          "stack_index": 0,
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "incremental_find": {
+    "height": 29.0
+  },
+  "input": {
+    "height": 79.0
+  },
+  "layout": {
+    "cells": [[0, 0, 1, 1]],
+    "cols": [0.0, 1.0],
+    "rows": [0.0, 1.0]
+  },
+  "menu_visible": true,
+  "output.CSS Extended Completions": {
+    "height": 0.0
+  },
+  "output.SublimeLinter": {
+    "height": 0.0
+  },
+  "output.SublimeLinter Messages": {
+    "height": 194.0
+  },
+  "output.doc": {
+    "height": 0.0
+  },
+  "output.exec": {
+    "height": 319.0
+  },
+  "output.find_results": {
+    "height": 0.0
+  },
+  "output.stino_build_panel": {
+    "height": 0.0
+  },
+  "output.stino_panel": {
+    "height": 0.0
+  },
+  "output.unsaved_changes": {
+    "height": 96.0
+  },
+  "pinned_build_system": "Build debug",
+  "project": "/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Projects.sublime-project",
+  "replace": {
+    "height": 54.0
+  },
+  "save_all_on_build": true,
+  "select_file": {
+    "height": 0.0,
+    "last_filter": "",
+    "selected_items": [],
+    "width": 0.0
+  },
+  "select_project": {
+    "height": 500.0,
+    "last_filter": "",
+    "selected_items": [],
+    "width": 380.0
+  },
+  "select_symbol": {
+    "height": 0.0,
+    "last_filter": "",
+    "selected_items": [],
+    "width": 0.0
+  },
+  "selected_group": 0,
+  "settings": {},
+  "show_minimap": true,
+  "show_open_files": false,
+  "show_tabs": true,
+  "side_bar_visible": true,
+  "side_bar_width": 291.0,
+  "status_bar_visible": true,
+  "template_settings": {}
 }

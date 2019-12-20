@@ -199,7 +199,7 @@ measureFrequency() {
 void
 measureVoltage(int numChannels) {
   const float mul = (5.0 / 1023.0);
-  
+
   for(int i = 0; i < numChannels; ++i) {
     float voltage = (float)analogRead(A0 + i) * mul;
 
@@ -287,7 +287,7 @@ loop() {
       // enable input capture and overflow interrupts
       TIMSK1 |= (1 << ICIE1) | (1 << TOIE1);
       timeElapsed = 0;
-      
+
       setBusy(false);
     }
   }
