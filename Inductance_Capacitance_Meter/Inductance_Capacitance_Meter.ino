@@ -9,7 +9,7 @@
 
 #include <elapsedMillis.h>
 
-elapsedMillis timeElapsed; //declare global if you don't want it reset every time loop runs
+elapsedMillis timeElapsed; // declare global if you don't want it reset every time loop runs
 unsigned int interval = 1000;
 
 #include <Capacitor.h>
@@ -18,7 +18,6 @@ unsigned int interval = 1000;
 // Note that for electrolytics the first pin (in this case D7)
 // should be positive, the second (in this case A2) negative.
 Capacitor cap1(7, A2);
-
 
 // Counts overflovs
 volatile uint16_t Tovf, Tovf1;
@@ -116,8 +115,9 @@ setup() {
   pinMode(8, INPUT);
   pinMode(9, OUTPUT);
   InitTimer1();
-  Serial.println("Ind.Meter 1uH-1H");
-  Serial.println("Connect Inductor");
+  //Serial.println("Ind.Meter 1uH-1H");
+  Serial.println("Connect Inductor to Pin 8, 9");
+  Serial.println("Connect Capacitor to Pin D7, A2");
 }
 
 void
@@ -154,11 +154,10 @@ loop() {
   }
   mark++;
 
-    if (timeElapsed > interval)
-  {
-     float c = cap1.Measure();
-  Serial.print(c); // Measure the capacitance (in pF), print to Serial Monitor
-  Serial.println("pF");
+  if(timeElapsed > interval) {
+    float c = cap1.Measure();
+    Serial.print(c); // Measure the capacitance (in pF), print to Serial Monitor
+    Serial.println("pF");
     timeElapsed = 0; // reset the counter to 0 so the counting starts over...
   }
 }
