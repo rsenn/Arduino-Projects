@@ -145,7 +145,7 @@ ISR(TIMER2_OVF_vect) {
   Timer2_Overflow++;
 
   if(Timer2_Overflow & 0b100) {
-    ledState = !ledstate;
+    ledState = !ledState;
     digitalWrite(13, ledState);
   }
 }
