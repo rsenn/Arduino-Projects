@@ -1,12 +1,29 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <math.h>
-#include <Nokia_LCD.h>
 #include <elapsedMillis.h>
 #include <Capacitor.h>
 #include <FreqCounter.h>
 
-Nokia_LCD lcd(13 /*SCLK*/, 11 /*DN(MOSI)*/, 5 /*D/C*/, 7 /*SCE*/, 6 /*RST*/);
+#include <Nokia_LCD.h>
+
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_PCD8544.h>
+
+
+// Hardware SPI (faster, but must use certain hardware pins):
+// SCK is LCD serial clock (SCLK) - this is pin 13 on Arduino Uno
+// MOSI is LCD DIN - this is pin 11 on an Arduino Uno
+// pin 5 - Data/Command select (D/C)
+// pin 4 - LCD chip select (CS)
+// pin 3 - LCD reset (RST)
+Adafruit_PCD8544 lcd = Adafruit_PCD8544(5, 7, 6);
+// Note with hardware SPI MISO and SS pins aren't used but will still be read
+// and written to during SPI transfer.  Be careful sharing these pins!
+
+
+//Nokia_LCD lcd(13 /*SCLK*/, 11 /*DN(MOSI)*/, 5 /*D/C*/, 7 /*SCE*/, 6 /*RST*/);
 
 volatile bool busy = false, ledState = false;
 elapsedMillis timeElapsed;
@@ -84,9 +101,21 @@ setup() {
 
   lcd.begin();         // Initialize the screen
   lcd.setContrast(50); // Set the contrast; Good values are usualy between 40 and 60
-  lcd.clear();         // Clear the screen
-  delay(1000);
+  lcd.display();
+    delay(2000);
+  lcd.clearDisplay();   // clears the screen and buffer
 
+/*  lcd.clear();         // Clear the screen
+  delay(1000);
+*/
+  Serial.print("display dimensions: ");
+  Serial.print(lcd.width());
+  Serial.print("x");
+  Serial.println(lcd.width());
+
+  
+    lcd.drawLine(0, 0, lcd.width()-1, lcd.height()-1, BLACK);
+    lcd.drawLine(0, lcd.height()-1,lcd.width()-1, 0,  BLACK);
   lcd.setCursor(2, 1);
   lcd.print("Meep Meep!");
 
