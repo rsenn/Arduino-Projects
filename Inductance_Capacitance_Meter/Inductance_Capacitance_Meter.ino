@@ -36,9 +36,9 @@ uint16_t interval = 250;
 // Capacitor under test.
 // Note that for electrolytics the first pin (in this case D7)
 // should be positive, the second (in this case A2) negative.
-Capacitor cap1(8, A2);
+Capacitor cap1(2, A2);
 
-char buffer[24];
+char buffer[128];
 
 uint32_t freq;
 uint8_t mode;
@@ -278,15 +278,19 @@ measureVoltage(int numChannels) {
   for(int i = 0; i < numChannels; ++i) {
     float voltage = (float)analogRead(A0 + i) * mul;
 
-    Serial.print(' ');
-    lcd.print(" ");
     dtostrf(voltage, 3, 2, buffer);
 
     /*   Serial.print(i > 0 ? " A" : "A");
      Serial.print(i);
       Serial.print("=");*/
-    print(buffer);
-    print(" V");
+    if(i == 0) {
+      lcd.print(" ");
+      lcd.print(buffer);
+      lcd.print(" V");
+    }
+    if(i > 0)
+      Serial.print(" ");
+    Serial.print(buffer);
   }
   println("");
 }
@@ -297,13 +301,19 @@ measureVoltage(int numChannels) {
 void
 measureCapacitance() {
   float c = cap1.Measure();
+  const char* unit = " pF";
+  if(c >= 1000) {
+    c /= 1000;
+    unit = " nF";
+  }
 
   dtostrf(c, 3, 2, buffer);
+
   lcd.setCursor(0, 2);
 
   lcd.print("C = ");
   print(buffer);
-  println(" pF");
+  println(unit);
 }
 
 void
@@ -346,7 +356,7 @@ loop() {
         mode = 0;
 
       Serial.print(modeNames[mode]);
-      Serial.print(" measurement: ");
+      Serial.println(" measurement");
 
       switch(mode) {
         case FREQUENCY:
@@ -360,7 +370,7 @@ loop() {
           break;
 
         case VOLTAGE:
-          measureVoltage(1);
+          measureVoltage(7);
           timeElapsed = 0;
           break;
 
