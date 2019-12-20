@@ -11,6 +11,9 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_PCD8544.h>
 
+#define ADAFRUIT 0
+
+#if ADAFRUIT
 // Hardware SPI (faster, but must use certain hardware pins):
 // SCK is LCD serial clock (SCLK) - this is pin 13 on Arduino Uno
 // MOSI is LCD DIN - this is pin 11 on an Arduino Uno
@@ -20,8 +23,11 @@
 Adafruit_PCD8544 lcd = Adafruit_PCD8544(5, 7, 6);
 // Note with hardware SPI MISO and SS pins aren't used but will still be read
 // and written to during SPI transfer.  Be careful sharing these pins!
-
-// Nokia_LCD lcd(13 /*SCLK*/, 11 /*DN(MOSI)*/, 5 /*D/C*/, 7 /*SCE*/, 6 /*RST*/);
+#else
+#define clearDisplay clear
+#define display getCursorX
+Nokia_LCD lcd(13 /*SCLK*/, 11 /*DN(MOSI)*/, 5 /*D/C*/, 7 /*SCE*/, 6 /*RST*/);
+#endif
 
 volatile bool busy = false, ledState = false;
 elapsedMillis timeElapsed;
@@ -31,6 +37,8 @@ uint16_t interval = 250;
 // Note that for electrolytics the first pin (in this case D7)
 // should be positive, the second (in this case A2) negative.
 Capacitor cap1(8, A2);
+
+char buffer[24];
 
 uint32_t freq;
 uint8_t mode;
@@ -113,35 +121,25 @@ setup() {
   lcd.display();
   delay(2000);
 
-  /*  lcd.clear();         // Clear the screen
-    delay(1000);
+  /*  Serial.print("display dimensions: ");
+    Serial.print(lcd.width());
+    Serial.print("x");
+    Serial.println(lcd.width());
   */
-  Serial.print("display dimensions: ");
-  Serial.print(lcd.width());
-  Serial.print("x");
-  Serial.println(lcd.width());
-  /*
-    lcd.drawLine(0, 0, lcd.width() - 1, lcd.height() - 1, BLACK);
-    lcd.drawLine(0, lcd.height() - 1, lcd.width() - 1, 0, BLACK);
-    lcd.display();*/
-  /*
-    lcd.display();
-  */
-  lcd.clearDisplay();
-
-  lcd.drawBitmap(30, 16, logo16_glcd_bmp, 16, 16, 1);
+  // lcd.drawBitmap(30, 16, logo16_glcd_bmp, 16, 16, 1);
   lcd.display();
   delay(2000);
 
   // invert the display
-  lcd.invertDisplay(true);
-  delay(1000);
-  lcd.invertDisplay(false);
-  delay(1000);
+  /* lcd.invertDisplay(true);
+   delay(1000);
+   lcd.invertDisplay(false);
+   delay(1000);*/
 
-  lcd.setTextColor(BLACK);
-  lcd.setCursor(2, 18);
-  lcd.print("Meep Meep!");
+  // lcd.clearDisplay();
+
+  lcd.setCursor(0, 0);
+  lcd.print("Meep Meep! ====>>");
   lcd.display();
   delay(2000);
 
@@ -231,6 +229,19 @@ setBusy(bool state = true) {
   busy = state;
 }
 
+void
+print(const char* b) {
+  Serial.print(b);
+  lcd.print(b);
+}
+
+void
+println(const char* b) {
+  Serial.println(b);
+  lcd.print(b);
+  lcd.display();
+}
+
 /**
  * @brief      Measure frequency on Pin 5
  */
@@ -241,9 +252,13 @@ measureFrequency() {
 
   while(FreqCounter::f_ready == 0) // wait until Timer2_Overflow ready
     freq = FreqCounter::f_freq;    // read result
+  dtostrf(freq, 3, 2, buffer);
 
-  Serial.print(freq); // print result
-  Serial.println("Hz");
+  lcd.setCursor(0, 4);
+
+  print("f = ");
+  print(buffer); // print result
+  println("Hz");
 }
 
 /**
@@ -255,17 +270,23 @@ void
 measureVoltage(int numChannels) {
   const float mul = (5.0 / 1023.0);
 
+  lcd.setCursor(0, 3);
+  lcd.print("V =");
+
   for(int i = 0; i < numChannels; ++i) {
     float voltage = (float)analogRead(A0 + i) * mul;
 
-    Serial.print(i > 0 ? " A" : "A");
-    Serial.print(i);
-    Serial.print("=");
-    Serial.print(voltage);
-    Serial.print("V");
-  }
+    Serial.print(' ');
+    lcd.print(" ");
+    dtostrf(voltage, 3, 2, buffer);
 
-  Serial.println("");
+    /*   Serial.print(i > 0 ? " A" : "A");
+     Serial.print(i);
+      Serial.print("=");*/
+    print(buffer);
+    print("V");
+  }
+  println("");
 }
 
 /**
@@ -275,8 +296,17 @@ void
 measureCapacitance() {
   float c = cap1.Measure();
 
-  Serial.print(c);
+  dtostrf(c, 3, 2, buffer);
+
+  Serial.print(buffer);
   Serial.println("pF");
+
+  lcd.setCursor(0, 2);
+  lcd.print("C = ");
+  lcd.print(buffer);
+  lcd.print("pF");
+
+  lcd.display();
 }
 
 void
@@ -304,7 +334,7 @@ loop() {
           break;
 
         case VOLTAGE:
-          measureVoltage(8);
+          measureVoltage(2);
           timeElapsed = 0;
           break;
 
