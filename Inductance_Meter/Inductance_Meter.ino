@@ -1,4 +1,3 @@
-#include <Capacitor.h>
 
 // Code Created by Arafa Microsys (Eng.Hossam Arafa)
 // www.youtube.com/arafamicrosystems
@@ -41,12 +40,12 @@ serprint(float us, float Freq, float Duty) // Function Received Freq and Duty Cy
   }
 
   /*
-    Serial.print("T= ");
-    Serial.print(us);
-    Serial.print("us");
-    Serial.print("&D= ");
-    Serial.print(Duty);
-    Serial.println("%");
+  Serial.print("T= ");
+  Serial.print(us);
+  Serial.print("us");
+  Serial.print("&D= ");
+  Serial.print(Duty);
+  Serial.println("%");
   */
 }
 
