@@ -147,7 +147,7 @@ setup() {
 
   // Serial.println("Ind.Meter 1uH-1H");
   Serial.println("Connect Inductor to Pin D8, D9");
-  Serial.println("Connect Capacitor to Pin D7, A2");
+  Serial.println("Connect Capacitor to Pin 2, A2");
   Serial.println("Connect Frequency to Pin D5");
   Serial.println("Connect Voltage to Pin A0 - A3");
 }
