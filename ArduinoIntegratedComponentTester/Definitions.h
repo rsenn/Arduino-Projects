@@ -2,20 +2,22 @@
 #include "Tuple.h"
 
 static const double PinResistances[] = {
-    // Bad practice
-    0,
-    0,
-    560,
-    220000,
-    560};
+  // Bad practice
+  0,
+  0,
+  560,
+  220000,
+  560
+};
 
 static const uint8_t AnalogReadMappings[] = {
-    // Really bad practice
-    255,
-    255,
-    A1,
-    A2,
-    A3};
+  // Really bad practice
+  255,
+  255,
+  A1,
+  A2,
+  A3
+};
 
 static const Triple<uint8_t, uint8_t, uint8_t> MutuallyExclusivePins[] = {{2, 3, 4}, {3, 4, 2}, {2, 4, 3}};
 
@@ -35,7 +37,7 @@ template <typename Type> String TypeToPaddedString(Type Value, int PaddingCount)
 }
 
 String DoubleToString(double Value) { // ughhhh, really not ideal, but the MKR1000 STRING CONSTRUCTOR TAKING FLOATING
-                                      // POINT VALUES IS **BROKEN**!! COME ON!
+  // POINT VALUES IS **BROKEN**!! COME ON!
   String Return;
   int intPart = int(Value);
   long decPart = 100.f * (Value - intPart);
@@ -56,7 +58,7 @@ IsReadingValid(double Reading) {
 
 template <typename ArrayType, size_t Count>
 size_t
-ArrayCount(ArrayType (&Array)[Count]) {
+ArrayCount(ArrayType(&Array)[Count]) {
   return Count;
 }
 

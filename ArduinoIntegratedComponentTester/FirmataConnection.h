@@ -31,18 +31,18 @@ private:
                                  uint8_t ArgumentCount /* argc */,
                                  uint8_t* ArgumentVector /* argv */) {
     switch(Command) {
-      case CAPABILITY_QUERY: {
-        Firmata.write(START_SYSEX);
-        Firmata.write(CAPABILITY_RESPONSE);
-        // No capabilities, innit.
-        Firmata.write(127);
-        Firmata.write(END_SYSEX);
-        break;
-      }
-      default: {
-        Firmata.sendString("Unsupported command.");
-        break;
-      }
+    case CAPABILITY_QUERY: {
+      Firmata.write(START_SYSEX);
+      Firmata.write(CAPABILITY_RESPONSE);
+      // No capabilities, innit.
+      Firmata.write(127);
+      Firmata.write(END_SYSEX);
+      break;
+    }
+    default: {
+      Firmata.sendString("Unsupported command.");
+      break;
+    }
     }
   }
 };

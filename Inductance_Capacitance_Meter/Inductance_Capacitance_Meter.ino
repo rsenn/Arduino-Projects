@@ -63,7 +63,8 @@ static const unsigned char PROGMEM logo16_glcd_bmp[] = {0b00000000, 0b11000000, 
                                                         0b11100000, 0b11110011, 0b11100000, 0b11111110, 0b11111000, 0b01111110, 0b11111111,
                                                         0b00110011, 0b10011111, 0b00011111, 0b11111100, 0b00001101, 0b01110000, 0b00011011,
                                                         0b10100000, 0b00111111, 0b11100000, 0b00111111, 0b11110000, 0b01111100, 0b11110000,
-                                                        0b01110000, 0b01110000, 0b00000000, 0b00110000};
+                                                        0b01110000, 0b01110000, 0b00000000, 0b00110000
+                                                       };
 
 /**
  * @brief      Initialize Timer 1.
@@ -93,13 +94,13 @@ InitTimer2(void) {
   // Freq_PIN = FreqOVF/2
   TCCR2B = 0x00;       // No clock source (Timer/Counter stopped)
   TCNT2 = Timer2_Init; // Register : the Timer/Counter (TCNT2) and Output Compare
-                       // Register (OCR2A and OCR2B) are 8-bit Reset Timer Count
+  // Register (OCR2A and OCR2B) are 8-bit Reset Timer Count
   TCCR2A = 0x00;       // TCCR2A - Timer/Counter Control Register A
-                       // All bits to zero -> Normal operation
+  // All bits to zero -> Normal operation
   TCCR2B &= 0b11111000;
   TCCR2B |= 0b00000001;   // Prescale 128 (Timer/Counter started)
   TIMSK2 |= (1 << TOIE2); // TIMSK2 - Timer/Counter2 Interrupt Mask Register
-                          // Bit 0 - TOIE2: Timer/Counter2 Overflow Interrupt Enable
+  // Bit 0 - TOIE2: Timer/Counter2 Overflow Interrupt Enable
 }
 
 /**
@@ -323,18 +324,18 @@ animateProgress() {
 
   // const char* animChars[4] = {"[ - ]","[ \\ ]","[ | ]","[ / ]"};
   const char* animChars[] = {
-      "  ..o     ",
-      "   ..o    ",
-      "    ..o   ",
-      "     ..o  ",
-      "      ..o ",
-      "       o..",
-      "      o.. ",
-      "     o..  ",
-      "    o..   ",
-      "   o..    ",
-      "  o..     ",
-      " ..o      ",
+    "  ..o     ",
+    "   ..o    ",
+    "    ..o   ",
+    "     ..o  ",
+    "      ..o ",
+    "       o..",
+    "      o.. ",
+    "     o..  ",
+    "    o..   ",
+    "   o..    ",
+    "  o..     ",
+    " ..o      ",
   };
   const int animSteps = sizeof(animChars) / sizeof(animChars[0]);
   digitalWrite(13, animTime & 1);
@@ -359,28 +360,28 @@ loop() {
       Serial.println(" measurement");
 
       switch(mode) {
-        case FREQUENCY:
-          measureFrequency();
-          timeElapsed = 0;
-          break;
+      case FREQUENCY:
+        measureFrequency();
+        timeElapsed = 0;
+        break;
 
-        case CAPACITANCE:
-          measureCapacitance();
-          timeElapsed = 0;
-          break;
+      case CAPACITANCE:
+        measureCapacitance();
+        timeElapsed = 0;
+        break;
 
-        case VOLTAGE:
-          measureVoltage(7);
-          timeElapsed = 0;
-          break;
+      case VOLTAGE:
+        measureVoltage(7);
+        timeElapsed = 0;
+        break;
 
-        case INDUCTANCE:
-          setBusy();
-          digitalWrite(9, HIGH);
-          delay(5); // give some time to charge inductor.
-          digitalWrite(9, LOW);
-          delayMicroseconds(400); // some delay to make it stable
-          break;
+      case INDUCTANCE:
+        setBusy();
+        digitalWrite(9, HIGH);
+        delay(5); // give some time to charge inductor.
+        digitalWrite(9, LOW);
+        delayMicroseconds(400); // some delay to make it stable
+        break;
       }
     }
   } else {

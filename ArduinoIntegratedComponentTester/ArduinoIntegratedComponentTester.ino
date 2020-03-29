@@ -13,7 +13,7 @@ ff #include<math.h>
 #include "Transistor.h"
 #include "WiFi.h"
 
-    RTCZero InternalRTC;
+RTCZero InternalRTC;
 WiFiRTPConnection WiFiRTP;
 auto LastTimeUpdate = millis();
 bool LastStatusBarDrawState = false;
@@ -50,8 +50,7 @@ loop() {
 
   if(millis() - LastTimeUpdate > 5000) {
     auto Epoch = WiFiRTP.GetEpoch();
-    if(Epoch != 0) // Not exactly what should be done - epoch could be zero, in theory - but workable in practice
-    {
+    if(Epoch != 0) { // Not exactly what should be done - epoch could be zero, in theory - but workable in practice
       InternalRTC.setEpoch(Epoch);
     }
     LastTimeUpdate = millis();
@@ -62,7 +61,7 @@ loop() {
     if(LastStatusBarDrawState) {
       auto RSSI = WiFiRTP.GetRSSI();
       Display::GetInstance().drawBitmap(
-          0, 0, ((RSSI < -100) ? WIFI_LOW : ((RSSI < -50) ? WIFI_MEDIUM : WIFI_HIGH)), 8, 8, WHITE);
+        0, 0, ((RSSI < -100) ? WIFI_LOW : ((RSSI < -50) ? WIFI_MEDIUM : WIFI_HIGH)), 8, 8, WHITE);
     } else {
       Display::GetInstance().print(TypeToPaddedString(InternalRTC.getHours(), 1) + ':' +
                                    TypeToPaddedString(InternalRTC.getMinutes(), 1));
@@ -70,9 +69,9 @@ loop() {
 
     Display::GetInstance().setCursor(36, 0);
     Display::GetInstance().print(
-        String("20") + TypeToPaddedString(InternalRTC.getYear(), 1) + '-' +
-        TypeToPaddedString(InternalRTC.getMonth(), 1) + '-' + TypeToPaddedString(InternalRTC.getDay(), 1) + ' ' +
-        TypeToPaddedString(round(Battery::MeasureBatteryCapacity() / RefVoltage * 100.f), 2) + '%');
+      String("20") + TypeToPaddedString(InternalRTC.getYear(), 1) + '-' +
+      TypeToPaddedString(InternalRTC.getMonth(), 1) + '-' + TypeToPaddedString(InternalRTC.getDay(), 1) + ' ' +
+      TypeToPaddedString(round(Battery::MeasureBatteryCapacity() / RefVoltage * 100.f), 2) + '%');
 
     LastStatusBarDrawState = !LastStatusBarDrawState;
   }

@@ -39,7 +39,7 @@ public:
 
       UDPConnection.read(PacketBuffer, NTP_PACKET_SIZE);
       unsigned long SecsSince1900 =
-          word(PacketBuffer[40], PacketBuffer[41]) << 16 | word(PacketBuffer[42], PacketBuffer[43]);
+        word(PacketBuffer[40], PacketBuffer[41]) << 16 | word(PacketBuffer[42], PacketBuffer[43]);
 
       UDPConnection.stop();
       return (SecsSince1900 - SeventyYears);

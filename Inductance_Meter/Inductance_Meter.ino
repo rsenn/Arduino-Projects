@@ -32,8 +32,7 @@ float capacitance, inductance;
 int mark;
 
 void
-serprint(float us, float Freq, float Duty) // Function Received Freq and Duty Cycle to print them
-{
+serprint(float us, float Freq, float Duty) { // Function Received Freq and Duty Cycle to print them
   capacitance = 1.E-6;                                                    // Using 1uF Capacitor
   inductance = 1. / (capacitance * Freq * Freq * 4. * 3.14159 * 3.14159); ////Inductance Equation
   inductance *= 1E6; // note that this is the same as saying inductance = inductance*1E6
@@ -121,8 +120,7 @@ setup() {
 
 void
 loop() {
-  if(mark == 10000) // mark used to give some delay without using the delay function
-  {
+  if(mark == 10000) { // mark used to give some delay without using the delay function
     digitalWrite(9, HIGH);
     delay(5); // give some time to charge inductor.
     digitalWrite(9, LOW);
