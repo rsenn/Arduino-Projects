@@ -1,7 +1,13 @@
 #include <AnalogButtons.h>
+#include <Keyboard.h>
 #define ANALOG_PIN A1
 
 #include <MultiButtons.h>
+
+#define OUTPUT_SERIAL 1
+
+// debounce by insisting the state is consistent this many reads in a row
+#define MAX_DEBOUNCE_COUNT 12
 
 const int buzzer = 9; // buzzer to arduino pin 9
 
@@ -17,6 +23,40 @@ int lastButtonState = 0;
 char buttonStates[4] = {0, 0, 0, 0};
 char lastButtonStates[4] = {0, 0, 0, 0};
 char steerState[4] = {0, 0, 0, 0};
+
+enum {
+  KEYCODE_UP = 0,
+  KEYCODE_DOWN = 1,
+  KEYCODE_LEFT = 2,
+  KEYCODE_RIGHT = 3,
+  KEYCODE_START = 4,
+  KEYCODE_SELECT = 5,
+  KEYCODE_BUTTON1 = 6,
+  KEYCODE_BUTTON2 = 7,
+  KEYCODE_BUTTON3 = 8,
+  KEYCODE_BUTTON4 = 9,
+  KEYCODE_BUTTON5 = 10,
+  KEYCODE_BUTTON6 = 11,
+};
+
+static uint8_t keyboardCodes[] = {
+    KEY_UP_ARROW,    // Up
+    KEY_DOWN_ARROW,  // Down
+    KEY_LEFT_ARROW,  // Left
+    KEY_RIGHT_ARROW, // Right
+    KEY_RETURN,      // Start
+    KEY_RIGHT_SHIFT, // Select
+
+    // Button 1-6
+    'x', // A
+    'z', // B
+    's', // X
+    'a', // Y
+    'd', // L
+    'c', // R
+};
+static uint8_t debounceCounts[12];
+
 static int prevAn[NUM_ANALOG];
 
 const char* buttonNames[] = {"up", "down", "left", "right"};
@@ -46,8 +86,13 @@ setup() {
   // pinMode(ANALOG_PIN, INPUT);
   pinMode(buttonPin, INPUT);
   pinMode(ledPin, OUTPUT);
+
   analogReference(DEFAULT);
+#ifdef OUTPUT_SERIAL
   Serial.begin(38400);
+#else
+  Keyboard.begin();
+#endif
   mb.begin();
 
   pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
@@ -117,32 +162,61 @@ loop() {
   unsigned int an[3];
   static int prevButtons;
 
+#ifdef OUTPUT_SERIAL
+  static int started;
+  if(!started) {
+    Serial.println("START");
+    started = 1;
+  }
+#endif
+
   mb.loop();
   int buttons = getButtonBits();
   int action = prevButtons != buttons || fabs(prevAn[0] - an[0]) > 50;
+  uint8_t* counts = &debounceCounts[KEYCODE_BUTTON1];
+
   if(action) {
     for(i = 0; i < 4; i++) {
 
+      const int prevBit = (prevButtons >> i) & 1;
       const int bit = (buttons >> i) & 1;
 
-      /*  if(i > 0)
-          Serial.print(" ");*/
+#ifdef OUTPUT_SERIAL
       Serial.print(bit ? "X" : ".");
+#else
+      if(bit) {
+        if(counts[i] < MAX_DEBOUNCE_COUNT)
+          counts[i]++;
+
+        if(counts[i] == MAX_DEBOUNCE_COUNT)
+          Keyboard.press(keyboardCodes[i + KEYCODE_BUTTON1]);
+      } else {
+        if(counts[i] > 0)
+          counts[i]--;
+        if(counts[i] == 0)
+          Keyboard.release(keyboardCodes[i + KEYCODE_BUTTON1]);
+      }
+    }
+#endif
     }
     for(i = 0; i < NUM_ANALOG; i++) {
       an[i] = analogRead(ANALOG_PIN);
     }
 
+#ifdef OUTPUT_SERIAL
     printAnalog(an, NUM_ANALOG);
 
     tone(buzzer, 3000);
     delay(25);
     noTone(buzzer);
     delay(25);
+#endif
 
     prevButtons = buttons;
   }
 
+#ifdef OUTPUT_SERIAL
   delay(50);
   noTone(buzzer);
+#endif
 }
