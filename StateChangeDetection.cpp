@@ -5,8 +5,6 @@
 
 const int buzzer = 9; // buzzer to arduino pin 9
 
-#include "EasyBuzzer.h"
-
 unsigned int frequency = 1000;
 unsigned int beeps = 10;
 
@@ -38,10 +36,6 @@ buttonHandler(MultiButtons* mb, int btnIndex) {
   Serial.print("Button pressed: ");
   Serial.println(buttonNames[btnIndex]);
   mb->setTriggerEdge(BTN_TRIGGER_EDGE_RELEASE);
-
-  EasyBuzzer.singleBeep(1000, // Frequency in hertz(HZ).
-                        30    // Duration of the beep in milliseconds(ms).
-                       );
 }
 
 MultiButtons mb(ANALOG_PIN, btnCount, voltageRanges, buttonHandler, 1024, BTN_TRIGGER_EDGE_PRESS);
@@ -57,10 +51,6 @@ setup() {
   mb.begin();
 
   pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
-
-  EasyBuzzer.singleBeep(3000, // Frequency in hertz(HZ).
-                        100   // Duration of the beep in milliseconds(ms).
-                       );
 }
 
 int
@@ -127,11 +117,10 @@ loop() {
   unsigned int an[3];
   static int prevButtons;
 
-  EasyBuzzer.update();
-
   mb.loop();
   int buttons = getButtonBits();
-  if(prevButtons != buttons || fabs(prevAn[0] - an[0]) > 50) {
+  int action = prevButtons != buttons || fabs(prevAn[0] - an[0]) > 50;
+  if(action) {
     for(i = 0; i < 4; i++) {
 
       const int bit = (buttons >> i) & 1;
@@ -146,10 +135,14 @@ loop() {
 
     printAnalog(an, NUM_ANALOG);
 
+    tone(buzzer, 3000);
+    delay(25);
+    noTone(buzzer);
+    delay(25);
+
     prevButtons = buttons;
   }
 
-  EasyBuzzer.update();
-
   delay(50);
+  noTone(buzzer);
 }

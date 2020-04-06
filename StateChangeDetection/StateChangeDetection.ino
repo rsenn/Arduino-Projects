@@ -3,8 +3,7 @@
 
 #include <MultiButtons.h>
 
-const int buzzer = 9; //buzzer to arduino pin 9
-
+const int buzzer = 9; // buzzer to arduino pin 9
 
 unsigned int frequency = 1000;
 unsigned int beeps = 10;
@@ -19,7 +18,6 @@ char buttonStates[4] = {0, 0, 0, 0};
 char lastButtonStates[4] = {0, 0, 0, 0};
 char steerState[4] = {0, 0, 0, 0};
 static int prevAn[NUM_ANALOG];
-
 
 const char* buttonNames[] = {"up", "down", "left", "right"};
 // Declare voltage ranges for each button
@@ -38,14 +36,10 @@ buttonHandler(MultiButtons* mb, int btnIndex) {
   Serial.print("Button pressed: ");
   Serial.println(buttonNames[btnIndex]);
   mb->setTriggerEdge(BTN_TRIGGER_EDGE_RELEASE);
-
 }
-
-
 
 MultiButtons mb(ANALOG_PIN, btnCount, voltageRanges, buttonHandler, 1024, BTN_TRIGGER_EDGE_PRESS);
 /*MultiButtons mbr(ANALOG_PIN, btnCount, voltageRanges, buttonRelease, 1024, BTN_TRIGGER_EDGE_RELEASE);*/
-
 
 void
 setup() {
@@ -57,7 +51,6 @@ setup() {
   mb.begin();
 
   pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
-
 }
 
 int
@@ -123,9 +116,6 @@ loop() {
   int changed = 0;
   unsigned int an[3];
   static int prevButtons;
-
-
-
 
   mb.loop();
   int buttons = getButtonBits();
