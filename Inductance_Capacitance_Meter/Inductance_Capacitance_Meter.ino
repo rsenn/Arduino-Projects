@@ -109,6 +109,8 @@ InitTimer2(void) {
 void
 setup() {
   Serial.begin(38400);
+
+  
   pinMode(8, INPUT);
   pinMode(9, OUTPUT);
   pinMode(13, OUTPUT);
