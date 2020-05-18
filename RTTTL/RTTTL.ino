@@ -41,11 +41,7 @@ NOTE_C7, NOTE_CS7, NOTE_D7, NOTE_DS7, NOTE_E7, NOTE_F7, NOTE_FS7, NOTE_G7, NOTE_
 //char *song = "MahnaMahna:d=16,o=6,b=125:c#,c.,b5,8a#.5,8f.,4g#,a#,g.,4d#,8p,c#,c.,b5,8a#.5,8f.,g#.,8a#.,4g,8p,c#,c.,b5,8a#.5,8f.,4g#,f,g.,8d#.,f,g.,8d#.,f,8g,8d#.,f,8g,d#,8c,a#5,8d#.,8d#.,4d#,8d#.";
 //char *song = "LeisureSuit:d=16,o=6,b=56:f.5,f#.5,g.5,g#5,32a#5,f5,g#.5,a#.5,32f5,g#5,32a#5,g#5,8c#.,a#5,32c#,a5,a#.5,c#.,32a5,a#5,32c#,d#,8e,c#.,f.,f.,f.,f.,f,32e,d#,8d,a#.5,e,32f,e,32f,c#,d#.,c#";
 //char *song = "MissionImp:d=16,o=6,b=95:32d,32d#,32d,32d#,32d,32d#,32d,32d#,32d,32d,32d#,32e,32f,32f#,32g,g,8p,g,8p,a#,p,c7,p,g,8p,g,8p,f,p,f#,p,g,8p,g,8p,a#,p,c7,p,g,8p,g,8p,f,p,f#,p,a#,g,2d,32p,a#,g,2c#,32p,a#,g,2c,a#5,8c,2p,32p,a#5,g5,2f#,32p,a#5,g5,2f,32p,a#5,g5,2e,d#,8d";
-//const char*song ="Shrek:d=32,o=6,b=56:g5,8g5,g5,p,8b5,4d,d,8e,e,p,e,16e.,4d.,g5,p,16b.5,2d,d,8e,e,p,8e,2d,g5,8b5,4d.,d,p,16e.,e,e,p,16e.,8d,d,d,p,d,16d.,8c,c,p,16a.5,4a5";
-//const char* song /* Shrek.txt */ = "Shrek:d=32,o=6,b=56:g5,8g5,g5,p,8b5,4d,d,8e,e,p,e,16e.,4d.,g5,p,16b.5,2d,d,8e,e,p,8e,2d,g5,8b5,4d.,d,p,16e.,e,e,p,16e.,8d,d,d,p,d,16d.,8c,c,p,16a.5,4a5";
-const char* song /* munsters.txt */ = "munsters:d=4,o=5,b=160:d,8f,8d,8g#,8a,d6,8a#,8a,2g,8f,8g,a,8a4,8d#4,8a4,8b4,c#,8d,p,c,c6,c6,2c6,8a#,8a,8a#,8g,8a,f,p,g,g,2g,8f,8e,8f,8d,8e,2c#,p,d,8f,8d,8g#,8a,d6,8a#,8a,2g,8f,8g,a,8d#4,8a4,8d#4,8b4,c#,2d";
-//const char* song /* Munsters.txt */ = "Munsters:d=4,o=6,b=127:d,8f,8d,8g_,8a,d7,8a_,8a,2g,8f,8g,a,8a5,8d_5,8a5,8b5,c_,8d,p,c,c7,c7,2c7,8a_,8a,8a_,8g,8a,f,p,g,g,8f,8e,8f,8d,8e,2c_,p";
-//const char* song /* munster.txt */ = "munsters:d=4,o=5,b=160:d,8f,8d,8g#,8a,d6,8a#,8a,2g,8f,8g,a,8a4,8d#4,8a4,8b4,c#,8d,p,c,c6,c6,2c6,8a#,8a,8a#,8g,8a,f,p,g,g,2g,8f,8e,8f,8d,8e,2c#,p,d,8f,8d,8g#,8a,d6,8a#,8a,2g,8f,8g,a,8d#4,8a4,8d#4,8b4,c#,2d";
+const char* song /* Eurythmics - Sweet Dreams.txt */ = "SweetDre:d=8,o=5,b=125:4d#,4d#,c,4d#,4d#,d#,4d.,p,d#,d#,c,4d#.,4c,d#,d#,4f.,d#,4d,16c,16p,d#,d#,c,4d#.,d#,c,d#,d#,16f,16p,d#,4d.,p,4d#,c,4d#,4c,p,d#,d#,f,d#,16d,16p,4d,p,g,g,4c,g,g,c,g,f,4f,2p,g,g,4c,g,g,c,4g,4g#.,g,4f,p,g,g,4c,g,g,c,g,f,4f,2p,g,g,4c,g,g,c,4g,4g#.,g,4f";
 
 void setup(void)
 {

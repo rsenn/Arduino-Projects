@@ -23,7 +23,7 @@ int scope_range_min = -1000;		//minimum value of the range [a]
 int scope_range_max = 1000;			//maximum value of the range [b]
 int sampling = 50;					//sampling time
 
-char buf[SERIAL_COLUMNS+1];
+char buf[SERIAL_COLUMNS+2];
 unsigned long thetime = 0;
 int sensorValue = 0; 
 int zero_pos = 0; 					//position of the zero in [a,b] relative to [0,SERIAL_COLUMNS]
@@ -47,12 +47,18 @@ void prepare_line(int val){
     memset(buf+zero_pos+1,BAR_CHAR,val-zero_pos);
   }
   buf[SERIAL_COLUMNS]=END_CHAR;
+  buf[SERIAL_COLUMNS+1]=0; 
 }
 
 void serial_scope(int value){
   int val = convert_to_serial(value);
   prepare_line(val);
-  Serial.println(buf);
+  Serial.print(buf);
+
+  Serial.print(" ");
+   float voltage = sensorValue * (5.0 / 1023.0);
+
+  Serial.println(voltage);
 }
 
 void setup() {
