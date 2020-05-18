@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARDUINO_LIBS	Makefile	/^ARDUINO_LIBS = Arduino-Frequency-Counter-Library elapsedMillis Capacitor Nokia_5110_LCD_library$/;"	m
+ARDUINO_PORT	Makefile	/^ARDUINO_PORT = \/dev\/ttyACM*$/;"	m
+BOARD_TAG	Makefile	/^BOARD_TAG    = uno$/;"	m
+CAPACITANCE	Inductance_Capacitance_Meter.cpp	/^enum { FREQUENCY, CAPACITANCE, VOLTAGE, INDUCTANCE };$/;"	e	enum:__anon1	file:
+Capture1_Time	Inductance_Capacitance_Meter.cpp	/^volatile uint16_t Capture1_Time, Capture2_Time, Capture3_Time;$/;"	v
+Capture2_Time	Inductance_Capacitance_Meter.cpp	/^volatile uint16_t Capture1_Time, Capture2_Time, Capture3_Time;$/;"	v
+Capture3_Time	Inductance_Capacitance_Meter.cpp	/^volatile uint16_t Capture1_Time, Capture2_Time, Capture3_Time;$/;"	v
+Capture_Flag	Inductance_Capacitance_Meter.cpp	/^volatile uint8_t Capture_Flag;$/;"	v
+FREQUENCY	Inductance_Capacitance_Meter.cpp	/^enum { FREQUENCY, CAPACITANCE, VOLTAGE, INDUCTANCE };$/;"	e	enum:__anon1	file:
+INDUCTANCE	Inductance_Capacitance_Meter.cpp	/^enum { FREQUENCY, CAPACITANCE, VOLTAGE, INDUCTANCE };$/;"	e	enum:__anon1	file:
+ISR	Inductance_Capacitance_Meter.cpp	/^ISR(TIMER1_CAPT_vect) {$/;"	f
+ISR	Inductance_Capacitance_Meter.cpp	/^ISR(TIMER1_OVF_vect) { Timer1_Overflow++; }$/;"	f
+ISR	Inductance_Capacitance_Meter.cpp	/^ISR(TIMER2_OVF_vect) {$/;"	f
+InitTimer1	Inductance_Capacitance_Meter.cpp	/^InitTimer1(void) {$/;"	f
+InitTimer2	Inductance_Capacitance_Meter.cpp	/^InitTimer2(void) {$/;"	f
+Timer1_Init	Inductance_Capacitance_Meter.cpp	/^const uint16_t Timer1_Init = 34286, Timer2_Init = 10;$/;"	v
+Timer1_Overflow	Inductance_Capacitance_Meter.cpp	/^volatile uint16_t Timer1_Overflow = 0, Timer1_Overflow2 = 0, Timer2_Overflow = 0;$/;"	v
+Timer1_Overflow2	Inductance_Capacitance_Meter.cpp	/^volatile uint16_t Timer1_Overflow = 0, Timer1_Overflow2 = 0, Timer2_Overflow = 0;$/;"	v
+Timer2_Init	Inductance_Capacitance_Meter.cpp	/^const uint16_t Timer1_Init = 34286, Timer2_Init = 10;$/;"	v
+Timer2_Overflow	Inductance_Capacitance_Meter.cpp	/^volatile uint16_t Timer1_Overflow = 0, Timer1_Overflow2 = 0, Timer2_Overflow = 0;$/;"	v
+USER_LIB_PATH	Makefile	/^USER_LIB_PATH = \/home\/roman\/Arduino\/libraries$/;"	m
+VOLTAGE	Inductance_Capacitance_Meter.cpp	/^enum { FREQUENCY, CAPACITANCE, VOLTAGE, INDUCTANCE };$/;"	e	enum:__anon1	file:
+busy	Inductance_Capacitance_Meter.cpp	/^volatile bool busy = false, ledState = false;$/;"	v
+capacitance	Inductance_Capacitance_Meter.cpp	/^float capacitance, inductance;$/;"	v
+freq	Inductance_Capacitance_Meter.cpp	/^uint32_t freq;$/;"	v
+inductance	Inductance_Capacitance_Meter.cpp	/^float capacitance, inductance;$/;"	v
+interval	Inductance_Capacitance_Meter.cpp	/^uint16_t interval = 250;$/;"	v
+ledState	Inductance_Capacitance_Meter.cpp	/^volatile bool busy = false, ledState = false;$/;"	v
+loop	Inductance_Capacitance_Meter.cpp	/^loop() {$/;"	f
+measureCapacitance	Inductance_Capacitance_Meter.cpp	/^measureCapacitance() {$/;"	f
+measureFrequency	Inductance_Capacitance_Meter.cpp	/^measureFrequency() {$/;"	f
+measureVoltage	Inductance_Capacitance_Meter.cpp	/^measureVoltage(int numChannels) {$/;"	f
+mode	Inductance_Capacitance_Meter.cpp	/^uint8_t mode;$/;"	v
+modeNames	Inductance_Capacitance_Meter.cpp	/^const char* const modeNames[] = {"freq", "cap.", "volt", "indu"};$/;"	v
+printInductance	Inductance_Capacitance_Meter.cpp	/^printInductance(float us, float freq, float dutyCycle) {$/;"	f
+setBusy	Inductance_Capacitance_Meter.cpp	/^setBusy(bool state = true) {$/;"	f
+setup	Inductance_Capacitance_Meter.cpp	/^setup() {$/;"	f
+timeElapsed	Inductance_Capacitance_Meter.cpp	/^elapsedMillis timeElapsed;$/;"	v
