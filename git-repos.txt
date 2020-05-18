@@ -1,0 +1,16 @@
+Arduino-Arcade-Joystick-USB: origin https://github.com/czazuaga/Arduino-Arcade-Joystick-USB
+arduino-joystick: origin https://github.com/devonshire/arduino-joystick
+ArduinoJoystickLibrary: origin https://github.com/MHeironimus/ArduinoJoystickLibrary
+Arduino-Leonardo-Joypad: origin https://github.com/FlorenzW/Arduino-Leonardo-Joypad
+arduino-leonardo-joystick: origin https://github.com/auron-muc/arduino-leonardo-joystick
+Arduino-Makefile: origin https://github.com/sudar/Arduino-Makefile
+ArduinoUSBNESController: origin https://github.com/joshwc/ArduinoUSBNESController
+elite-arduino-joystick: origin https://github.com/briefnotion/elite-arduino-joystick
+joypad: origin https://github.com/dragaosemchama/joypad
+LeonardoJoystick: origin https://github.com/Cryocrat/LeonardoJoystick
+libraries/arduino-leonardo-joystick: origin https://github.com/auron-muc/arduino-leonardo-joystick
+libraries/TimerThree: origin https://github.com/PaulStoffregen/TimerThree
+libraries/TimerTwo: origin https://github.com/theAndreas/TimerTwo
+libraries/TimerOne: origin https://github.com/PaulStoffregen/TimerOne
+libraries/Arduino-Frequency-Counter-Library: origin https://github.com/BlackBrix/Arduino-Frequency-Counter-Library
+libraries/LeonardoJoystick: origin https://github.com/Cryocrat/LeonardoJoystick
