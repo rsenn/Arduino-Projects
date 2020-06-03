@@ -67,8 +67,7 @@ static const unsigned char PROGMEM logo16_glcd_bmp[] = {0b00000000, 0b11000000, 
                                                         0b11100000, 0b11110011, 0b11100000, 0b11111110, 0b11111000, 0b01111110, 0b11111111,
                                                         0b00110011, 0b10011111, 0b00011111, 0b11111100, 0b00001101, 0b01110000, 0b00011011,
                                                         0b10100000, 0b00111111, 0b11100000, 0b00111111, 0b11110000, 0b01111100, 0b11110000,
-                                                        0b01110000, 0b01110000, 0b00000000, 0b00110000
-                                                       };
+                                                        0b01110000, 0b01110000, 0b00000000, 0b00110000};
 
 RotaryEncoder encoder(A0, A1);
 
@@ -81,7 +80,7 @@ constexpr static const unsigned long kAccelerationShortCutffMillis = 4;
 constexpr static const float m = -0.16;
 // linear acceleration: y offset
 constexpr static const float c = 84.03;
-  static int32_t pos,  offset;
+static int32_t pos, offset;
 
 /**
  * @brief      Initialize Timer 1.
@@ -197,12 +196,11 @@ ISR(TIMER1_CAPT_vect) {
   Capture_Flag++; // increment Capture_Flag
 }
 
-
 void
 handleButton() {
   pos = 0;
 
-//  Serial.println("button pressed");
+  //  Serial.println("button pressed");
 }
 
 void
@@ -277,9 +275,9 @@ measureVoltage(int numChannels) {
 void
 drawColon(int b = 1) {
   char bitmap[] = {
-    (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
-    (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
-    0b0000000,
+      (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
+      (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
+      0b0000000,
   };
   lcd.draw(bitmap, sizeof(bitmap), false);
 }
@@ -287,11 +285,11 @@ drawColon(int b = 1) {
 void
 drawZero() {
   char bitmap[] = {
-    0b00111110,
-    0b01000001,
-    0b01000001,
-    0b01000001,
-    0b00111110,
+      0b00111110,
+      0b01000001,
+      0b01000001,
+      0b01000001,
+      0b00111110,
   };
   lcd.draw(bitmap, sizeof(bitmap), false);
 }
@@ -319,16 +317,16 @@ showTime(const char* label, int32_t secs) {
   }
 
   lcd.print(" ");
-   secs %= 86400;
+  secs %= 86400;
   if(secs < 0)
     secs += 86400;
 
   s = secs;
- 
+
   m = s / 60;
   m = s / 60 % 60;
   h = s / 3600;
-    s = s%60;
+  s = s % 60;
 
   if(h < 10)
     drawChar('0');
@@ -343,7 +341,7 @@ showTime(const char* label, int32_t secs) {
     drawChar(0x30 + ((m % 60) / 10));
 
   drawChar('0' + (m % 10));
-  if(s) {
+  if(1) {
     drawColon();
 
     drawChar('0' + s / 10);
@@ -380,18 +378,18 @@ animateProgress() {
 
   // const char* animChars[4] = {"[ - ]","[ \\ ]","[ | ]","[ / ]"};
   const char* animChars[] = {
-    "  ..o     ",
-    "   ..o    ",
-    "    ..o   ",
-    "     ..o  ",
-    "      ..o ",
-    "       o..",
-    "      o.. ",
-    "     o..  ",
-    "    o..   ",
-    "   o..    ",
-    "  o..     ",
-    " ..o      ",
+      "  ..o     ",
+      "   ..o    ",
+      "    ..o   ",
+      "     ..o  ",
+      "      ..o ",
+      "       o..",
+      "      o.. ",
+      "     o..  ",
+      "    o..   ",
+      "   o..    ",
+      "  o..     ",
+      " ..o      ",
   };
   const int animSteps = sizeof(animChars) / sizeof(animChars[0]);
   digitalWrite(13, animTime & 1);
@@ -462,7 +460,6 @@ processChar(char c) {
   processLine(inputString);
 }
 
-
 /**
  * @brief      Setup routine
  */
@@ -521,14 +518,13 @@ setup() {
   Serial.println("Connect Capacitor to Pin 2, A2");
   Serial.println("Connect Frequency to Pin D5");
   Serial.println("Connect Voltage to Pin A0 - A3");
-  
-    attachInterrupt(digitalPinToInterrupt(A2), handleButton, FALLING);
-  
+
+  attachInterrupt(digitalPinToInterrupt(A2), handleButton, FALLING);
+
   lcd.clear();
   digitalWrite(3, HIGH);
   digitalWrite(4, HIGH);
 }
-
 
 void
 updateEncoder() {
@@ -536,14 +532,13 @@ updateEncoder() {
   static RotaryEncoder::Direction lastMovementDirection = RotaryEncoder::Direction::NOROTATION;
   encoder.tick();
 
-
   int newPos = encoder.getPosition();
   if(pos != newPos) {
 
     // compute linear acceleration
     RotaryEncoder::Direction currentDirection = encoder.getDirection();
     if(currentDirection == lastMovementDirection && currentDirection != RotaryEncoder::Direction::NOROTATION &&
-        lastMovementDirection != RotaryEncoder::Direction::NOROTATION) {
+       lastMovementDirection != RotaryEncoder::Direction::NOROTATION) {
       // ... but only of the direction of rotation matched and there
       // actually was a previous rotation.
       unsigned long deltat = encoder.getMillisBetweenRotations();
@@ -573,10 +568,16 @@ updateEncoder() {
     Serial.print("pos = ");
     Serial.print(newPos);
     Serial.println();
-    if(buttonState == LOW)
-      offset = newPos*60;
+    if(buttonState == LOW){
+      int8_t seconds = count/4+offset % 60;
+
+      offset = newPos * 60;
+      int32_t value = count/4 + offset;
+     offset -= value % 60;
+     offset += seconds;
+    }
     else
-    pos = newPos;
+      pos = newPos;
   } // if
 }
 
@@ -591,13 +592,13 @@ loop() {
     y = digitalRead(A1) == LOW;
     digitalWrite(4, y);
     z = digitalRead(A2) == LOW;
-   lcd.print(z);
-         lcd.print(" ");
+    lcd.print(z);
+    lcd.print(" ");
 
-  /*    
-      lcd.print(" ");
-      lcd.print(y);------------------------------------------------------------
-      lcd.print(" ");*/
+    /*
+        lcd.print(" ");
+        lcd.print(y);------------------------------------------------------------
+        lcd.print(" ");*/
     lcd.print((int)pos);
     /*
     lcd.print(" ");
@@ -623,7 +624,7 @@ loop() {
       lcd.setCursor(0, 2);
       showTime(" ON ", 7 * 60 * 60);
       lcd.setCursor(0, 3);
-      showTime(" OFF", 23*60*60);
+      showTime(" OFF", 23 * 60 * 60);
     }
     if(!busy) {
 
@@ -636,28 +637,28 @@ loop() {
       mode = -1;
 
       switch(mode) {
-      case FREQUENCY:
-        measureFrequency();
-        timeElapsed = 0;
-        break;
+        case FREQUENCY:
+          measureFrequency();
+          timeElapsed = 0;
+          break;
 
-      case CAPACITANCE:
-        measureCapacitance();
-        timeElapsed = 0;
-        break;
+        case CAPACITANCE:
+          measureCapacitance();
+          timeElapsed = 0;
+          break;
 
-      case VOLTAGE:
-        measureVoltage(7);
-        timeElapsed = 0;
-        break;
+        case VOLTAGE:
+          measureVoltage(7);
+          timeElapsed = 0;
+          break;
 
-      case INDUCTANCE:
-        setBusy();
-        digitalWrite(9, HIGH);
-        delay(5); // give some time to charge inductor.
-        digitalWrite(9, LOW);
-        delayMicroseconds(400); // some delay to make it stable
-        break;
+        case INDUCTANCE:
+          setBusy();
+          digitalWrite(9, HIGH);
+          delay(5); // give some time to charge inductor.
+          digitalWrite(9, LOW);
+          delayMicroseconds(400); // some delay to make it stable
+          break;
       }
     }
   } else {

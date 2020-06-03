@@ -12,15 +12,14 @@
 #define JOYSTICK_COUNT 4
 
 Joystick_ Joystick[JOYSTICK_COUNT] = {
-  Joystick_(
-    0x03, JOYSTICK_TYPE_GAMEPAD, 4, 2, true, true, false, false, false, false, false, false, false, false, false),
-  Joystick_(
-    0x04, JOYSTICK_TYPE_JOYSTICK, 8, 1, true, true, true, true, false, false, false, false, false, false, false),
-  Joystick_(
-    0x05, JOYSTICK_TYPE_MULTI_AXIS, 16, 0, false, true, false, true, false, false, true, true, false, false, false),
-  Joystick_(
-    0x06, JOYSTICK_TYPE_MULTI_AXIS, 32, 1, true, true, false, true, true, false, false, false, true, true, true)
-};
+    Joystick_(
+        0x03, JOYSTICK_TYPE_GAMEPAD, 4, 2, true, true, false, false, false, false, false, false, false, false, false),
+    Joystick_(
+        0x04, JOYSTICK_TYPE_JOYSTICK, 8, 1, true, true, true, true, false, false, false, false, false, false, false),
+    Joystick_(
+        0x05, JOYSTICK_TYPE_MULTI_AXIS, 16, 0, false, true, false, true, false, false, true, true, false, false, false),
+    Joystick_(
+        0x06, JOYSTICK_TYPE_MULTI_AXIS, 32, 1, true, true, false, true, true, false, false, false, true, true, true)};
 
 // Set to true to test "Auto Send" mode or false to test "Manual Send" mode.
 // const bool testAutoSendMode = true;

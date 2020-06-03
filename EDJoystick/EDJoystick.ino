@@ -136,22 +136,22 @@
 
 #include "Joystick.h"
 Joystick_
-Joystick(JOYSTICK_DEFAULT_REPORT_ID, // default uint8_t hidReportId. Do not use 0x01 or 0x02
-         JOYSTICK_TYPE_JOYSTICK, // options: JOYSTICK_TYPE_JOYSTICK, JOYSTICK_TYPE_GAMEPAD, JOYSTICK_TYPE_MULTI_AXIS
-         1,                      // uint8_t buttonCount - button count
-         0,                      // uint8_t hatSwitchCount
-         true,                   // bool includeXAxis
-         true,                   // bool includeYAxis
-         false,                  // bool includeZAxis
-         false,                  // bool includeRxAxis
-         false,                  // bool includeRyAxis
-         false,                  // bool includeRzAxis
-         false,                  // bool includeRudder
-         false,                  // bool includeThrottle
-         false,                  // bool includeAccelerator
-         false,                  // bool includeBrake
-         false                   // bool includeSteering
-        );
+    Joystick(JOYSTICK_DEFAULT_REPORT_ID, // default uint8_t hidReportId. Do not use 0x01 or 0x02
+             JOYSTICK_TYPE_JOYSTICK, // options: JOYSTICK_TYPE_JOYSTICK, JOYSTICK_TYPE_GAMEPAD, JOYSTICK_TYPE_MULTI_AXIS
+             1,                      // uint8_t buttonCount - button count
+             0,                      // uint8_t hatSwitchCount
+             true,                   // bool includeXAxis
+             true,                   // bool includeYAxis
+             false,                  // bool includeZAxis
+             false,                  // bool includeRxAxis
+             false,                  // bool includeRyAxis
+             false,                  // bool includeRzAxis
+             false,                  // bool includeRudder
+             false,                  // bool includeThrottle
+             false,                  // bool includeAccelerator
+             false,                  // bool includeBrake
+             false                   // bool includeSteering
+    );
 
 // --- Current Pin Layout ---
 // PIN 6   - Joystick Button

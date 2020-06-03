@@ -59,37 +59,37 @@ loop() {
     int currentButtonState = !digitalRead(index + 2);
     if(currentButtonState != lastButtonState[index]) {
       switch(index) {
-      case 0: // UP
-        if(currentButtonState == 1) {
-          Joystick.setYAxis(-1);
-        } else {
-          Joystick.setYAxis(0);
-        }
-        break;
-      case 1: // RIGHT
-        if(currentButtonState == 1) {
-          Joystick.setXAxis(1);
-        } else {
-          Joystick.setXAxis(0);
-        }
-        break;
-      case 2: // DOWN
-        if(currentButtonState == 1) {
-          Joystick.setYAxis(1);
-        } else {
-          Joystick.setYAxis(0);
-        }
-        break;
-      case 3: // LEFT
-        if(currentButtonState == 1) {
-          Joystick.setXAxis(-1);
-        } else {
-          Joystick.setXAxis(0);
-        }
-        break;
-      case 4: // FIRE
-        Joystick.setButton(0, currentButtonState);
-        break;
+        case 0: // UP
+          if(currentButtonState == 1) {
+            Joystick.setYAxis(-1);
+          } else {
+            Joystick.setYAxis(0);
+          }
+          break;
+        case 1: // RIGHT
+          if(currentButtonState == 1) {
+            Joystick.setXAxis(1);
+          } else {
+            Joystick.setXAxis(0);
+          }
+          break;
+        case 2: // DOWN
+          if(currentButtonState == 1) {
+            Joystick.setYAxis(1);
+          } else {
+            Joystick.setYAxis(0);
+          }
+          break;
+        case 3: // LEFT
+          if(currentButtonState == 1) {
+            Joystick.setXAxis(-1);
+          } else {
+            Joystick.setXAxis(0);
+          }
+          break;
+        case 4: // FIRE
+          Joystick.setButton(0, currentButtonState);
+          break;
       }
       lastButtonState[index] = currentButtonState;
     }

@@ -138,95 +138,95 @@ loop(void) {
     char theChar = Serial.read();
     // Parse character
     switch(theChar) {
-    case 's': // 's' for starting ADC conversions
+      case 's': // 's' for starting ADC conversions
 
-      // Clear buffer
-      memset((void*)ADCBuffer, 0, sizeof(ADCBuffer));
+        // Clear buffer
+        memset((void*)ADCBuffer, 0, sizeof(ADCBuffer));
 
-      startADC();
-      startAnalogComparator();
-      break;
-    case 'S': // 'S' for stopping ADC conversions
-      stopAnalogComparator();
-      stopADC();
-      break;
-    case 'p': // 'p' for new prescaler setting
-    case 'P': {
-      // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
-      delay(COMMANDDELAY);
+        startADC();
+        startAnalogComparator();
+        break;
+      case 'S': // 'S' for stopping ADC conversions
+        stopAnalogComparator();
+        stopADC();
+        break;
+      case 'p': // 'p' for new prescaler setting
+      case 'P': {
+        // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
+        delay(COMMANDDELAY);
 
-      fillBuffer(commandBuffer, COMBUFFERSIZE);
+        fillBuffer(commandBuffer, COMBUFFERSIZE);
 
-      // Convert buffer to integer
-      uint8_t newP = atoi(commandBuffer);
+        // Convert buffer to integer
+        uint8_t newP = atoi(commandBuffer);
 
-      prescaler = newP;
-      setADCPrescaler(newP);
-    } break;
+        prescaler = newP;
+        setADCPrescaler(newP);
+      } break;
 
-    case 'r': // 'r' for new voltage reference setting
-    case 'R': {
-      // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
-      delay(COMMANDDELAY);
+      case 'r': // 'r' for new voltage reference setting
+      case 'R': {
+        // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
+        delay(COMMANDDELAY);
 
-      fillBuffer(commandBuffer, COMBUFFERSIZE);
+        fillBuffer(commandBuffer, COMBUFFERSIZE);
 
-      // Convert buffer to integer
-      uint8_t newR = atoi(commandBuffer);
+        // Convert buffer to integer
+        uint8_t newR = atoi(commandBuffer);
 
-      setVoltageReference(newR);
-    } break;
+        setVoltageReference(newR);
+      } break;
 
-    case 'e': // 'e' for new trigger event setting
-    case 'E': {
-      // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
-      delay(COMMANDDELAY);
+      case 'e': // 'e' for new trigger event setting
+      case 'E': {
+        // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
+        delay(COMMANDDELAY);
 
-      fillBuffer(commandBuffer, COMBUFFERSIZE);
+        fillBuffer(commandBuffer, COMBUFFERSIZE);
 
-      // Convert buffer to integer
-      uint8_t newE = atoi(commandBuffer);
+        // Convert buffer to integer
+        uint8_t newE = atoi(commandBuffer);
 
-      if(newE == 4) {
-        isContinuous = true;
-      } else {
-        isContinuous = false;
-        triggerEvent = newE;
-        setTriggerEvent(newE);
-      }
-    } break;
+        if(newE == 4) {
+          isContinuous = true;
+        } else {
+          isContinuous = false;
+          triggerEvent = newE;
+          setTriggerEvent(newE);
+        }
+      } break;
 
-    case 'w': // 'w' for new wait setting
-    case 'W': {
-      // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
-      delay(COMMANDDELAY);
+      case 'w': // 'w' for new wait setting
+      case 'W': {
+        // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
+        delay(COMMANDDELAY);
 
-      fillBuffer(commandBuffer, COMBUFFERSIZE);
+        fillBuffer(commandBuffer, COMBUFFERSIZE);
 
-      // Convert buffer to integer
-      uint16_t newW = atoi(commandBuffer);
+        // Convert buffer to integer
+        uint16_t newW = atoi(commandBuffer);
 
-      newWaitDuration = newW;
-    } break;
+        newWaitDuration = newW;
+      } break;
 
-    case 't': // 't' for new threshold setting
-    case 'T': {
-      // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
-      delay(COMMANDDELAY);
+      case 't': // 't' for new threshold setting
+      case 'T': {
+        // Wait for COMMANDDELAY ms to be sure that the Serial buffer is filled
+        delay(COMMANDDELAY);
 
-      fillBuffer(commandBuffer, COMBUFFERSIZE);
+        fillBuffer(commandBuffer, COMBUFFERSIZE);
 
-      // Convert buffer to integer
-      uint8_t newT = atoi(commandBuffer);
+        // Convert buffer to integer
+        uint8_t newT = atoi(commandBuffer);
 
-      threshold = newT;
-      analogWrite(thresholdPin, threshold);
-    } break;
+        threshold = newT;
+        analogWrite(thresholdPin, threshold);
+      } break;
 
-    case 'd': // 'd' for display status
-    case 'D': printStatus(); break;
+      case 'd': // 'd' for display status
+      case 'D': printStatus(); break;
 
-    default: error();
+      default: error();
     }
   }
 }

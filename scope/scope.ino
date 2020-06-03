@@ -63,21 +63,21 @@ setup() {
 void
 scopeInputSet(char cScale) {
   switch(cScopeScale) {
-  case 2:                // x10
-    ADMUX = 0b11000000 + // use vref=1.1 internal
-            0b00000000 + // use adc0
-            0b00100000;  // left justifieds bits. read only most significative one
-    break;
-  case 1:                // x1
-    ADMUX = 0b11000000 + // use vref=1.1 internal
-            0b00000001 + // use adc1
-            0b00100000;  // left justifieds bits. read only most significative one
-    break;
-  case 0:                // x0.1
-    ADMUX = 0b11000000 + // use vref=1.1 internal
-            0b00000010 + // use adc2
-            0b00100000;  // left justifieds bits. read only most significative one
-    break;
+    case 2:                // x10
+      ADMUX = 0b11000000 + // use vref=1.1 internal
+              0b00000000 + // use adc0
+              0b00100000;  // left justifieds bits. read only most significative one
+      break;
+    case 1:                // x1
+      ADMUX = 0b11000000 + // use vref=1.1 internal
+              0b00000001 + // use adc1
+              0b00100000;  // left justifieds bits. read only most significative one
+      break;
+    case 0:                // x0.1
+      ADMUX = 0b11000000 + // use vref=1.1 internal
+              0b00000010 + // use adc2
+              0b00100000;  // left justifieds bits. read only most significative one
+      break;
   }
 
   DIDR0 = 0b00000111; // turn off the digital input for adc0 1 and 2
@@ -103,7 +103,7 @@ loop() {
     // maybe more if performing something slow
 
     if(cScopeDisplayed == 1 // waiting for display?
-        && iScopeCounter == POINTS) {
+       && iScopeCounter == POINTS) {
       iScopeCounter = 0; // reset sample buffer and restart sampling
     }
 
@@ -137,7 +137,7 @@ loop() {
   }
 
   if(iScopeCounter == POINTS && // buffer filled?
-      cScopeDisplayed == 0) {    // diplay not to be redraw?
+     cScopeDisplayed == 0) {    // diplay not to be redraw?
     cScopeDisplayed = 1;        // enable a display redraw
 
     // check sample for trigger

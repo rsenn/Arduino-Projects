@@ -75,7 +75,7 @@ loop() {
     if(valueChanged[hatSwitch]) {
 
       if((lastButtonState[hatSwitch][0] == 0) && (lastButtonState[hatSwitch][1] == 0) &&
-          (lastButtonState[hatSwitch][2] == 0) && (lastButtonState[hatSwitch][3] == 0)) {
+         (lastButtonState[hatSwitch][2] == 0) && (lastButtonState[hatSwitch][3] == 0)) {
         Joystick.setHatSwitch(hatSwitch, -1);
       }
       if(lastButtonState[hatSwitch][0] == 1) {

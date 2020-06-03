@@ -1,5 +1,5 @@
 {
-"build_systems": [
+  "build_systems": [
    {
  "name": "List",
  "shell_cmd": "ls -l"

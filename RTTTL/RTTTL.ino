@@ -17,8 +17,7 @@ int notes[] = {0,        NOTE_C4,  NOTE_CS4, NOTE_D4,  NOTE_DS4, NOTE_E4,  NOTE_
                NOTE_A4,  NOTE_AS4, NOTE_B4,  NOTE_C5,  NOTE_CS5, NOTE_D5,  NOTE_DS5, NOTE_E5,  NOTE_F5,  NOTE_FS5,
                NOTE_G5,  NOTE_GS5, NOTE_A5,  NOTE_AS5, NOTE_B5,  NOTE_C6,  NOTE_CS6, NOTE_D6,  NOTE_DS6, NOTE_E6,
                NOTE_F6,  NOTE_FS6, NOTE_G6,  NOTE_GS6, NOTE_A6,  NOTE_AS6, NOTE_B6,  NOTE_C7,  NOTE_CS7, NOTE_D7,
-               NOTE_DS7, NOTE_E7,  NOTE_F7,  NOTE_FS7, NOTE_G7,  NOTE_GS7, NOTE_A7,  NOTE_AS7, NOTE_B7
-              };
+               NOTE_DS7, NOTE_E7,  NOTE_F7,  NOTE_FS7, NOTE_G7,  NOTE_GS7, NOTE_A7,  NOTE_AS7, NOTE_B7};
 
 // char *song = "The
 // Simpsons:d=4,o=5,b=160:c.6,e6,f#6,8a6,g.6,e6,c6,8a,8f#,8f#,8f#,2g,8p,8p,8f#,8f#,8f#,8g,a#.,8c6,8c6,8c6,c6"; char
@@ -158,15 +157,15 @@ play_rtttl(char* p) {
     note = 0;
 
     switch(*p) {
-    case 'c': note = 1; break;
-    case 'd': note = 3; break;
-    case 'e': note = 5; break;
-    case 'f': note = 6; break;
-    case 'g': note = 8; break;
-    case 'a': note = 10; break;
-    case 'b': note = 12; break;
-    case 'p':
-    default: note = 0;
+      case 'c': note = 1; break;
+      case 'd': note = 3; break;
+      case 'e': note = 5; break;
+      case 'f': note = 6; break;
+      case 'g': note = 8; break;
+      case 'a': note = 10; break;
+      case 'b': note = 12; break;
+      case 'p':
+      default: note = 0;
     }
     p++;
 
