@@ -16,7 +16,7 @@
 Joystick_ Joystick;
 
 // Set to true to test "Auto Send" mode or false to test "Manual Send" mode.
-//const bool testAutoSendMode = true;
+// const bool testAutoSendMode = true;
 const bool testAutoSendMode = false;
 
 const unsigned long gcCycleDelta = 1000;
@@ -25,7 +25,8 @@ const unsigned long gcButtonDelta = 500;
 unsigned long gNextTime = 0;
 unsigned int gCurrentStep = 0;
 
-void testSingleButtonPush(unsigned int button) {
+void
+testSingleButtonPush(unsigned int button) {
   if(button > 0) {
     Joystick.releaseButton(button - 1);
   }
@@ -34,7 +35,8 @@ void testSingleButtonPush(unsigned int button) {
   }
 }
 
-void testMultiButtonPush(unsigned int currentStep) {
+void
+testMultiButtonPush(unsigned int currentStep) {
   for(int button = 0; button < 32; button++) {
     if((currentStep == 0) || (currentStep == 2)) {
       if((button % 2) == 0) {
@@ -53,10 +55,11 @@ void testMultiButtonPush(unsigned int currentStep) {
     if(currentStep == 3) {
       Joystick.releaseButton(button);
     } // if (currentStep == 3)
-  } // for (int button = 0; button < 32; button++)
+  }   // for (int button = 0; button < 32; button++)
 }
 
-void testXYAxis(unsigned int currentStep) {
+void
+testXYAxis(unsigned int currentStep) {
   int xAxis;
   int yAxis;
 
@@ -81,7 +84,8 @@ void testXYAxis(unsigned int currentStep) {
   }
 }
 
-void testZAxis(unsigned int currentStep) {
+void
+testZAxis(unsigned int currentStep) {
   if(currentStep < 128) {
     Joystick.setZAxis(-currentStep);
   } else if(currentStep < 256 + 128) {
@@ -91,7 +95,8 @@ void testZAxis(unsigned int currentStep) {
   }
 }
 
-void testHatSwitch(unsigned int currentStep) {
+void
+testHatSwitch(unsigned int currentStep) {
   if(currentStep < 8) {
     Joystick.setHatSwitch(0, currentStep * 45);
   } else if(currentStep == 8) {
@@ -112,18 +117,21 @@ void testHatSwitch(unsigned int currentStep) {
   }
 }
 
-void testThrottleRudder(unsigned int value) {
+void
+testThrottleRudder(unsigned int value) {
   Joystick.setThrottle(value);
   Joystick.setRudder(value);
 }
 
-void testXYZAxisRotation(unsigned int degree) {
+void
+testXYZAxisRotation(unsigned int degree) {
   Joystick.setRxAxis(degree);
   Joystick.setRyAxis(degree);
   Joystick.setRzAxis(degree * 2);
 }
 
-void setup() {
+void
+setup() {
 
   // Set Range Values
   Joystick.setXAxisRange(-127, 127);
@@ -145,7 +153,8 @@ void setup() {
   pinMode(13, OUTPUT);
 }
 
-void loop() {
+void
+loop() {
 
   // System Disabled
   if(digitalRead(A0) != 0) {

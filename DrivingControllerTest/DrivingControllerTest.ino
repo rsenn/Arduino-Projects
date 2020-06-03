@@ -9,12 +9,23 @@
 #include "Joystick.h"
 
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,
-                   JOYSTICK_TYPE_MULTI_AXIS, 4, 0,
-                   false, false, false, false, false, false,
-                   false, false, true, true, true);
+                   JOYSTICK_TYPE_MULTI_AXIS,
+                   4,
+                   0,
+                   false,
+                   false,
+                   false,
+                   false,
+                   false,
+                   false,
+                   false,
+                   false,
+                   true,
+                   true,
+                   true);
 
 // Set to true to test "Auto Send" mode or false to test "Manual Send" mode.
-//const bool testAutoSendMode = true;
+// const bool testAutoSendMode = true;
 const bool testAutoSendMode = false;
 
 const unsigned long gcCycleDelta = 1000;
@@ -23,7 +34,8 @@ const unsigned long gcAnalogDelta = 25;
 unsigned long gNextTime = 0;
 unsigned int gCurrentStep = 0;
 
-void testSingleButtonPush(unsigned int button) {
+void
+testSingleButtonPush(unsigned int button) {
   if(button > 0) {
     Joystick.releaseButton(button - 1);
   }
@@ -32,7 +44,8 @@ void testSingleButtonPush(unsigned int button) {
   }
 }
 
-void testMultiButtonPush(unsigned int currentStep) {
+void
+testMultiButtonPush(unsigned int currentStep) {
   for(int button = 0; button < 4; button++) {
     if((currentStep == 0) || (currentStep == 2)) {
       if((button % 2) == 0) {
@@ -51,15 +64,17 @@ void testMultiButtonPush(unsigned int currentStep) {
     if(currentStep == 3) {
       Joystick.releaseButton(button);
     } // if (currentStep == 3)
-  } // for (int button = 0; button < 32; button++)
+  }   // for (int button = 0; button < 32; button++)
 }
 
-void testAcceleratorBrake(int value) {
+void
+testAcceleratorBrake(int value) {
   Joystick.setAccelerator(value);
   Joystick.setBrake(260 - value);
 }
 
-void testSteering(int value) {
+void
+testSteering(int value) {
   if(value < 300) {
     Joystick.setSteering(value);
   } else {
@@ -67,7 +82,8 @@ void testSteering(int value) {
   }
 }
 
-void setup() {
+void
+setup() {
 
   Joystick.setAcceleratorRange(0, 260);
   Joystick.setBrakeRange(0, 260);
@@ -83,7 +99,8 @@ void setup() {
   pinMode(13, OUTPUT);
 }
 
-void loop() {
+void
+loop() {
 
   // System Disabled
   if(digitalRead(A0) != 0) {
@@ -122,4 +139,3 @@ void loop() {
     }
   }
 }
-

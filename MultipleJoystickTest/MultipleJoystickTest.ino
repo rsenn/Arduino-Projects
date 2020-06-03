@@ -12,14 +12,18 @@
 #define JOYSTICK_COUNT 4
 
 Joystick_ Joystick[JOYSTICK_COUNT] = {
-  Joystick_(0x03, JOYSTICK_TYPE_GAMEPAD, 4, 2, true, true, false, false, false, false, false, false, false, false, false),
-  Joystick_(0x04, JOYSTICK_TYPE_JOYSTICK, 8, 1, true, true, true, true, false, false, false, false, false, false, false),
-  Joystick_(0x05, JOYSTICK_TYPE_MULTI_AXIS, 16, 0, false, true, false, true, false, false, true, true, false, false, false),
-  Joystick_(0x06, JOYSTICK_TYPE_MULTI_AXIS, 32, 1, true, true, false, true, true, false, false, false, true, true, true)
+  Joystick_(
+    0x03, JOYSTICK_TYPE_GAMEPAD, 4, 2, true, true, false, false, false, false, false, false, false, false, false),
+  Joystick_(
+    0x04, JOYSTICK_TYPE_JOYSTICK, 8, 1, true, true, true, true, false, false, false, false, false, false, false),
+  Joystick_(
+    0x05, JOYSTICK_TYPE_MULTI_AXIS, 16, 0, false, true, false, true, false, false, true, true, false, false, false),
+  Joystick_(
+    0x06, JOYSTICK_TYPE_MULTI_AXIS, 32, 1, true, true, false, true, true, false, false, false, true, true, true)
 };
 
 // Set to true to test "Auto Send" mode or false to test "Manual Send" mode.
-//const bool testAutoSendMode = true;
+// const bool testAutoSendMode = true;
 const bool testAutoSendMode = false;
 
 const unsigned long gcCycleDelta = 1000;
@@ -29,7 +33,8 @@ unsigned long gNextTime = 0;
 unsigned int gCurrentStep = 0;
 int gJoystickId = 0;
 
-void testSingleButtonPush(int joystickId, unsigned int button) {
+void
+testSingleButtonPush(int joystickId, unsigned int button) {
   if(button > 0) {
     Joystick[joystickId].releaseButton(button - 1);
   }
@@ -38,7 +43,8 @@ void testSingleButtonPush(int joystickId, unsigned int button) {
   }
 }
 
-void testMultiButtonPush(int joystickId, unsigned int currentStep) {
+void
+testMultiButtonPush(int joystickId, unsigned int currentStep) {
   for(int button = 0; button < 16; button++) {
     if((currentStep == 0) || (currentStep == 2)) {
       if((button % 2) == 0) {
@@ -57,10 +63,11 @@ void testMultiButtonPush(int joystickId, unsigned int currentStep) {
     if(currentStep == 3) {
       Joystick[joystickId].releaseButton(button);
     } // if (currentStep == 3)
-  } // for (int button = 0; button < 32; button++)
+  }   // for (int button = 0; button < 32; button++)
 }
 
-void testXYAxis(int joystickId, unsigned int currentStep) {
+void
+testXYAxis(int joystickId, unsigned int currentStep) {
   if(currentStep < 255) {
     Joystick[joystickId].setXAxis(currentStep - 127);
     Joystick[joystickId].setYAxis(-127);
@@ -76,7 +83,8 @@ void testXYAxis(int joystickId, unsigned int currentStep) {
   }
 }
 
-void setup() {
+void
+setup() {
 
   for(int index = 0; index < JOYSTICK_COUNT; index++) {
     Joystick[index].setXAxisRange(-127, 127);
@@ -93,7 +101,8 @@ void setup() {
   pinMode(13, OUTPUT);
 }
 
-void loop() {
+void
+loop() {
 
   // System Disabled
   if(digitalRead(A0) != 0) {

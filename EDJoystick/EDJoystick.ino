@@ -123,7 +123,8 @@
 // *    - Added and rearranged source code and comments to make initial setup easier.
 // *
 // *  V 2.01  _191128
-// *    - Added non delay loop - code then modified from Arduino Tutorial   http://www.arduino.cc/en/Tutorial/BlinkWithoutDelay
+// *    - Added non delay loop - code then modified from Arduino Tutorial
+// http://www.arduino.cc/en/Tutorial/BlinkWithoutDelay
 // *    - Added Blink Routine then removed.  It has stayed in comment form as an example.
 // *    - Removed Delay from Timer. (Coded as Delay less Loop)
 // *    - Brought Back Deadzone Code.
@@ -134,24 +135,23 @@
 // ***************************************************************************************
 
 #include "Joystick.h"
-Joystick_ Joystick
-(
-  JOYSTICK_DEFAULT_REPORT_ID,   // default uint8_t hidReportId. Do not use 0x01 or 0x02
-  JOYSTICK_TYPE_JOYSTICK,   // options: JOYSTICK_TYPE_JOYSTICK, JOYSTICK_TYPE_GAMEPAD, JOYSTICK_TYPE_MULTI_AXIS
-  1,    // uint8_t buttonCount - button count
-  0, // uint8_t hatSwitchCount
-  true, // bool includeXAxis
-  true, // bool includeYAxis
-  false, // bool includeZAxis
-  false, // bool includeRxAxis
-  false, // bool includeRyAxis
-  false,    // bool includeRzAxis
-  false, // bool includeRudder
-  false, // bool includeThrottle
-  false, // bool includeAccelerator
-  false, // bool includeBrake
-  false // bool includeSteering
-);
+Joystick_
+Joystick(JOYSTICK_DEFAULT_REPORT_ID, // default uint8_t hidReportId. Do not use 0x01 or 0x02
+         JOYSTICK_TYPE_JOYSTICK, // options: JOYSTICK_TYPE_JOYSTICK, JOYSTICK_TYPE_GAMEPAD, JOYSTICK_TYPE_MULTI_AXIS
+         1,                      // uint8_t buttonCount - button count
+         0,                      // uint8_t hatSwitchCount
+         true,                   // bool includeXAxis
+         true,                   // bool includeYAxis
+         false,                  // bool includeZAxis
+         false,                  // bool includeRxAxis
+         false,                  // bool includeRyAxis
+         false,                  // bool includeRzAxis
+         false,                  // bool includeRudder
+         false,                  // bool includeThrottle
+         false,                  // bool includeAccelerator
+         false,                  // bool includeBrake
+         false                   // bool includeSteering
+        );
 
 // --- Current Pin Layout ---
 // PIN 6   - Joystick Button
@@ -182,9 +182,9 @@ boolean booSelfTunerRun = true;
 // w 3.3 v range is 0 = 675.84 and mid is 337.92 -note
 // Calc XYMid =  338, XYMax 0 - 676              -note
 
-//const float floVOffset = 1;       // is used for 5V
+// const float floVOffset = 1;       // is used for 5V
 // or
-const float floVOffset = 1.5151;  // is used for 3.5V
+const float floVOffset = 1.5151; // is used for 3.5V
 
 // Inverse Axis
 const boolean booXInverse = false;
@@ -201,13 +201,13 @@ float fltXtuneMinError = 0;
 float fltYtuneMinError = 0;
 float fltXtuneMaxError = 0;
 float fltYtuneMaxError = 0;
-int intDeadZone = 0 ;   // Reintroducing deadzones
+int intDeadZone = 0; // Reintroducing deadzones
 
 // Precision slope, controlled slope, and Breakaway Point
 //    Not sure how to explain this except by example.  If joystick is at halfway point of uppermost and mid position and
-//    slope is 2 or (1/2), then the joystick position will be reported as at the 1/4 point of uppermost and mid position.
-//    Also, if breakpoint is either max(1024 - intBreakTune) or min (0 + intBreakTune) away from the joysticks upper
-//    limit, then the position will be reported as max upper limit.
+//    slope is 2 or (1/2), then the joystick position will be reported as at the 1/4 point of uppermost and mid
+//    position. Also, if breakpoint is either max(1024 - intBreakTune) or min (0 + intBreakTune) away from the joysticks
+//    upper limit, then the position will be reported as max upper limit.
 //      Note: These are thruster controls.  I need either precision or full on.
 // Slope is rep by 1/#.  eg, Slope 2 = 1/2 = .5, 4 = .25, ...
 // Break point . 9 represents 90%
@@ -216,25 +216,24 @@ const int intSlopeBreak1 = int(512 / 2);
 const int intSlopeTune2 = 2;
 const int intBreakTune = 12;
 
-
 // Adjust joystick end to end limits value.
 // doesn't work yet and never finished.
-//const float floMag = .3;
+// const float floMag = .3;
 
 // Delay less Loop Variables
 //    intRestTime defines the amount of time, in milliseconds, passed before another data read pass is performed
 //    and transmitted from the controller to the main system.
-unsigned long tmeCurrentMillis = millis();  // 1 Second = 1000 millis
+unsigned long tmeCurrentMillis = millis(); // 1 Second = 1000 millis
 unsigned long tmePrevMillis = 0;
-int intRestTime = 46;        // Do not check for update until rest time is passed
+int intRestTime = 46; // Do not check for update until rest time is passed
 
 // --- End Setup ---
 
 // constants won't change. Used here to set a pin number:
-const int ledPin =  LED_BUILTIN;// the number of the LED pin
+const int ledPin = LED_BUILTIN; // the number of the LED pin
 
 // // Blink Variables
-int ledState = LOW;                // ledState used to set the LED
+int ledState = LOW; // ledState used to set the LED
 
 // // Generally, you should use "unsigned long" for variables that hold time
 // // The value will quickly become too large for an int to store
@@ -249,9 +248,8 @@ float fltAxisXPrev = 0;
 float fltAxisYPrev = 0;
 boolean booUpdate = false;
 
-
 // Not going to use.
-//boolean booDebug(boolean booOn, char strOutput[], boolean booPrintLn)
+// boolean booDebug(boolean booOn, char strOutput[], boolean booPrintLn)
 ////  Debug output routin.
 //  if (booOn == true)
 //  {
@@ -263,8 +261,8 @@ boolean booUpdate = false;
 //  }
 //}
 
-
-float sign(float fltX) {
+float
+sign(float fltX) {
   if(fltX == 0) {
     return 1;
   } else {
@@ -272,7 +270,8 @@ float sign(float fltX) {
   }
 }
 
-float fltJoyTuneInverse(float fltAxisVal, int intTune, boolean booInverse)
+float
+fltJoyTuneInverse(float fltAxisVal, int intTune, boolean booInverse)
 //  This function will clean the newly read joystick value by adjusting its passed tune
 //  and invert the value if requested.
 {
@@ -299,8 +298,8 @@ float fltJoyTuneInverse(float fltAxisVal, int intTune, boolean booInverse)
   return fltAxisVal;
 }
 
-
-float fltPrecisionBreakaway(float fltAxisVal, int intSlope1, int intBreak1, int intSlope2, float intBreakA)
+float
+fltPrecisionBreakaway(float fltAxisVal, int intSlope1, int intBreak1, int intSlope2, float intBreakA)
 //  Now that we have a valid position of the joystick, we need to define its behavior.
 //  Precision is defined before the breakaway point by the Slope Value, then
 //  Breaks away at the BreakTune value.
@@ -330,7 +329,6 @@ float fltPrecisionBreakaway(float fltAxisVal, int intSlope1, int intBreak1, int 
     // Slope 1
     fltAxisVal = (fltAxisVal / intSlope1);
 
-
     if(booTuner == true) {
       Serial.print(" SL1 ");
       Serial.println();
@@ -356,16 +354,16 @@ float fltPrecisionBreakaway(float fltAxisVal, int intSlope1, int intBreak1, int 
   return fltAxisVal;
 }
 
-
-float fltDeadZoneCheck(float fltAxisVal, int intDead)
+float
+fltDeadZoneCheck(float fltAxisVal, int intDead)
 //  If the value isn't far enough away from the deadzone, then set
 //  the position to absolute center.
 {
-  //Serial.print(abs(intDead));
-  //Serial.print("  ABSVal = ");
-  //Serial.print(abs(fltAxisVal));
-  //Serial.print("  Val =  ");
-  //Serial.print(fltAxisVal);  // testing values
+  // Serial.print(abs(intDead));
+  // Serial.print("  ABSVal = ");
+  // Serial.print(abs(fltAxisVal));
+  // Serial.print("  Val =  ");
+  // Serial.print(fltAxisVal);  // testing values
 
   if(abs(fltAxisVal) < intDead) {
     fltAxisVal = 0;
@@ -382,22 +380,22 @@ float fltDeadZoneCheck(float fltAxisVal, int intDead)
     Serial.println();
   }
 
-  //Serial.print("  Ret = ");
-  //Serial.print(fltAxisVal);
-  //Serial.println();
+  // Serial.print("  Ret = ");
+  // Serial.print(fltAxisVal);
+  // Serial.println();
 
   return fltAxisVal;
 }
 
-
-float flt512Center(float fltVal)
+float
+flt512Center(float fltVal)
 //  Adjust -512-512 0 center value to 512 center. Range unchecked.
 {
   return fltVal + 512;
 }
 
-
-boolean booSelfTuner(float fltX, float fltY) {
+boolean
+booSelfTuner(float fltX, float fltY) {
   //  I discovered that changes in atmospheric pressures, gravity, humidity,
   //  and temperature could and would change the tuning values, causing the
   //  zero center to drift.  This routine will adjust the automaticlly on
@@ -492,8 +490,8 @@ boolean booSelfTuner(float fltX, float fltY) {
   }
 }
 
-
-void setup() {
+void
+setup() {
   // put your setup code here, to run once:
 
   if((booTest == true) || (booTuner == true)) {
@@ -509,13 +507,13 @@ void setup() {
   // Unused Pins
   //  I want more buttons.  I really dont have enough buttons on the joystick.
   //  These are placeholders.
-  //pinMode(7, INPUT_PULLUP);
-  //pinMode(8, INPUT_PULLUP);
-  //pinMode(9, INPUT_PULLUP);
-  //pinMode(10, INPUT_PULLUP);
-  //pinMode(11, INPUT_PULLUP);
-  //pinMode(12, INPUT_PULLUP);
-  //pinMode(13, INPUT_PULLUP);
+  // pinMode(7, INPUT_PULLUP);
+  // pinMode(8, INPUT_PULLUP);
+  // pinMode(9, INPUT_PULLUP);
+  // pinMode(10, INPUT_PULLUP);
+  // pinMode(11, INPUT_PULLUP);
+  // pinMode(12, INPUT_PULLUP);
+  // pinMode(13, INPUT_PULLUP);
 
   int lastButtonState = 0;
 
@@ -523,8 +521,8 @@ void setup() {
   pinMode(ledPin, OUTPUT);
 }
 
-
-void loop() {
+void
+loop() {
   tmeCurrentMillis = millis();
 
   // Begin of Delay less Loop
@@ -535,13 +533,13 @@ void loop() {
 
     int button0Val = digitalRead(6);
 
-    //int button1Val =digitalRead(7);
-    //int button2Val =digitalRead(8);
-    //int button3Val =digitalRead(9);
-    //int button4Val =digitalRead(10);
-    //int button5Val =digitalRead(11);
-    //int button6Val =digitalRead(12);
-    //int button7Val =digitalRead(13);
+    // int button1Val =digitalRead(7);
+    // int button2Val =digitalRead(8);
+    // int button3Val =digitalRead(9);
+    // int button4Val =digitalRead(10);
+    // int button5Val =digitalRead(11);
+    // int button6Val =digitalRead(12);
+    // int button7Val =digitalRead(13);
 
     int xAxis = analogRead(A0);
     int yAxis = analogRead(A1);
@@ -611,13 +609,13 @@ void loop() {
     booUpdate = false;
 
     //  PlaceHolders for Unused Unneeded Unwanted Unloved Code
-    //Joystick.setButton(1, !button1Val);
-    //Joystick.setButton(2, !button2Val);
-    //Joystick.setButton(3, !button3Val);
-    //Joystick.setButton(4, !button4Val);
-    //Joystick.setButton(5, !button5Val);
-    //Joystick.setButton(6, !button6Val);
-    //Joystick.setButton(7, !button7Val);
+    // Joystick.setButton(1, !button1Val);
+    // Joystick.setButton(2, !button2Val);
+    // Joystick.setButton(3, !button3Val);
+    // Joystick.setButton(4, !button4Val);
+    // Joystick.setButton(5, !button5Val);
+    // Joystick.setButton(6, !button6Val);
+    // Joystick.setButton(7, !button7Val);
 
     // Testing Output
     if(booTest == true) {
@@ -643,12 +641,11 @@ void loop() {
     if((booTest == true) || (booTuner == true)) {
       intRestTime = 250;
     }
-  }   // End Delay less Loop
+  } // End Delay less Loop
 }
 
 // End of main loop
 // Start of all supporting functions
-
 
 //  Closing Notes:  Codes a mess but it works.  I got another idea while writing it.  I
 //  am going to issue a request to the AI Programmer System to see if it can read data

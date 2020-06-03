@@ -9,12 +9,23 @@
 #include "Joystick.h"
 
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,
-                   JOYSTICK_TYPE_MULTI_AXIS, 32, 0,
-                   true, true, false, false, false, false,
-                   true, true, false, false, false);
+                   JOYSTICK_TYPE_MULTI_AXIS,
+                   32,
+                   0,
+                   true,
+                   true,
+                   false,
+                   false,
+                   false,
+                   false,
+                   true,
+                   true,
+                   false,
+                   false,
+                   false);
 
 // Set to true to test "Auto Send" mode or false to test "Manual Send" mode.
-//const bool testAutoSendMode = true;
+// const bool testAutoSendMode = true;
 const bool testAutoSendMode = false;
 
 const unsigned long gcCycleDelta = 1000;
@@ -23,7 +34,8 @@ const unsigned long gcButtonDelta = 500;
 unsigned long gNextTime = 0;
 unsigned int gCurrentStep = 0;
 
-void testSingleButtonPush(unsigned int button) {
+void
+testSingleButtonPush(unsigned int button) {
   if(button > 0) {
     Joystick.releaseButton(button - 1);
   }
@@ -32,7 +44,8 @@ void testSingleButtonPush(unsigned int button) {
   }
 }
 
-void testMultiButtonPush(unsigned int currentStep) {
+void
+testMultiButtonPush(unsigned int currentStep) {
   for(int button = 0; button < 32; button++) {
     if((currentStep == 0) || (currentStep == 2)) {
       if((button % 2) == 0) {
@@ -51,10 +64,11 @@ void testMultiButtonPush(unsigned int currentStep) {
     if(currentStep == 3) {
       Joystick.releaseButton(button);
     } // if (currentStep == 3)
-  } // for (int button = 0; button < 32; button++)
+  }   // for (int button = 0; button < 32; button++)
 }
 
-void testXYAxis(unsigned int currentStep) {
+void
+testXYAxis(unsigned int currentStep) {
   int xAxis;
   int yAxis;
 
@@ -79,12 +93,14 @@ void testXYAxis(unsigned int currentStep) {
   }
 }
 
-void testThrottleRudder(unsigned int value) {
+void
+testThrottleRudder(unsigned int value) {
   Joystick.setThrottle(value);
   Joystick.setRudder(255 - value);
 }
 
-void setup() {
+void
+setup() {
 
   Joystick.setXAxisRange(-127, 127);
   Joystick.setYAxisRange(-127, 127);
@@ -102,7 +118,8 @@ void setup() {
   pinMode(13, OUTPUT);
 }
 
-void loop() {
+void
+loop() {
 
   // System Disabled
   if(digitalRead(A0) != 0) {
@@ -141,4 +158,3 @@ void loop() {
     }
   }
 }
-

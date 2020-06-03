@@ -17,14 +17,24 @@
 
 #include <Joystick.h>
 
-Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_GAMEPAD,
-                   1, 0,                  // Button Count, Hat Switch Count
-                   true, true, false,     // X and Y, but no Z Axis
-                   false, false, false,   // No Rx, Ry, or Rz
-                   false, false,          // No rudder or throttle
-                   false, false, false);  // No accelerator, brake, or steering
+Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,
+                   JOYSTICK_TYPE_GAMEPAD,
+                   1,
+                   0, // Button Count, Hat Switch Count
+                   true,
+                   true,
+                   false, // X and Y, but no Z Axis
+                   false,
+                   false,
+                   false, // No Rx, Ry, or Rz
+                   false,
+                   false, // No rudder or throttle
+                   false,
+                   false,
+                   false); // No accelerator, brake, or steering
 
-void setup() {
+void
+setup() {
   // Initialize Button Pins
   pinMode(2, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
@@ -41,7 +51,8 @@ void setup() {
 // Last state of the buttons
 int lastButtonState[5] = {0, 0, 0, 0, 0};
 
-void loop() {
+void
+loop() {
 
   // Read pin values
   for(int index = 0; index < 5; index++) {
@@ -86,4 +97,3 @@ void loop() {
 
   delay(10);
 }
-

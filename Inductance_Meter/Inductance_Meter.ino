@@ -33,7 +33,7 @@ int mark;
 
 void
 serprint(float us, float Freq, float Duty) { // Function Received Freq and Duty Cycle to print them
-  capacitance = 1.E-6;                                                    // Using 1uF Capacitor
+  capacitance = 1.E-6;                       // Using 1uF Capacitor
   inductance = 1. / (capacitance * Freq * Freq * 4. * 3.14159 * 3.14159); ////Inductance Equation
   inductance *= 1E6; // note that this is the same as saying inductance = inductance*1E6
   if(inductance > 1000000 || inductance < 1) {

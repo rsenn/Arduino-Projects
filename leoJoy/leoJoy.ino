@@ -3,12 +3,11 @@ Arduino Leonardo Joystick!
 
 */
 
-
 JoyState_t joySt;
 
-void setup() {
+void
+setup() {
   pinMode(13, OUTPUT);
-
 
   joySt.xAxis = 0;
   joySt.yAxis = 0;
@@ -21,13 +20,10 @@ void setup() {
   joySt.hatSw1 = 0;
   joySt.hatSw2 = 0;
   joySt.buttons = 0;
-
 }
 
-
-void loop() {
-
-
+void
+loop() {
 
   joySt.xAxis = random(255);
   joySt.yAxis = random(255);
@@ -35,11 +31,10 @@ void loop() {
   joySt.xRotAxis = random(255);
   joySt.yRotAxis = random(255);
   joySt.zRotAxis = random(255);
-  //joySt.throttle = random(255);
+  // joySt.throttle = random(255);
   joySt.rudder = random(255);
 
   joySt.throttle++;
-
 
   joySt.buttons <<= 1;
   if(joySt.buttons == 0)
@@ -60,8 +55,6 @@ void loop() {
   else
     digitalWrite(13, LOW);
 
-
   // Call Joystick.move
   Joystick.setState(&joySt);
-
 }

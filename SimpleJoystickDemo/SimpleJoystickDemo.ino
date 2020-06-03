@@ -20,7 +20,8 @@ See Joystick.h for ackgnowlegments.
 #define LEOJOY_AXIS_Vx 0
 #define LEOJOY_AXIS_Vy 0
 #define LEOJOY_AXIS_Vz 0
-// define resolution in bit (up to 15 bit, 16 bit currently has issues with singedness but don't care - 15 is more than enough)
+// define resolution in bit (up to 15 bit, 16 bit currently has issues with singedness but don't care - 15 is more than
+// enough)
 #define LEOJOY_AXIS_BITS 10
 
 // number of buttons
@@ -32,7 +33,8 @@ See Joystick.h for ackgnowlegments.
 // enabling debugging will write a ton of low level info on Serial
 //#define LEOJOY_DEBUG
 
-// define a pin that will mute Joystick USB Reports to allow safe uploading of new sketch (have an ISP ready if you don't do this)
+// define a pin that will mute Joystick USB Reports to allow safe uploading of new sketch (have an ISP ready if you
+// don't do this)
 #define LEOJOY_MUTE_PIN 3
 
 // note that the LEOJOY_* defines need to happen before the include
@@ -40,7 +42,8 @@ See Joystick.h for ackgnowlegments.
 
 #define LED 13
 
-void setup() {
+void
+setup() {
 #ifdef LEOJOY_DEBUG
   pinMode(LED, OUTPUT);
 
@@ -48,7 +51,7 @@ void setup() {
   Serial.begin(115200);
 
   // blink for 15 seconds (60*0,25) to allow serial monitor to attach
-  for(int i = 0 ; i < 60; i++) {
+  for(int i = 0; i < 60; i++) {
     digitalWrite(LED, ((i % 2) == 0));
     delay(250);
   }
@@ -56,10 +59,10 @@ void setup() {
 
   Joystick.begin();
 
-}// end setup
+} // end setup
 
-
-void loop() {
+void
+loop() {
   // turn on all buttons
   for(int i = 0; i < LEOJOY_NUMBUTTONS; i++) {
     Joystick.press(i);
@@ -91,4 +94,4 @@ void loop() {
     Joystick.axis(i, maxvalue / 2);
   }
 
-}// end main program loop
+} // end main program loop

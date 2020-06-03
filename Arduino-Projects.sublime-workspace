@@ -4,12 +4,64 @@
 		"selected_items":
 		[
 			[
-				"deb",
-				"debounceState"
+				"CFLAGS_O",
+				"CFLAGS_ONLY_OTHER"
 			],
 			[
-				"mesa",
-				"measureCapacitance"
+				"CFLA",
+				"CFLAGS_ONLY_I"
+			],
+			[
+				"CFLAGS_ONL",
+				"CFLAGS_ONLY_OTHER"
+			],
+			[
+				"CFL",
+				"CFLAGS_ONLY_I"
+			],
+			[
+				"LIBS",
+				"LIBS_ONLY_OTHER"
+			],
+			[
+				"CF",
+				"CFLAGS_ONLY_OTHER"
+			],
+			[
+				"CFLAGS",
+				"CFLAGS_ONLY_I"
+			],
+			[
+				"LIBS_",
+				"LIBS_ONLY_L"
+			],
+			[
+				"strlist_push",
+				"strlist_push_unique"
+			],
+			[
+				"strlist_pushb",
+				"strlist_pushb"
+			],
+			[
+				"endf",
+				"endfunction"
+			],
+			[
+				"SSL_",
+				"SSL_ERROR_WANT_READ"
+			],
+			[
+				"cha",
+				"chained_attributes"
+			],
+			[
+				"cfg",
+				"cfgdata"
+			],
+			[
+				"Con",
+				"ContactRef\tclass"
 			],
 			[
 				"pre",
@@ -68,88 +120,262 @@
 	"buffers":
 	[
 		{
-			"file": "StateChangeDetection/StateChangeDetection.ino",
+			"contents": "ADAFRUIT\nclearDisplay\ndisplay\nlcd\ncap1\nLOGO16_GLCD_HEIGHT\nLOGO16_GLCD_WIDTH\nInitTimer1\nInitTimer2\ntickX\ntickXOff\ntickX\ntickY\ntickYOff\ntickY\nprintInductance\nISR\nISR\nISR\nsetBusy\nprint\nprintln\nmeasureFrequency\nmeasureVoltage\ndrawColon\ndrawZero\ndrawChar\nshowTime\nmeasureCapacitance\nanimateProgress\nprocessLine\ndrawLineH\nprocessChar\nsetup\nloop",
 			"settings":
 			{
-				"buffer_size": 6675,
+				"buffer_size": 338,
+				"line_ending": "Unix",
+				"name": "𝌆 Outline",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder_minimal/slight_RotaryEncoder_minimal.ino",
+			"settings":
+			{
+				"buffer_size": 4118,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V2.0/ArduinoArcadeController_V2.0.ino",
+			"file": "Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.ino",
 			"settings":
 			{
-				"buffer_size": 14629,
+				"buffer_size": 14253,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V1.0.ino",
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder_test/slight_RotaryEncoder_test.ino",
 			"settings":
 			{
-				"buffer_size": 2881,
+				"buffer_size": 6039,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID_Buttons/examples/Keyboard/Joy2WASD/Joy2WASD.ino",
+			"file": "/home/roman/Arduino/libraries/MD_REncoder/src/MD_REncoder.cpp",
 			"settings":
 			{
-				"buffer_size": 2496,
+				"buffer_size": 3878,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID_Buttons/examples/Keyboard/KeyboardButton/KeyboardButton.ino",
+			"file": "/home/roman/Arduino/libraries/MD_REncoder/src/MD_REncoder.h",
 			"settings":
 			{
-				"buffer_size": 1794,
+				"buffer_size": 8866,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/USBHID/examples/simplekeyboard/simplekeyboard.ino",
+			"file": "/home/roman/Arduino/libraries/MD_REncoder/examples/Polling/Polling.ino",
 			"settings":
 			{
-				"buffer_size": 239,
+				"buffer_size": 486,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/USBHID/examples/BootKeyboard/BootKeyboard.ino",
+			"file": "/home/roman/Arduino/libraries/HID-Project/examples/SurfaceDial/SurfaceDial.ino",
 			"settings":
 			{
-				"buffer_size": 269,
+				"buffer_size": 1901,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/USBHID/examples/keyboardwithleds/keyboardwithleds.ino",
+			"file": "/home/roman/Arduino/libraries/Itty_Bitty/IttyBitty_UI_nav_adapters.cpp",
 			"settings":
 			{
-				"buffer_size": 215,
+				"buffer_size": 1140,
+				"encoding": "Western (Windows 1252)",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/RawHID/KeyboardFeatureReport/KeyboardFeatureReport.ino",
+			"file": "/home/roman/Arduino/libraries/Itty_Bitty/IttyBitty_UI_nav_adapters.h",
 			"settings":
 			{
-				"buffer_size": 2388,
+				"buffer_size": 5601,
+				"encoding": "Western (Windows 1252)",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/Keyboard/KeyboardLed/KeyboardLed.ino",
+			"file": "/home/roman/Arduino/libraries/MIDI_Library/src/MIDI.cpp",
 			"settings":
 			{
-				"buffer_size": 1065,
+				"buffer_size": 3782,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/Keyboard/BootKeyboard/BootKeyboard.ino",
+			"file": "/home/roman/Arduino/libraries/MIDI_Library/test/unit-tests/tests/unit-tests_SysExCodec.cpp",
+			"settings":
+			{
+				"buffer_size": 4092,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/Adafruit_seesaw.cpp",
+			"settings":
+			{
+				"buffer_size": 35749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/Adafruit_seesaw.h",
+			"settings":
+			{
+				"buffer_size": 9058,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/examples/encoder/rgb_encoder/rgb_encoder.ino",
+			"settings":
+			{
+				"buffer_size": 520,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/examples/encoder/encoder_basic/encoder_basic.ino",
+			"settings":
+			{
+				"buffer_size": 583,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/Encoder.cpp",
+			"settings":
+			{
+				"buffer_size": 251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/utility/interrupt_config.h",
+			"settings":
+			{
+				"buffer_size": 1969,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/utility/interrupt_pins.h",
+			"settings":
+			{
+				"buffer_size": 5918,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/examples/Basic/Basic.pde",
+			"settings":
+			{
+				"buffer_size": 741,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/examples/SpeedTest/SpeedTest.pde",
+			"settings":
+			{
+				"buffer_size": 4973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/examples/NoInterrupts/NoInterrupts.pde",
+			"settings":
+			{
+				"buffer_size": 1594,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/examples/TwoKnobs/TwoKnobs.pde",
+			"settings":
+			{
+				"buffer_size": 1241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Encoder/Encoder.h",
+			"settings":
+			{
+				"buffer_size": 26117,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/EncoderStepCounter/EncoderStepCounter.cpp",
+			"settings":
+			{
+				"buffer_size": 3380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/EncoderStepCounter/examples/BasicExample/BasicExample.ino",
+			"settings":
+			{
+				"buffer_size": 753,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/EncoderStepCounter/examples/InterruptExample/InterruptExample.ino",
+			"settings":
+			{
+				"buffer_size": 1037,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/EncoderStepCounter/EncoderStepCounter.h",
+			"settings":
+			{
+				"buffer_size": 1848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/src/SimpleRotary.cpp",
+			"settings":
+			{
+				"buffer_size": 8036,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/src/SimpleRotary.h",
+			"settings":
+			{
+				"buffer_size": 1021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/push/push.ino",
+			"settings":
+			{
+				"buffer_size": 856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushType/pushType.ino",
 			"settings":
 			{
 				"buffer_size": 1043,
@@ -157,34 +383,361 @@
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/Keyboard/AlternateLanguageLayout/AlternateLanguageLayout.ino",
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushReset/pushReset.ino",
 			"settings":
 			{
-				"buffer_size": 919,
+				"buffer_size": 1050,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/Keyboard/TeensyKeyboard/TeensyKeyboard.ino",
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushLong/pushLong.ino",
 			"settings":
 			{
-				"buffer_size": 1418,
+				"buffer_size": 906,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/Keyboard/NKROKeyboard/NKROKeyboard.ino",
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushTime/pushTime.ino",
 			"settings":
 			{
-				"buffer_size": 1470,
+				"buffer_size": 820,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "libraries/HID-Project/examples/Keyboard/ImprovedKeyboard/ImprovedKeyboard.ino",
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/options/options.ino",
 			"settings":
 			{
-				"buffer_size": 1702,
+				"buffer_size": 1217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/rotate/rotate.ino",
+			"settings":
+			{
+				"buffer_size": 914,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/IRMP/src/irsndSelectAllProtocols.h",
+			"settings":
+			{
+				"buffer_size": 6978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/IRMP/src/irsndSelectMain15Protocols.h",
+			"settings":
+			{
+				"buffer_size": 3189,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/src/qdec.h",
+			"settings":
+			{
+				"buffer_size": 13860,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/01.BareLoop/01.BareLoop.ino",
+			"settings":
+			{
+				"buffer_size": 2145,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/22.InterruptsLearn/22.InterruptsLearn.ino",
+			"settings":
+			{
+				"buffer_size": 6754,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/04.LoopTemplate/04.LoopTemplate.ino",
+			"settings":
+			{
+				"buffer_size": 3119,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/03.LoopNamespace/03.LoopNamespace.ino",
+			"settings":
+			{
+				"buffer_size": 2763,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/21.BareInterrupts/21.BareInterrupts.ino",
+			"settings":
+			{
+				"buffer_size": 5215,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/05.LoopTemplateFun/05.LoopTemplateFun.ino",
+			"settings":
+			{
+				"buffer_size": 3437,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QDEC/examples/02.LoopLearn/02.LoopLearn.ino",
+			"settings":
+			{
+				"buffer_size": 3724,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/ESP_Rotary/src/ESPRotary.h",
+			"settings":
+			{
+				"buffer_size": 1467,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/ESP_Rotary/src/ESPRotary.cpp",
+			"settings":
+			{
+				"buffer_size": 2898,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/ESP_Rotary/examples/SimpleCounterWithButton/SimpleCounterWithButton.ino",
+			"settings":
+			{
+				"buffer_size": 1401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/ESP_Rotary/examples/SimpleCounter/SimpleCounter.ino",
+			"settings":
+			{
+				"buffer_size": 973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/IRremote/ir_Lego_PF.cpp",
+			"settings":
+			{
+				"buffer_size": 1325,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/IRremote/examples/LegoPowerFunctionsTests/LegoPowerFunctionsTests.ino",
+			"settings":
+			{
+				"buffer_size": 7405,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/IRremote/ir_Lego_PF_BitStreamEncoder.h",
+			"settings":
+			{
+				"buffer_size": 3488,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SoftTimer/src/Rotary.h",
+			"settings":
+			{
+				"buffer_size": 2728,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SoftTimer/src/Rotary.cpp",
+			"settings":
+			{
+				"buffer_size": 2973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/SoftTimer/examples/SoftTimer6Rotary/SoftTimer6Rotary.ino",
+			"settings":
+			{
+				"buffer_size": 916,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/Accessories/src/Accessory.hpp",
+			"settings":
+			{
+				"buffer_size": 18437,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QuadratureEncoder/QuadratureEncoder.cpp",
+			"settings":
+			{
+				"buffer_size": 2054,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QuadratureEncoder/examples/SimpleEncoderExample/SimpleEncoderExample.ino",
+			"settings":
+			{
+				"buffer_size": 1007,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/QuadratureEncoder/QuadratureEncoder.h",
+			"settings":
+			{
+				"buffer_size": 1076,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryDial/src/RotaryDial.cpp",
+			"settings":
+			{
+				"buffer_size": 1242,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryDial/src/RotaryDial.h",
+			"settings":
+			{
+				"buffer_size": 314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryDial/examples/dial_read/dial_read.ino",
+			"settings":
+			{
+				"buffer_size": 599,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/RotaryEncoder.h",
+			"settings":
+			{
+				"buffer_size": 1800,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/SimplePollRotator/SimplePollRotator.ino",
+			"settings":
+			{
+				"buffer_size": 1207,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/SimplePollRotatorLCD/SimplePollRotatorLCD.ino",
+			"settings":
+			{
+				"buffer_size": 1387,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/AcceleratedRotator/AcceleratedRotator.ino",
+			"settings":
+			{
+				"buffer_size": 4776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/LimitedRotator/LimitedRotator.ino",
+			"settings":
+			{
+				"buffer_size": 2126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/InterruptRotator/InterruptRotator.ino",
+			"settings":
+			{
+				"buffer_size": 2049,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/RotaryEncoder/RotaryEncoder.cpp",
+			"settings":
+			{
+				"buffer_size": 2846,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/src/slight_RotaryEncoder.h",
+			"settings":
+			{
+				"buffer_size": 7214,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/src/slight_RotaryEncoder.cpp",
+			"settings":
+			{
+				"buffer_size": 19767,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/myinput.h",
+			"settings":
+			{
+				"buffer_size": 3031,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/slight_RotaryEncoder__advanced2.ino",
+			"settings":
+			{
+				"buffer_size": 3307,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/myinput.cpp",
+			"settings":
+			{
+				"buffer_size": 4273,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -192,53 +745,145 @@
 	"build_system": "",
 	"build_system_choices":
 	[
-		[
-			[
-				[
-					"Packages/Makefile/Make.sublime-build",
-					""
-				],
-				[
-					"Packages/Makefile/Make.sublime-build",
-					"Clean"
-				]
-			],
-			[
-				"Packages/Makefile/Make.sublime-build",
-				"Clean"
-			]
-		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 188.0,
+		"height": 400.0,
 		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"install pac",
-				"Package Control: Install Package"
-			],
-			[
-				"build",
-				"Build: Cancel"
-			],
-			[
-				"extract",
-				"PackageResourceViewer: Extract Package"
-			],
-			[
-				"out",
+				"outlin",
 				"Browse Mode: Outline (Right)"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"outline",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"c99",
+				"Set Syntax: C99"
+			],
+			[
+				"toks",
+				"Toks: Full report any occurrences of symbol (prompt)"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
+				"ctag",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"adv",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"add rep",
+				"Package Control: Add Repository"
+			],
+			[
+				"format",
+				"Clang Format: Format Selection"
+			],
+			[
+				"random",
+				"Schemr: Random scheme"
+			],
+			[
+				"adva",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"outli",
+				"Browse Mode: Outline (Right)"
+			],
+			[
 				"schemee",
+				"SchemeEditor: Edit installed scheme"
+			],
+			[
+				"schemeed",
 				"SchemeEditor: Edit Current Scheme"
+			],
+			[
+				"schemed",
+				"SchemeEditor: Edit Current Scheme"
+			],
+			[
+				"package",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"colorsche",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"add repo",
+				"Package Control: Add Repository"
+			],
+			[
+				"index",
+				"Indexing Status"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"schheme",
+				"SchemeEditor: Edit Current Scheme"
+			],
+			[
+				"TOKS",
+				"Toks: Quick search for definitions of symbol under cursor"
+			],
+			[
+				"cscope",
+				"Cscope: Look up symbol"
+			],
+			[
+				"utline",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"out",
+				"Browse Mode: Outline (Right)"
 			],
 			[
 				"instal",
@@ -257,10 +902,6 @@
 				"SchemeEditor: Edit Current Scheme"
 			],
 			[
-				"schemed",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
 				"gdb",
 				"SublimeGDB: Stop Debugging"
 			],
@@ -273,18 +914,6 @@
 				"SchemeEditor: Edit Current Scheme"
 			],
 			[
-				"add re",
-				"Package Control: Add Repository"
-			],
-			[
-				"install ",
-				"Package Control: Install Package"
-			],
-			[
-				"adva",
-				"Package Control: Advanced Install Package"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -293,28 +922,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"schemeed",
-				"SchemeEditor: Edit Current Scheme"
-			],
-			[
-				"adv",
-				"Package Control: Advanced Install Package"
-			],
-			[
 				"html",
 				"HTMLPrettify"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"install p",
-				"Package Control: Install Package"
-			],
-			[
-				"install pack",
-				"Package Control: Install Package"
 			],
 			[
 				"Package Control: install",
@@ -353,10 +962,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remove pac",
-				"Package Control: Remove Package"
-			],
-			[
 				"inst",
 				"Package Control: Install Package"
 			],
@@ -367,10 +972,6 @@
 			[
 				"moon",
 				"Browse Mode: Outline (Left)"
-			],
-			[
-				"outline",
-				"Browse Mode: Outline (Right)"
 			],
 			[
 				"lua",
@@ -393,7 +994,7 @@
 				"Package Control: Add Repository"
 			]
 		],
-		"width": 601.0
+		"width": 736.0
 	},
 	"console":
 	{
@@ -416,308 +1017,173 @@
 	},
 	"expanded_folders":
 	[
-		"/home/roman/Dokumente/Sources/Arduino-Projects",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Arcade-Joystick-USB",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Arcade-Joystick-USB/ArduinoArcadeController",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V2.0",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/arduino-joystick",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/arduino-joystick/Joystick",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Leonardo-Joypad",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Leonardo-Joypad/JoystickButton",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Arduino-Frequency-Counter-Library",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/FreqCount",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/FreqCount/examples",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/FreqCount/util",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia5110",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia5110/examples",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia5110/src",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110/src",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110_LCD_library",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110_LCD_library/examples",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110_LCD_library/examples/Nokia_LCD_Demo",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110_LCD_library/src"
+		"/home/roman/Dokumente/Sources/Arduino-Projects"
 	],
 	"file_history":
 	[
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Frequency-Counter-Library/FreqCounter.cpp",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.",
 		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V2.0/ArduinoArcadeController_V2.0.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V1.0.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID_Buttons/examples/Keyboard/Joy2WASD/Joy2WASD.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID_Buttons/examples/Keyboard/KeyboardButton/KeyboardButton.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/USBHID/examples/simplekeyboard/simplekeyboard.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/USBHID/examples/BootKeyboard/BootKeyboard.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/USBHID/examples/keyboardwithleds/keyboardwithleds.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/RawHID/KeyboardFeatureReport/KeyboardFeatureReport.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/Keyboard/KeyboardLed/KeyboardLed.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/Keyboard/BootKeyboard/BootKeyboard.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/Keyboard/AlternateLanguageLayout/AlternateLanguageLayout.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/Keyboard/TeensyKeyboard/TeensyKeyboard.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/Keyboard/NKROKeyboard/NKROKeyboard.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/HID-Project/examples/Keyboard/ImprovedKeyboard/ImprovedKeyboard.ino",
-		"/opt/arduino-1.8.12/libraries/Keyboard/src/Keyboard.h",
-		"/home/roman/Dokumente/Sources/V",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Nokia_5110_LCD_library/src/Nokia_LCD.cpp",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/FreqCount/FreqCount.h",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/libraries/Commander/examples/BasicCommands/masterCommands.ino",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Arduino-Projects.sublime-project",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter/Makefile",
-		"/home/roman/.arduin",
-		"/home/roman/.arduino15/preferences.txt",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.cpp",
-		"/home/roman/Dokumente/Sources/c-utils/test.circuit",
-		"/home/roman/Sources/c-utils/eagle-to-circuit.c",
-		"/home/roman/Sources/c-utils/build/examples.mk",
-		"/home/roman/Sources/an-tronics/eagle/40106-4069-Synth.brd",
-		"/home/roman/Sources/c-utils/lib/byte.h",
-		"/home/roman/Sources/c-utils/lib/buffer/buffer_putspad.c",
-		"/home/roman/Sources/c-utils/lib/buffer.h",
-		"/home/roman/Sources/c-utils/lib/cb.h",
-		"/home/roman/Sources/c-utils/jsontest.c",
-		"/home/roman/Sources/c-utils/lib/json.h",
-		"/home/roman/Sources/c-utils/lib/json/json_print.c",
-		"/home/roman/Sources/c-utils/lib/byte/byte_copy.c",
-		"/home/roman/Sources/c-utils/lib/scan/scan_whitenskip.c",
-		"/home/roman/Sources/c-utils/hexedit.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/hmap/hmap_get.c",
-		"/home/roman/Sources/c-utils/lib/hmap/hmap_free_data.c",
-		"/home/roman/Sources/c-utils/lib/hmap.h",
-		"/home/roman/Sources/c-utils/lib/strlist.h",
-		"/home/roman/Sources/c-utils/lib/strarray/strarray_sort.c",
-		"/home/roman/Sources/c-utils/lib/strlist/strlist_sort.c",
-		"/home/roman/Sources/c-utils/lib/array.h",
-		"/home/roman/Dokumente/Sources/striprouter/bin/circuits/example.circuit",
-		"/home/roman/Dokumente/Sources/striprouter/bin/circuits/benchmark.circuit",
-		"/home/roman/Sources/c-utils/lib/str.h",
-		"/home/roman/Sources/c-utils/lib/stralloc.h",
-		"/home/roman/Dokumente/Sources/c-utils/lib/strlist/strlist_sort.c",
-		"/home/roman/Dokumente/Sources/c-utils/eagle-to-circuit.e.c",
-		"/home/roman/Sources/c-utils/jsonpp.c",
-		"/home/roman/Dokumente/Sources/c-utils/eagle-gen-cmds.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/array.h",
-		"/home/roman/Dokumente/Sources/c-utils/reg2cmd.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/hmap.h",
-		"/home/roman/Dokumente/Sources/c-utils/genmakefile.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/uint32.h",
-		"/home/roman/Dokumente/Sources/c-utils/c-utils.sublime-project",
-		"/home/roman/.config/sublime-text-3/Packages/SublimeGDB/SublimeGDB.sublime-settings",
-		"/home/roman/Sources/c-utils/c-utils.sublime-project",
-		"/home/roman/Dokumente/Sources/c-utils/lib/str/str_triml.c",
-		"/home/roman/Dokumente/Sources/c-utils/mediathek-list.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/cbmap.h",
-		"/home/roman/Dokumente/Sources/c-utils/lib/cbmap/cbmap_alloc.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/xml/xml_path.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/xml.h",
-		"/home/roman/Dokumente/Sources/c-utils/lib/stralloc/stralloc_trimr.c",
-		"/home/roman/Sources/c-utils/lib/cb/cb_foreach.c",
-		"/home/roman/Sources/c-utils/xmlpp.c",
-		"/home/roman/Sources/c-utils/lib/http/http_get.c",
-		"/home/roman/.config/sublime-text-3/Packages/User/SublimeGDB.sublime-settings",
-		"/home/roman/Sources/c-utils/lib/strlist/strlist_pushb.c",
-		"/home/roman/Sources/c-utils/lib/strlist/strlist_pushb_unique.c",
-		"/home/roman/Sources/c-utils/mediathek-list.c",
-		"/home/roman/Sources/c-utils/lib/scan/scan_charsetnskip.c",
-		"/home/roman/Sources/c-utils/lib/scan/scan_noncharsetnskip.c",
-		"/home/roman/Sources/c-utils/lib/byte/byte_finds.c",
-		"/home/roman/Sources/c-utils/lib/path/path_canonical.c",
-		"/home/roman/Sources/c-utils/lib/ihex.h",
-		"/home/roman/Sources/c-utils/lib/ihex/ihex_read_record.c",
-		"/home/roman/Sources/c-utils/lib/ihex/ihex_read_buf.c",
-		"/home/roman/Sources/c-utils/lib/ihex/ihex_read_data.c",
-		"/home/roman/Sources/c-utils/lib/alloc/alloc_zero.c",
-		"/home/roman/Sources/c-utils/build/rdir-test",
-		"/home/roman/Sources/c-utils/testihex.c",
-		"/home/roman/Sources/c-utils/lib/scan/scan_xshort.c",
-		"/home/roman/Sources/c-utils/lib/scan/scan_xchar.c",
-		"/home/roman/Sources/c-utils/lib/slist.h",
-		"/home/roman/Sources/c-utils/lib/list.h",
+		"/home/roman/Arduino/libraries/Itty_Bitty/IttyBitty_UI_nav_adapters.cpp",
+		"/home/roman/Arduino/libraries/Itty_Bitty/IttyBitty_UI_nav_adapters.h",
+		"/home/roman/Arduino/libraries/MIDI_Library/src/MIDI.cpp",
+		"/home/roman/Arduino/libraries/MIDI_Library/test/unit-tests/tests/unit-tests_SysExCodec.cpp",
+		"/home/roman/Arduino/libraries/Adafruit_seesaw_Library/Adafruit_seesaw.cpp",
+		"/home/roman/Arduino/libraries/Adafruit_seesaw_Library/Adafruit_seesaw.h",
+		"/home/roman/Arduino/libraries/Adafruit_seesaw_Library/examples/encoder/rgb_encoder/rgb_encoder.ino",
+		"/home/roman/Arduino/libraries/Adafruit_seesaw_Library/examples/encoder/encoder_basic/encoder_basic.ino",
+		"/home/roman/Arduino/libraries/Encoder/Encoder.cpp",
+		"/home/roman/Arduino/libraries/Encoder/utility/interrupt_config.h",
+		"/home/roman/Arduino/libraries/Encoder/utility/interrupt_pins.h",
+		"/home/roman/Arduino/libraries/Encoder/examples/Basic/Basic.pde",
+		"/home/roman/Arduino/libraries/Encoder/examples/SpeedTest/SpeedTest.pde",
+		"/home/roman/Arduino/libraries/Encoder/examples/NoInterrupts/NoInterrupts.pde",
+		"/home/roman/Arduino/libraries/Encoder/examples/TwoKnobs/TwoKnobs.pde",
+		"/home/roman/Arduino/libraries/Encoder/Encoder.h",
+		"/home/roman/Arduino/libraries/EncoderStepCounter/EncoderStepCounter.cpp",
+		"/home/roman/Arduino/libraries/EncoderStepCounter/examples/BasicExample/BasicExample.ino",
+		"/home/roman/Arduino/libraries/EncoderStepCounter/examples/InterruptExample/InterruptExample.ino",
+		"/home/roman/Arduino/libraries/EncoderStepCounter/EncoderStepCounter.h",
+		"/home/roman/Arduino/libraries/SimpleRotary/src/SimpleRotary.cpp",
+		"/home/roman/Arduino/libraries/SimpleRotary/src/SimpleRotary.h",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/push/push.ino",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/pushType/pushType.ino",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/pushReset/pushReset.ino",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/pushLong/pushLong.ino",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/pushTime/pushTime.ino",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/options/options.ino",
+		"/home/roman/Arduino/libraries/SimpleRotary/examples/rotate/rotate.ino",
+		"/home/roman/Arduino/libraries/IRMP/src/irsndSelectAllProtocols.h",
+		"/home/roman/Arduino/libraries/IRMP/src/irsndSelectMain15Protocols.h",
+		"/home/roman/Arduino/libraries/QDEC/src/qdec.h",
+		"/home/roman/Arduino/libraries/QDEC/examples/01.BareLoop/01.BareLoop.ino",
+		"/home/roman/Arduino/libraries/QDEC/examples/22.InterruptsLearn/22.InterruptsLearn.ino",
+		"/home/roman/Arduino/libraries/QDEC/examples/04.LoopTemplate/04.LoopTemplate.ino",
+		"/home/roman/Arduino/libraries/QDEC/examples/03.LoopNamespace/03.LoopNamespace.ino",
+		"/home/roman/Arduino/libraries/QDEC/examples/21.BareInterrupts/21.BareInterrupts.ino",
+		"/home/roman/Arduino/libraries/QDEC/examples/05.LoopTemplateFun/05.LoopTemplateFun.ino",
+		"/home/roman/Arduino/libraries/QDEC/examples/02.LoopLearn/02.LoopLearn.ino",
+		"/home/roman/Arduino/libraries/ESP_Rotary/src/ESPRotary.h",
+		"/home/roman/Arduino/libraries/ESP_Rotary/src/ESPRotary.cpp",
+		"/home/roman/Arduino/libraries/ESP_Rotary/examples/SimpleCounterWithButton/SimpleCounterWithButton.ino",
+		"/home/roman/Arduino/libraries/ESP_Rotary/examples/SimpleCounter/SimpleCounter.ino",
+		"/home/roman/Arduino/libraries/IRremote/ir_Lego_PF.cpp",
+		"/home/roman/Arduino/libraries/IRremote/examples/LegoPowerFunctionsTests/LegoPowerFunctionsTests.ino",
+		"/home/roman/Arduino/libraries/IRremote/ir_Lego_PF_BitStreamEncoder.h",
+		"/home/roman/Arduino/libraries/SoftTimer/src/Rotary.h",
+		"/home/roman/Arduino/libraries/SoftTimer/src/Rotary.cpp",
+		"/home/roman/Arduino/libraries/SoftTimer/examples/SoftTimer6Rotary/SoftTimer6Rotary.ino",
+		"/home/roman/Arduino/libraries/Accessories/src/Accessory.hpp",
+		"/home/roman/Arduino/libraries/QuadratureEncoder/QuadratureEncoder.cpp",
+		"/home/roman/Arduino/libraries/QuadratureEncoder/examples/SimpleEncoderExample/SimpleEncoderExample.ino",
+		"/home/roman/Arduino/libraries/QuadratureEncoder/QuadratureEncoder.h",
+		"/home/roman/Arduino/libraries/RotaryDial/src/RotaryDial.cpp",
+		"/home/roman/Arduino/libraries/RotaryDial/src/RotaryDial.h",
+		"/home/roman/Arduino/libraries/RotaryDial/examples/dial_read/dial_read.ino",
+		"/home/roman/Arduino/libraries/RotaryEncoder/RotaryEncoder.h",
+		"/home/roman/Arduino/libraries/RotaryEncoder/examples/SimplePollRotator/SimplePollRotator.ino",
+		"/home/roman/Arduino/libraries/RotaryEncoder/examples/SimplePollRotatorLCD/SimplePollRotatorLCD.ino",
+		"/home/roman/Arduino/libraries/RotaryEncoder/examples/AcceleratedRotator/AcceleratedRotator.ino",
+		"/home/roman/Arduino/libraries/RotaryEncoder/examples/LimitedRotator/LimitedRotator.ino",
+		"/home/roman/Arduino/libraries/RotaryEncoder/examples/InterruptRotator/InterruptRotator.ino",
+		"/home/roman/Arduino/libraries/RotaryEncoder/RotaryEncoder.cpp",
+		"/home/roman/Arduino/libraries/slight_RotaryEncoder/src/slight_RotaryEncoder.h",
+		"/home/roman/Arduino/libraries/slight_RotaryEncoder/src/slight_RotaryEncoder.cpp",
+		"/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/myinput.h",
+		"/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/slight_RotaryEncoder__advanced2.ino",
+		"/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/myinput.cpp",
+		"/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder_test/slight_RotaryEncoder_test.ino",
+		"/home/roman/Arduino/libraries/MD_REncoder/src/MD_REncoder.cpp",
+		"/home/roman/Arduino/libraries/MD_REncoder/src/MD_REncoder.h",
+		"/home/roman/Arduino/libraries/MD_REncoder/examples/Polling/Polling.ino",
+		"/home/roman/Arduino/libraries/HID-Project/examples/SurfaceDial/SurfaceDial.ino",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/FunctionGeneratorABMS/Arduino_Frequency_Counter_Duty_Cycle_Meter_4.ino",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Simple-Arduino-Frequency-Counter/frequency_counter.ino",
 		"/home/roman/Sources/c-utils/lib/strarray.h",
-		"/home/roman/Sources/c-utils/parse.c",
-		"/home/roman/Sources/c-utils/crc.c",
-		"/home/roman/Sources/c-utils/mediathek-parser.c",
-		"/home/roman/Sources/c-utils/pkgcfg.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/path/path_relative.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/scan/scan_xchar.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/scan/scan_fromhex.c",
-		"/home/roman/Dokumente/Sources/c-utils/lib/scan/scan_xshort.c",
-		"/home/roman/Dokumente/Sources/c-utils/eagle-init-brd.c",
-		"/home/roman/Dokumente/Sources/c-utils/daemon.c",
-		"/home/roman/Dokumente/Sources/c-utils/httptest.c",
-		"/home/roman/Dokumente/Sources/c-utils/dirlist.sublime-project",
-		"/home/roman/Dokumente/Sources/c-utils/list-r.c",
-		"/home/roman/Dokumente/Sources/c-utils/bsdiffcat.c",
-		"/home/roman/Dokumente/Sources/c-utils/parse.c",
-		"/home/roman/Dokumente/Sources/c-utils/plsconv.c",
-		"/home/roman/Dokumente/Sources/c-utils/GNUmakefile",
-		"/home/roman/Dokumente/Sources/c-utils/CMakeLists.txt",
-		"/home/roman/Dokumente/Sources/c-utils/sln.c",
-		"/home/roman/Dokumente/Sources/pictest/src/timer0.c",
-		"/home/enki/lotto/test.txt",
-		"/home/enki/lotto/utils/util.js",
-		"/home/enki/lotto/pages/deposit.js",
-		"/home/enki/lotto/helpers/app.moon",
-		"/home/enki/lotto/applications/payment.lua",
-		"/home/enki/lotto/applications/payment.moon",
-		"/home/enki/lotto/helpers/payment.moon",
-		"/home/enki/lotto/helpers/json.moon",
-		"/home/enki/lotto/helpers/date.moon",
-		"/home/enki/lotto/applications/users.moon",
-		"/home/enki/lotto/applications/api.moon",
-		"/home/enki/lotto/helpers/validate.moon",
-		"/home/enki/lotto/helpers/api.moon",
-		"/home/enki/lotto/helpers/time.moon",
-		"/home/enki/lotto/applications/socket.moon",
-		"/home/enki/lotto/helpers/validate.lua"
+		"/home/roman/Sources/c-utils/lib/str.h",
+		"/home/roman/Sources/c-utils/lib/uint32/uint32_seed.c",
+		"/home/roman/Sources/c-utils/lib/uint32.h",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_unshift.c",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_unshiftb.c",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_pushb.c",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_diff.c",
+		"/home/roman/Sources/c-utils/lib/path/path_canonical.c",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_contains.c",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_remove_all.c",
+		"/home/roman/Sources/c-utils/lib/strlist.h",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_containsb.c",
+		"/home/roman/Sources/c-utils/lib/slist.h",
+		"/home/roman/Sources/c-utils/map.h",
+		"/home/roman/Sources/c-utils/genmakefile.h",
+		"/home/roman/Sources/c-utils/lib/strarray/strarray_pushb.c",
+		"/home/roman/Sources/c-utils/lib/strarray/strarray_index_of.c",
+		"/home/roman/Sources/c-utils/lib/stralloc/stralloc_remove.c",
+		"/home/roman/Sources/c-utils/lib/path/path_is_directory.c",
+		"/home/roman/Sources/c-utils/lib/path/path_realpath.c",
+		"/home/roman/Sources/c-utils/lib/path/path_relative.c",
+		"/home/roman/Sources/c-utils/lib/strarray/strarray_push_unique.c",
+		"/home/roman/Sources/c-utils/lib/fmt/fmt_escapecharjson.c",
+		"/home/roman/Sources/c-utils/lib/path/path_collapse.c",
+		"/home/roman/Sources/c-utils/mplab.c",
+		"/home/roman/Sources/c-utils/lib/rdir/rdir_read.c",
+		"/home/roman/Sources/c-utils/lib/path/path_concat.c",
+		"/home/roman/Sources/c-utils/lib/path/path_append.c",
+		"/home/roman/Sources/c-utils/lib/path/path_canonical_sa.c",
+		"/home/roman/Sources/c-utils/lib/path/path_collapse_sa.c",
+		"/home/roman/Sources/c-utils/lib/path.h",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_filter.c",
+		"/home/roman/Sources/c-utils/lib/stralloc/stralloc_nul.c",
+		"/home/roman/Sources/c-utils/lib/byte.h",
+		"/home/roman/Sources/c-utils/lib/strarray/strarray_pushb_unique.c",
+		"/home/roman/Sources/c-utils/lib/strlist/strlist_pushb_unique.c",
+		"/home/roman/Sources/c-utils/lib/slist/slist_shift.c",
+		"/home/roman/Sources/c-utils/lib/path/path_exists.c",
+		"/home/roman/Sources/c-utils/lib/path/path_isdir.c",
+		"/home/roman/Sources/c-utils/lib/path/path_basename.c",
+		"/home/roman/Sources/c-utils/lib/stralloc.h",
+		"/home/roman/Sources/c-utils/lib/slist/slist_pushb.c",
+		"/home/roman/Sources/c-utils/lib/slist/slist_unshiftb.c",
+		"/home/roman/Sources/c-utils/genmakefile.c",
+		"/home/roman/Sources/c-utils/lib/list.h",
+		"/home/roman/Sources/c-utils/lib/slist/slist_unshifts.c",
+		"/home/roman/Sources/c-utils/lib/slist/slist_pushs.c",
+		"/home/roman/Sources/c-utils/lib/slist/slist_init.c",
+		"/home/roman/Sources/c-utils/lib/path/path_num.c"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 47.0
 	},
 	"find_in_files":
 	{
 		"height": 258.0,
 		"where_history":
 		[
-			"/home/roman/Dokumente/Sources/c-utils,*.c,*.h",
-			"/home/roman/Dokumente/Sources/c-utils,*.c",
-			""
+			"/home/roman/Dokumente/Sources/Arduino-Projects,*.ino,*.cpp,*.h,*.hpp"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
-			"lastButt",
-			"lastButtonStates",
-			"buttonPushCounter",
-			"\\s+\\\\$",
-			"OUTPUT_SER",
+			"r = 2",
+			"r =",
+			"tickX",
+			"FALLING",
+			"RISING",
+			"r =",
+			"drawChar",
+			"drawCol",
+			"ax",
 			"setup",
-			"SPACE",
-			"KEY_SP",
-			"KEY_SPACE",
-			"shiftOut",
-			"TIMER_USE_TIMER2",
-			"COUNTER_USE_TIMER1",
-			"TIMER_ISR_VECTOR",
-			"Voltage",
-			"buffer",
-			"^    \"",
-			"    \"",
-			"SIZEOF",
-			"measureVoltage",
-			"buffer",
-			"drawBit",
-			"display\\.",
-			" B",
-			"Meep Meep",
-			"display\\.",
-			"anti.*ali",
-			".cpp",
-			"setBusy",
-			"busy",
-			"setBusy",
-			"busy =",
-			"MsTimer",
-			"Counter",
-			"CounterV",
-			"Counter",
-			"Serial",
-			"setup",
-			"TimerTh",
-			"TimerT",
-			"TimerTh",
-			"Timer",
-			"mode++",
-			"mode ",
-			"mode",
-			"Timer1",
-			"output_part",
-			"stereo",
-			"Package",
-			"spad",
-			"board",
-			"bounds",
-			"update_bounds",
-			"build_part",
-			"output_part",
-			"bounds",
-			"output_part",
-			"component n",
-			"output_pa",
-			"output_part",
-			"putdoub",
-			"output_part",
-			"=\"C1",
-			"0.12",
-			"_part",
-			"pad1",
-			"_part",
-			"output_part",
-			"get_doub",
-			"output_part",
-			"_",
-			"clean_pkg",
-			"output_part",
-			"clean_pkgname",
-			"clean_p",
-			"clean_pack",
-			"dump_part",
-			"output_part",
-			"->packa",
-			"struct part",
-			"dump_part",
-			"build_part",
-			"Part:",
-			"pkgname\\.",
-			"\\&pkgname",
-			"pkgname",
-			"build_part",
-			"element",
-			"E2.5-4/V",
-			"name=\"C1\"",
-			"<inst",
-			"<comp",
-			"<packa.*\"SPAD..\"",
-			"\"SPAD..\"",
-			"\"SPAD....\"",
-			"\"SPAD",
-			"SPAD",
-			"<package.*SPAD",
-			"package.*SPAD",
-			"SPAD",
-			"package=",
-			"SPAD",
-			"spad",
-			"replacec",
-			"replace",
-			"E2.5-4/V",
-			"E2",
-			"lower",
-			"tolower",
-			"R3",
-			"R3\\.",
-			"byte_chrs",
-			"putspad",
-			"spad",
-			"strlist_foreach",
-			"foreach",
-			"_net",
-			"pad",
-			"output_net",
-			"dump_part",
-			"Net:",
-			"byte_diff",
-			"cmp_ref",
-			"strlist_sort",
-			"sort",
-			"strlist_sort",
-			"val_custom",
-			"diff",
-			"str_"
+			"z;",
+			"FALLING",
+			"interrupt",
+			"capture",
+			"CCP",
+			"RISING",
+			"rising"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -725,25 +1191,6 @@
 		"regex": true,
 		"replace_history":
 		[
-			" \\",
-			"    \"  ",
-			"    \"    \n",
-			"lcd.",
-			" 0b",
-			"lcd.",
-			"pkgname->",
-			"pkgname",
-			"output_net",
-			"MAP_NEW(\\1)",
-			"&output",
-			"output",
-			"buffer_2",
-			"buffer_1->",
-			"ppsrc",
-			"path_output",
-			"'",
-			"parse",
-			"MACH"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -759,42 +1206,223 @@
 			[
 				{
 					"buffer": 0,
-					"file": "StateChangeDetection/StateChangeDetection.ino",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6675,
+						"buffer_size": 338,
 						"regions":
 						{
 						},
 						"selection":
 						[
-							[
-								1708,
-								1708
-							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/SchemeEditorTemp/Darkside (rainglow).tmTheme",
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"current_file": "/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.ino",
+							"outline_rename_mode": false,
+							"symkeys":
+							[
+								[
+									267,
+									275
+								],
+								[
+									783,
+									795
+								],
+								[
+									810,
+									817
+								],
+								[
+									839,
+									842
+								],
+								[
+									1195,
+									1199
+								],
+								[
+									1690,
+									1708
+								],
+								[
+									1720,
+									1737
+								],
+								[
+									2456,
+									2466
+								],
+								[
+									2905,
+									2915
+								],
+								[
+									3721,
+									3726
+								],
+								[
+									3735,
+									3743
+								],
+								[
+									3809,
+									3814
+								],
+								[
+									3928,
+									3933
+								],
+								[
+									3942,
+									3950
+								],
+								[
+									4004,
+									4009
+								],
+								[
+									4271,
+									4286
+								],
+								[
+									5179,
+									5182
+								],
+								[
+									5268,
+									5271
+								],
+								[
+									5476,
+									5479
+								],
+								[
+									6028,
+									6035
+								],
+								[
+									6081,
+									6086
+								],
+								[
+									6147,
+									6154
+								],
+								[
+									6284,
+									6300
+								],
+								[
+									6789,
+									6803
+								],
+								[
+									7313,
+									7322
+								],
+								[
+									7567,
+									7575
+								],
+								[
+									7746,
+									7754
+								],
+								[
+									7890,
+									7898
+								],
+								[
+									8550,
+									8568
+								],
+								[
+									8801,
+									8816
+								],
+								[
+									9459,
+									9470
+								],
+								[
+									9757,
+									9766
+								],
+								[
+									10027,
+									10038
+								],
+								[
+									10546,
+									10551
+								],
+								[
+									11883,
+									11887
+								]
+							],
+							"symlist":
+							[
+								"ADAFRUIT",
+								"clearDisplay",
+								"display",
+								"lcd",
+								"cap1",
+								"LOGO16_GLCD_HEIGHT",
+								"LOGO16_GLCD_WIDTH",
+								"InitTimer1",
+								"InitTimer2",
+								"tickX",
+								"tickXOff",
+								"tickX",
+								"tickY",
+								"tickYOff",
+								"tickY",
+								"printInductance",
+								"ISR",
+								"ISR",
+								"ISR",
+								"setBusy",
+								"print",
+								"println",
+								"measureFrequency",
+								"measureVoltage",
+								"drawColon",
+								"drawZero",
+								"drawChar",
+								"showTime",
+								"measureCapacitance",
+								"animateProgress",
+								"processLine",
+								"drawLineH",
+								"processChar",
+								"setup",
+								"loop"
+							],
+							"syntax": "Packages/Outline/outline.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 18.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 75,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 1,
-					"file": "Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V2.0/ArduinoArcadeController_V2.0.ino",
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder_minimal/slight_RotaryEncoder_minimal.ino",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14629,
+						"buffer_size": 4118,
 						"regions":
 						{
 						},
@@ -807,110 +1435,54 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Arduino-Arcade-Joystick-USB/ArduinoArcadeController/ArduinoArcadeController_V1.0.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2881,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1296.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "libraries/HID_Buttons/examples/Keyboard/Joy2WASD/Joy2WASD.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2496,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2031,
-								2031
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 594.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "libraries/HID_Buttons/examples/Keyboard/KeyboardButton/KeyboardButton.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "libraries/USBHID/examples/simplekeyboard/simplekeyboard.ino",
+					"buffer": 2,
+					"file": "Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.ino",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 239,
+						"buffer_size": 14253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10831,
+								10831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder_test/slight_RotaryEncoder_test.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6039,
 						"regions":
 						{
 						},
@@ -923,22 +1495,84 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/roman/Arduino/libraries/MD_REncoder/src/MD_REncoder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/roman/Arduino/libraries/MD_REncoder/src/MD_REncoder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "libraries/USBHID/examples/BootKeyboard/BootKeyboard.ino",
+					"file": "/home/roman/Arduino/libraries/MD_REncoder/examples/Polling/Polling.ino",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 269,
+						"buffer_size": 486,
 						"regions":
 						{
 						},
@@ -951,22 +1585,376 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
+							"syntax": "Packages/C99/C99.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "libraries/USBHID/examples/keyboardwithleds/keyboardwithleds.ino",
+					"file": "/home/roman/Arduino/libraries/HID-Project/examples/SurfaceDial/SurfaceDial.ino",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 1901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 948.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/roman/Arduino/libraries/Itty_Bitty/IttyBitty_UI_nav_adapters.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 74,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/roman/Arduino/libraries/Itty_Bitty/IttyBitty_UI_nav_adapters.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 73,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/roman/Arduino/libraries/MIDI_Library/src/MIDI.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 72,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/roman/Arduino/libraries/MIDI_Library/test/unit-tests/tests/unit-tests_SysExCodec.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 71,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/Adafruit_seesaw.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 70,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/Adafruit_seesaw.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 69,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/examples/encoder/rgb_encoder/rgb_encoder.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 68,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/home/roman/Arduino/libraries/Adafruit_seesaw_Library/examples/encoder/encoder_basic/encoder_basic.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 67,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/home/roman/Arduino/libraries/Encoder/Encoder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 66,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/home/roman/Arduino/libraries/Encoder/utility/interrupt_config.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 65,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/home/roman/Arduino/libraries/Encoder/utility/interrupt_pins.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 64,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/home/roman/Arduino/libraries/Encoder/examples/Basic/Basic.pde",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 741,
 						"regions":
 						{
 						},
@@ -985,16 +1973,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 63,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "libraries/HID-Project/examples/RawHID/KeyboardFeatureReport/KeyboardFeatureReport.ino",
+					"buffer": 20,
+					"file": "/home/roman/Arduino/libraries/Encoder/examples/SpeedTest/SpeedTest.pde",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2388,
+						"buffer_size": 4973,
 						"regions":
 						{
 						},
@@ -1015,16 +2003,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 62,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "libraries/HID-Project/examples/Keyboard/KeyboardLed/KeyboardLed.ino",
+					"buffer": 21,
+					"file": "/home/roman/Arduino/libraries/Encoder/examples/NoInterrupts/NoInterrupts.pde",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1065,
+						"buffer_size": 1594,
 						"regions":
 						{
 						},
@@ -1045,12 +2033,278 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 61,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "libraries/HID-Project/examples/Keyboard/BootKeyboard/BootKeyboard.ino",
+					"buffer": 22,
+					"file": "/home/roman/Arduino/libraries/Encoder/examples/TwoKnobs/TwoKnobs.pde",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 60,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/home/roman/Arduino/libraries/Encoder/Encoder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 59,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/home/roman/Arduino/libraries/EncoderStepCounter/EncoderStepCounter.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 58,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/home/roman/Arduino/libraries/EncoderStepCounter/examples/BasicExample/BasicExample.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 57,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/home/roman/Arduino/libraries/EncoderStepCounter/examples/InterruptExample/InterruptExample.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 56,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/home/roman/Arduino/libraries/EncoderStepCounter/EncoderStepCounter.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 55,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/src/SimpleRotary.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 54,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/src/SimpleRotary.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 53,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/push/push.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 52,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushType/pushType.ino",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1067,8 +2321,1284 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"syntax": "Packages/C99/C99.tmLanguage",
 							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 51,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushReset/pushReset.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 50,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushLong/pushLong.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 49,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/pushTime/pushTime.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 48,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/options/options.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 47,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "/home/roman/Arduino/libraries/SimpleRotary/examples/rotate/rotate.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 46,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "/home/roman/Arduino/libraries/IRMP/src/irsndSelectAllProtocols.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 45,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "/home/roman/Arduino/libraries/IRMP/src/irsndSelectMain15Protocols.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 44,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "/home/roman/Arduino/libraries/QDEC/src/qdec.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 43,
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/01.BareLoop/01.BareLoop.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 42,
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/22.InterruptsLearn/22.InterruptsLearn.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 41,
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/04.LoopTemplate/04.LoopTemplate.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 40,
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/03.LoopNamespace/03.LoopNamespace.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/21.BareInterrupts/21.BareInterrupts.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/05.LoopTemplateFun/05.LoopTemplateFun.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "/home/roman/Arduino/libraries/QDEC/examples/02.LoopLearn/02.LoopLearn.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "/home/roman/Arduino/libraries/ESP_Rotary/src/ESPRotary.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "/home/roman/Arduino/libraries/ESP_Rotary/src/ESPRotary.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "/home/roman/Arduino/libraries/ESP_Rotary/examples/SimpleCounterWithButton/SimpleCounterWithButton.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "/home/roman/Arduino/libraries/ESP_Rotary/examples/SimpleCounter/SimpleCounter.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 973,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "/home/roman/Arduino/libraries/IRremote/ir_Lego_PF.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 52,
+					"file": "/home/roman/Arduino/libraries/IRremote/examples/LegoPowerFunctionsTests/LegoPowerFunctionsTests.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 53,
+					"file": "/home/roman/Arduino/libraries/IRremote/ir_Lego_PF_BitStreamEncoder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 54,
+					"file": "/home/roman/Arduino/libraries/SoftTimer/src/Rotary.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 55,
+					"file": "/home/roman/Arduino/libraries/SoftTimer/src/Rotary.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2973,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 56,
+					"file": "/home/roman/Arduino/libraries/SoftTimer/examples/SoftTimer6Rotary/SoftTimer6Rotary.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 57,
+					"file": "/home/roman/Arduino/libraries/Accessories/src/Accessory.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 58,
+					"file": "/home/roman/Arduino/libraries/QuadratureEncoder/QuadratureEncoder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2054,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 59,
+					"file": "/home/roman/Arduino/libraries/QuadratureEncoder/examples/SimpleEncoderExample/SimpleEncoderExample.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 60,
+					"file": "/home/roman/Arduino/libraries/QuadratureEncoder/QuadratureEncoder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 61,
+					"file": "/home/roman/Arduino/libraries/RotaryDial/src/RotaryDial.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 62,
+					"file": "/home/roman/Arduino/libraries/RotaryDial/src/RotaryDial.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 63,
+					"file": "/home/roman/Arduino/libraries/RotaryDial/examples/dial_read/dial_read.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 64,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/RotaryEncoder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1800,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 65,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/SimplePollRotator/SimplePollRotator.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 66,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/SimplePollRotatorLCD/SimplePollRotatorLCD.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 67,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/AcceleratedRotator/AcceleratedRotator.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 68,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/LimitedRotator/LimitedRotator.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 69,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/InterruptRotator/InterruptRotator.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 70,
+					"file": "/home/roman/Arduino/libraries/RotaryEncoder/RotaryEncoder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 71,
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/src/slight_RotaryEncoder.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 72,
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/src/slight_RotaryEncoder.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 73,
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/myinput.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 74,
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/slight_RotaryEncoder__advanced2.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1079,12 +3609,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "libraries/HID-Project/examples/Keyboard/AlternateLanguageLayout/AlternateLanguageLayout.ino",
+					"buffer": 75,
+					"file": "/home/roman/Arduino/libraries/slight_RotaryEncoder/examples/slight_RotaryEncoder__advanced2/myinput.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 919,
+						"buffer_size": 4273,
 						"regions":
 						{
 						},
@@ -1097,7 +3627,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1105,103 +3637,13 @@
 					},
 					"stack_index": 7,
 					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "libraries/HID-Project/examples/Keyboard/TeensyKeyboard/TeensyKeyboard.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "libraries/HID-Project/examples/Keyboard/NKROKeyboard/NKROKeyboard.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1470,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "libraries/HID-Project/examples/Keyboard/ImprovedKeyboard/ImprovedKeyboard.ino",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1702,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++11/C++11.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 47.0
 	},
 	"input":
 	{
@@ -1212,65 +3654,42 @@
 		"cells":
 		[
 			[
+				2,
+				0,
+				3,
+				2
+			],
+			[
 				0,
 				0,
-				1,
-				1
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.2,
+			0.8,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
 	"menu_visible": true,
-	"output.CSS Extended Completions":
-	{
-		"height": 0.0
-	},
-	"output.SublimeLinter":
-	{
-		"height": 0.0
-	},
-	"output.SublimeLinter Messages":
-	{
-		"height": 194.0
-	},
-	"output.doc":
-	{
-		"height": 0.0
-	},
-	"output.exec":
-	{
-		"height": 319.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"output.stino_build_panel":
-	{
-		"height": 0.0
-	},
-	"output.stino_panel":
-	{
-		"height": 0.0
-	},
-	"output.unsaved_changes":
-	{
-		"height": 96.0
-	},
-	"pinned_build_system": "Open in Arduino IDE",
+	"pinned_build_system": "Build debug",
 	"project": "Arduino-Projects.sublime-project",
 	"replace":
 	{
-		"height": 80.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1280,452 +3699,516 @@
 		"selected_items":
 		[
 			[
-				"state",
-				"StateChangeDetection/StateChangeDetection.ino"
-			],
-			[
-				"test",
-				"test.circuit"
-			],
-			[
-				"eagle",
-				"eagle-to-circuit.c"
-			],
-			[
-				"buffer.h",
-				"lib/buffer.h"
-			],
-			[
-				"eag",
-				"eagle-to-circuit.c"
-			],
-			[
-				"",
-				"~/Dokumente/Sources/striprouter/bin/circuits/example.circuit"
-			],
-			[
-				"exam",
-				"build/examples.mk"
-			],
-			[
-				"stralloc.h",
-				"lib/stralloc.h"
-			],
-			[
-				"putspad",
-				"lib/buffer/buffer_putspad.c"
-			],
-			[
-				"buffer_putspad",
-				"lib/buffer/buffer_putspad.c"
-			],
-			[
-				"strlist.h",
-				"lib/strlist.h"
-			],
-			[
-				"byte.h",
-				"lib/byte.h"
-			],
-			[
-				"byte_chr",
-				"lib/byte/byte_chr.3"
-			],
-			[
-				"sort.c",
-				"lib/strlist/strlist_sort.c"
-			],
-			[
-				"eagle-to",
-				"eagle-to-circuit.c"
-			],
-			[
-				"hmap",
-				"lib/hmap.h"
-			],
-			[
-				"hmap_free",
-				"lib/hmap/hmap_free_data.c"
-			],
-			[
-				"str.h",
-				"lib/str.h"
-			],
-			[
-				"strlist",
-				"lib/strlist.h"
-			],
-			[
-				"strall",
-				"lib/stralloc.h"
-			],
-			[
-				"array.h",
-				"lib/array.h"
-			],
-			[
-				"cbmap.h",
-				"lib/cbmap.h"
-			],
-			[
-				"cbmap",
-				"lib/cbmap.h"
-			],
-			[
-				"cb.h",
-				"lib/cb.h"
-			],
-			[
-				"hexed",
-				"hexedit.c"
-			],
-			[
-				"json.h",
-				"lib/json.h"
-			],
-			[
-				"uint32",
-				"lib/uint32.h"
-			],
-			[
-				"json_pr",
-				"lib/json/json_print.c"
-			],
-			[
-				"jsontest",
-				"jsontest.c"
-			],
-			[
-				"json",
-				"jsonpp.c"
-			],
-			[
-				"genma",
-				"genmakefile.c"
-			],
-			[
-				"xml.h",
-				"lib/xml.h"
-			],
-			[
-				"eagle-",
-				"eagle-to-circuit.c"
-			],
-			[
-				"_trim",
-				"lib/stralloc/stralloc_trimr.c"
-			],
-			[
-				"str_trimr",
-				"lib/stralloc/stralloc_trimr.c"
-			],
-			[
-				"str_trim",
-				"lib/str/str_triml.c"
-			],
-			[
-				"xmlpp",
-				"xmlpp.c"
-			],
-			[
-				"path_re",
-				"lib/path/path_relative.c"
-			],
-			[
-				"genmake",
-				"genmakefile.c"
-			],
-			[
-				"alloc",
-				"lib/alloc/alloc_zero.c"
-			],
-			[
-				"testihe",
-				"testihex.c"
-			],
-			[
-				"rtest",
-				"build/rdir-test"
+				"cmakeli",
+				"CMakeLists.txt"
 			],
 			[
 				"slist.h",
 				"lib/slist.h"
 			],
 			[
+				"containsb",
+				"lib/strlist/strlist_containsb.c"
+			],
+			[
+				"strlist.h",
+				"lib/strlist.h"
+			],
+			[
+				"contains",
+				"lib/strlist/strlist_contains.c"
+			],
+			[
+				"strlist_diff",
+				"lib/strlist/strlist_diff.c"
+			],
+			[
+				"strlist_",
+				"lib/strlist/strlist_pushb.c"
+			],
+			[
+				"genma",
+				"genmakefile.h"
+			],
+			[
+				"genm",
+				"genmakefile.h"
+			],
+			[
+				"genmakefile",
+				"genmakefile.h"
+			],
+			[
+				"strarray.h",
+				"lib/strarray.h"
+			],
+			[
+				"str.h",
+				"lib/str.h"
+			],
+			[
+				"seed.c",
+				"lib/uint32/uint32_seed.c"
+			],
+			[
+				"uint32",
+				"lib/uint32.h"
+			],
+			[
 				"list.h",
-				"lib/list.h"
+				"lib/strlist.h"
 			],
 			[
-				"ihex",
-				"lib/ihex.h"
+				"unshift",
+				"lib/strlist/strlist_unshift.c"
 			],
 			[
-				"parse.c",
-				"parse.c"
+				"map.h",
+				"map.h"
 			],
 			[
-				"GNUMa",
+				"genmake",
+				"genmakefile.h"
+			],
+			[
+				"strarray_push",
+				"lib/strarray/strarray_pushb.c"
+			],
+			[
+				"index_of",
+				"lib/strarray/strarray_index_of.c"
+			],
+			[
+				"stralloc_remove",
+				"lib/stralloc/stralloc_remove.c"
+			],
+			[
+				"mplab.c",
+				"mplab.c"
+			],
+			[
+				"fmt_esca",
+				"lib/fmt/fmt_escapecharjson.c"
+			],
+			[
+				"genmakefile.h",
+				"genmakefile.h"
+			],
+			[
+				"rdir_rea",
+				"lib/rdir/rdir_read.c"
+			],
+			[
+				"canoni",
+				"lib/path/path_canonical.c"
+			],
+			[
+				"path.h",
+				"lib/path.h"
+			],
+			[
+				"path_relative",
+				"lib/path/path_relative.c"
+			],
+			[
+				"byte.h",
+				"lib/byte.h"
+			],
+			[
+				"pushb",
+				"lib/strlist/strlist_pushb.c"
+			],
+			[
+				"strlist_pushb",
+				"lib/strlist/strlist_pushb_unique.c"
+			],
+			[
+				"path.",
+				"lib/path.h"
+			],
+			[
+				"path_ex",
+				"lib/path/path_exists.c"
+			],
+			[
+				"path_bas",
+				"lib/path/path_basename.c"
+			],
+			[
+				"path_concat",
+				"lib/path/path_concat.c"
+			],
+			[
+				"stralloc.h",
+				"lib/stralloc.h"
+			],
+			[
+				"slist_pushb",
+				"lib/slist/slist_pushb.c"
+			],
+			[
+				"unshiftb",
+				"lib/slist/slist_unshiftb.c"
+			],
+			[
+				"slist_shift",
+				"lib/slist/slist_shift.c"
+			],
+			[
+				"pushs",
+				"lib/slist/slist_pushs.c"
+			],
+			[
+				"slist_",
+				"lib/slist/slist_init.c"
+			],
+			[
+				"collapse",
+				"lib/path/path_collapse.c"
+			],
+			[
+				"path_",
+				"lib/path/path_num.c"
+			],
+			[
+				"ini.c",
+				"ini.c"
+			],
+			[
+				"mplab",
+				"mplab.c"
+			],
+			[
+				"ini.h",
+				"ini.h"
+			],
+			[
+				"buffer_write_fd",
+				"lib/buffer/buffer_write_fd.c"
+			],
+			[
+				"buffer_wr",
+				"lib/buffer/buffer_write.c"
+			],
+			[
+				"uint16.h",
+				"lib/uint16.h"
+			],
+			[
+				"scan_utf",
+				"lib/scan/scan_utf8.c"
+			],
+			[
+				"buffer.h",
+				"lib/buffer.h"
+			],
+			[
+				"stralloc_fm",
+				"lib/stralloc/stralloc_fmt_call.c"
+			],
+			[
+				"utf8.c",
+				"lib/fmt/fmt_utf8.c"
+			],
+			[
+				"skip",
+				"lib/buffer/buffer_skipn.c"
+			],
+			[
+				"hmap_dump",
+				"lib/hmap/hmap_dump.c"
+			],
+			[
+				"mult.c",
+				"examples/mult.c"
+			],
+			[
+				"list-r",
+				"list-r.c"
+			],
+			[
+				"pkgcfg.c",
+				"pkgcfg.c"
+			],
+			[
+				"umul",
+				"lib/safemult/umult64.c"
+			],
+			[
+				"taia",
+				"lib/taia.h"
+			],
+			[
+				"tcping",
+				"tcping.c"
+			],
+			[
+				"strip-c",
+				"strip-comments.c"
+			],
+			[
+				"setuid",
+				"setuidgid.c"
+			],
+			[
+				"buffer_get",
+				"lib/buffer/buffer_get.c"
+			],
+			[
+				"buffer_peek",
+				"lib/buffer/buffer_peek.c"
+			],
+			[
+				"testini",
+				"testini.c"
+			],
+			[
+				"cmake",
+				"CMakeLists.txt"
+			],
+			[
+				"umult",
+				"lib/safemult/umult64.c"
+			],
+			[
+				"tcpin",
+				"tcping.c"
+			],
+			[
+				"stralloc_",
+				"lib/stralloc/stralloc_trimr.c"
+			],
+			[
+				"sttr_dup",
+				"lib/str/str_dup.c"
+			],
+			[
+				"slist_pu",
+				"lib/slist/slist_push.c"
+			],
+			[
+				"GNU",
 				"GNUmakefile"
 			],
 			[
-				"GENMA",
-				"genmakefile.c"
+				"pkgcf",
+				"pkgcfg.c"
 			],
 			[
-				"payme",
-				"applications/payment.moon"
+				"cmakelists",
+				"CMakeLists.txt"
 			],
 			[
-				"users.moon",
-				"applications/users.moon"
+				"piccfg",
+				"piccfg.c"
 			],
 			[
-				"socket.moo",
-				"applications/socket.moon"
+				"getopt.h",
+				"lib/getopt.h"
 			],
 			[
-				"config.moo",
-				"config.moon"
+				"getopt",
+				"lib/unix/getopt.c"
 			],
 			[
-				"config.moon",
-				"config.moon"
+				"cmakeLi",
+				"CMakeLists.txt"
 			],
 			[
-				"payment",
-				"applications/payment.moon"
+				"slist_add",
+				"lib/slist/slist_add_before.c"
 			],
 			[
-				"socket",
-				"applications/socket.moon"
+				"strlist_sort",
+				"lib/strlist/strlist_sort.c"
 			],
 			[
-				"webso",
-				"helpers/websocket.moon"
+				"case_diffs",
+				"lib/case/case_diffs.c"
 			],
 			[
-				"websock",
-				"helpers/websocket.moon"
+				"stsrlist_sort",
+				"lib/strlist/strlist_sort.c"
 			],
 			[
-				"payment.moo",
-				"applications/payment.moon"
+				"filter",
+				"build/x86_64-linux-musl/CMakeFiles/regfilter.dir/cmake_clean.cmake"
 			],
 			[
-				"parsigram.html",
-				"static/parsigram.html"
+				"hashmap.h",
+				"lib/hashmap.h"
 			],
 			[
-				"config.mo",
-				"docker/backend/config.moon"
+				"linked",
+				"lib/linked_list.h"
 			],
 			[
-				"test-pa",
-				"test-parsigram.moon"
+				"to-cir",
+				"eagle-to-circuit.c"
 			],
 			[
-				"test-pars",
-				"test-parsigram.moon"
+				"append.c",
+				"lib/hashmap/linked_list_append.c"
 			],
 			[
-				"test-per",
-				"test-perfectmoney.moon"
+				"to-circ",
+				"eagle-to-circuit.c"
 			],
 			[
-				"test-perf",
-				"test-perfectmoney.lua"
+				"weak",
+				"build/x86_64-linux-musl/CMakeFiles/elfwrsec.dir/cmake_clean.cmake"
 			],
 			[
-				"parsi",
-				"helpers/parsigram.moon"
+				"dir_read.c",
+				"lib/dir/dir_read.c"
 			],
 			[
-				"app.moo",
-				"app.moon"
+				"dir_open",
+				"lib/dir/dir_open.c"
 			],
 			[
-				"test-pe",
-				"test-perfectmoney.moon"
+				"rdir_read",
+				"lib/rdir/rdir_read.c"
 			],
 			[
-				"test-",
-				"test-parsigram.moon"
+				"rdir_",
+				"lib/dir/dir_open.c"
 			],
 			[
-				"pay",
-				"applications/payment.moon"
+				"rdir.h",
+				"lib/rdir.h"
 			],
 			[
-				"drawings.moo",
-				"applications/drawings.moon"
+				"dir_close",
+				"lib/dir/dir_close.c"
 			],
 			[
-				"api.moon",
-				"applications/api.moon"
+				"rdir_ope",
+				"lib/rdir/rdir_open.c"
 			],
 			[
-				"users.moo",
-				"applications/users.moon"
+				"read.c",
+				"lib/dir/dir_read.c"
 			],
 			[
-				"paymen",
-				"applications/payment.moon"
+				"mplab.h",
+				"mplab.h"
 			],
 			[
-				"models",
-				"helpers/models.moon"
+				"hmap.h",
+				"lib/hmap.h"
 			],
 			[
-				"models.m",
-				"helpers/models.moon"
+				"gnuma",
+				"GNUmakefile"
 			],
 			[
-				"bitcoin.moo",
-				"helpers/bitcoin.moon"
+				"gnumake",
+				"GNUmakefile"
 			],
 			[
-				"api.moo",
-				"applications/api.moon"
+				"getdelim",
+				"lib/unix/getdelim.c"
 			],
 			[
-				"api.mo",
-				"helpers/api.moon"
+				"Werror",
+				"build/cmake/Werror.cmake"
 			],
 			[
-				"perfe",
-				"helpers/perfectmoney.moon"
+				"xml.h",
+				"lib/xml.h"
 			],
 			[
-				"parsigram.moo",
-				"helpers/parsigram.moon"
+				"gen-cmd",
+				"eagle-gen-cmds.c"
 			],
 			[
-				"test-p",
-				"test-perfectmoney.moon"
+				"eagle-to-svg",
+				"eagle-to-svg.c"
 			],
 			[
-				"perfectmoney.moo",
-				"helpers/perfectmoney.moon"
+				"eagle-to-c",
+				"eagle-to-circuit.c"
 			],
 			[
-				"perfect",
-				"helpers/perfectmoney.moon"
+				"msys-shell",
+				"msys-shell.c"
 			],
 			[
-				"api.m",
-				"helpers/api.moon"
+				"xml2moon.c",
+				"xml2moon.c"
 			],
 			[
-				"pars",
-				"helpers/parsigram.moon"
+				"xml2json.c",
+				"xml2json.c"
 			],
 			[
-				"json.moo",
-				"helpers/json.moon"
+				"hmap.j",
+				"build/.cmake/api/v1/reply/target-hmap-618dc598ca6c474cbfbf.json"
 			],
 			[
-				"parsigram.mo",
-				"helpers/parsigram.moon"
+				"cc-wrap",
+				"cc-wrap.c"
 			],
 			[
-				"valida",
-				"helpers/validate.moon"
+				"skip_pred",
+				"lib/buffer/buffer_skip_pred.c"
 			],
 			[
-				"validate",
-				"~/Documents/Sources/lapis-1.7.0-1/lapis/lapis/validate.moon"
+				"skipspace",
+				"lib/buffer/buffer_skipspace.c"
 			],
 			[
-				"games",
-				"applications/games.moon"
+				"xml_read",
+				"lib/xml/xml_read_tree.c"
 			],
 			[
-				"games.moo",
-				"models/games.moon"
+				"xml_print",
+				"lib/xml/xml_print.c"
 			],
 			[
-				"vali",
-				"helpers/validate.moon"
+				"xmlpp.c",
+				"xmlpp.c"
 			],
 			[
-				"sheta",
-				"static/shetab-deposit.html"
+				"_erase",
+				"lib/stralloc/stralloc_erase.c"
 			],
 			[
-				"parsig",
-				"helpers/parsigram.moon"
+				"unshifts",
+				"lib/slist/slist_unshifts.c"
 			],
 			[
-				"nginx.conf",
-				"nginx.conf"
+				"pushs.c",
+				"lib/slist/slist_pushs.c"
 			],
 			[
-				"nginx",
-				"nginx.conf"
+				"errmsg.h",
+				"lib/errmsg.h"
 			],
 			[
-				"gate",
-				"doc/parsigram/gateway.html"
+				"errmsg_write",
+				"lib/errmsg/errmsg_write.c"
 			],
 			[
-				"test.html",
-				"static/test.html"
+				"errmsg_wa",
+				"lib/errmsg/errmsg_warn.c"
 			],
 			[
-				"query.",
-				"helpers/query.moon"
+				"readclose",
+				"lib/stralloc/readclose.c"
 			],
 			[
-				"test.moo",
-				"test.moon"
+				"open.h",
+				"lib/open.h"
 			],
 			[
-				"mobile",
-				"static/css/mobile.css"
+				"strlist",
+				"lib/strlist.h"
 			],
 			[
-				"desktop",
-				"static/css/desktop.css"
-			],
-			[
-				"application.m",
-				"applications/users.moon"
-			],
-			[
-				"users.mo",
-				"applications/users.moon"
-			],
-			[
-				"json-to",
-				"scripts/convert-json-to-po.sh"
-			],
-			[
-				"users.",
-				"applications/users.moon"
-			],
-			[
-				"ngin.",
-				"nginx.conf"
-			],
-			[
-				"app.m",
-				"app.moon"
-			],
-			[
-				"embe",
-				"embed.html"
-			],
-			[
-				"ngix",
-				"nginx.conf"
-			],
-			[
-				"components.cs",
-				"static/css/components.css"
-			],
-			[
-				"games.moon",
-				"models/games.moon"
+				"quickjs",
+				"~/Dokumente/Sources/plot-cv/quickjs/quickjs.c"
 			]
 		],
 		"width": 0.0
@@ -1748,7 +4231,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1756,7 +4239,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 291.0,
+	"side_bar_width": 363.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

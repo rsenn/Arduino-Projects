@@ -1,15 +1,15 @@
 /*
-* -------------------------------------------------------------------------
-* Digital Joystick Code
-* -------------------------------------------------------------------------
-* Copyright Kevin Peat 2013
-* kevin@kevinpeat.com
-* This code module is licensed public domain
-* -------------------------------------------------------------------------
-* Uses modified HID.cpp and USBAPI.h provided by "That Guy"
-* at http://www.imaginaryindustries.com/blog/?p=80
-* -------------------------------------------------------------------------
-*/
+ * -------------------------------------------------------------------------
+ * Digital Joystick Code
+ * -------------------------------------------------------------------------
+ * Copyright Kevin Peat 2013
+ * kevin@kevinpeat.com
+ * This code module is licensed public domain
+ * -------------------------------------------------------------------------
+ * Uses modified HID.cpp and USBAPI.h provided by "That Guy"
+ * at http://www.imaginaryindustries.com/blog/?p=80
+ * -------------------------------------------------------------------------
+ */
 
 // Pin definitions
 const int BUT1_PIN = 6;
@@ -31,7 +31,8 @@ boolean stickRight = false;
 // Hold joystick state
 JoyState_t joySt;
 
-void setup() {
+void
+setup() {
   // Pin definitions
   pinMode(BUT1_PIN, INPUT);
   pinMode(BUT2_PIN, INPUT);
@@ -63,7 +64,8 @@ void setup() {
   joySt.buttons = 0;
 }
 
-void loop() {
+void
+loop() {
   // Button 1 pressed
   if(!button1State && digitalRead(BUT1_PIN) == LOW) {
     button1State = true;
@@ -139,4 +141,3 @@ void loop() {
   // Send joystick state
   Joystick.setState(&joySt);
 }
-

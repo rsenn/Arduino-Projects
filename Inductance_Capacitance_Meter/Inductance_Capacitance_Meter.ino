@@ -2,6 +2,7 @@
 #include <avr/interrupt.h>
 #include <math.h>
 #include <elapsedMillis.h>
+#include <limits.h>
 #include <Capacitor.h>
 #include <FreqCounter.h>
 
@@ -10,6 +11,7 @@
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_PCD8544.h>
+#include <RotaryEncoder.h>
 
 #define ADAFRUIT 0
 
@@ -33,6 +35,8 @@ volatile bool busy = false, ledState = false;
 elapsedMillis timeElapsed;
 uint16_t interval = 250;
 
+volatile int32_t count = 0;
+volatile uint32_t numInterrupts;
 // Capacitor under test.
 // Note that for electrolytics the first pin (in this case D7)
 // should be positive, the second (in this case A2) negative.
@@ -66,6 +70,19 @@ static const unsigned char PROGMEM logo16_glcd_bmp[] = {0b00000000, 0b11000000, 
                                                         0b01110000, 0b01110000, 0b00000000, 0b00110000
                                                        };
 
+RotaryEncoder encoder(A0, A1);
+
+// Define some constants.
+// at 500ms, there should be no acceleration.
+constexpr static const unsigned long kAccelerationLongCutoffMillis = 500;
+// at 4ms, we want to have maximum acceleration
+constexpr static const unsigned long kAccelerationShortCutffMillis = 4;
+// linear acceleration: incline
+constexpr static const float m = -0.16;
+// linear acceleration: y offset
+constexpr static const float c = 84.03;
+  static int32_t pos,  offset;
+
 /**
  * @brief      Initialize Timer 1.
  */
@@ -95,7 +112,7 @@ InitTimer2(void) {
   TCCR2B = 0x00;       // No clock source (Timer/Counter stopped)
   TCNT2 = Timer2_Init; // Register : the Timer/Counter (TCNT2) and Output Compare
   // Register (OCR2A and OCR2B) are 8-bit Reset Timer Count
-  TCCR2A = 0x00;       // TCCR2A - Timer/Counter Control Register A
+  TCCR2A = 0x00; // TCCR2A - Timer/Counter Control Register A
   // All bits to zero -> Normal operation
   TCCR2B &= 0b11111000;
   TCCR2B |= 0b00000001;   // Prescale 128 (Timer/Counter started)
@@ -103,57 +120,8 @@ InitTimer2(void) {
   // Bit 0 - TOIE2: Timer/Counter2 Overflow Interrupt Enable
 }
 
-/**
- * @brief      Setup routine
- */
-void
-setup() {
-  Serial.begin(38400);
-
-  
-  pinMode(8, INPUT);
-  pinMode(9, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(3, OUTPUT);
-  analogWrite(3, 120);
-  InitTimer1();
-  // InitTimer2();
-
-  lcd.begin();         // Initialize the screen
-  lcd.setContrast(50); // Set the contrast; Good values are usualy between 40 and 60
-
-  lcd.clearDisplay(); // clears the screen and buffer
-  lcd.display();
-  delay(2000);
-
-  /*  Serial.print("display dimensions: ");
-    Serial.print(lcd.width());
-    Serial.print("x");
-    Serial.println(lcd.width());
-  */
-  // lcd.drawBitmap(30, 16, logo16_glcd_bmp, 16, 16, 1);
-  lcd.display();
-  delay(2000);
-
-  // invert the display
-  /* lcd.invertDisplay(true);
-   delay(1000);
-   lcd.invertDisplay(false);
-   delay(1000);*/
-
-  // lcd.clearDisplay();
-
-  lcd.setCursor(0, 0);
-  lcd.print("Meep Meep! ====>>");
-  lcd.display();
-  delay(2000);
-
-  // Serial.println("Ind.Meter 1uH-1H");
-  Serial.println("Connect Inductor to Pin D8, D9");
-  Serial.println("Connect Capacitor to Pin 2, A2");
-  Serial.println("Connect Frequency to Pin D5");
-  Serial.println("Connect Voltage to Pin A0 - A3");
-}
+volatile uint32_t x, y, z, r;
+volatile int32_t ax = 0, bx = 0;
 
 /**
  * @brief      Prints inductance.
@@ -229,6 +197,14 @@ ISR(TIMER1_CAPT_vect) {
   Capture_Flag++; // increment Capture_Flag
 }
 
+
+void
+handleButton() {
+  pos = 0;
+
+//  Serial.println("button pressed");
+}
+
 void
 setBusy(bool state = true) {
   busy = state;
@@ -298,6 +274,84 @@ measureVoltage(int numChannels) {
   println("");
 }
 
+void
+drawColon(int b = 1) {
+  char bitmap[] = {
+    (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
+    (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
+    0b0000000,
+  };
+  lcd.draw(bitmap, sizeof(bitmap), false);
+}
+
+void
+drawZero() {
+  char bitmap[] = {
+    0b00111110,
+    0b01000001,
+    0b01000001,
+    0b01000001,
+    0b00111110,
+  };
+  lcd.draw(bitmap, sizeof(bitmap), false);
+}
+
+void
+drawChar(char c) {
+  char s[] = {c, 0};
+  if(c == '0')
+    drawZero();
+  else
+    lcd.print(s);
+  char b = 0;
+  lcd.draw(&b, 1, false);
+}
+
+void
+showTime(const char* label, int32_t secs) {
+  uint32_t h, m, s;
+
+  lcd.print(" ");
+
+  while(*label) {
+    drawChar((char)*label);
+    label++;
+  }
+
+  lcd.print(" ");
+   secs %= 86400;
+  if(secs < 0)
+    secs += 86400;
+
+  s = secs;
+ 
+  m = s / 60;
+  m = s / 60 % 60;
+  h = s / 3600;
+    s = s%60;
+
+  if(h < 10)
+    drawChar('0');
+  else
+    drawChar('0' + (h % 24) / 10);
+  drawChar('0' + (h % 10));
+
+  drawColon();
+  if(m < 10)
+    drawChar(0x30);
+  else
+    drawChar(0x30 + ((m % 60) / 10));
+
+  drawChar('0' + (m % 10));
+  if(s) {
+    drawColon();
+
+    drawChar('0' + s / 10);
+    drawChar('0' + (s % 10));
+  }
+  drawChar(' ');
+}
+
 /**
  * @brief      Measure the capacitance (in pF), print to Serial Monitor
  */
@@ -350,16 +404,236 @@ animateProgress() {
 }
 
 void
-loop() {
+processLine(char* s) {
+  uint32_t seconds = 0;
+  while(*s) {
+    if(*s >= '0' && *s <= '9') {
+      unsigned long l = strtoul(s, &s, 10);
 
-  if(!busy) {
-    if(timeElapsed > interval) {
+      if(l != ULONG_MAX) {
+        seconds *= 60;
+        seconds += l;
+        continue;
+      }
+    }
+
+    s++;
+  }
+  count = (seconds % 86400) * 4;
+}
+
+void
+drawLineH(int x1, int x2, int row, int y) {
+  int x;
+  lcd.setCursor(x1, row);
+  char bit = 1 << (y % 8);
+
+  for(x = x1 & (~0b111); x < x2; x += 8) {
+    char bitmap[] = {bit, bit, bit, bit, bit, bit, bit, bit};
+
+    lcd.draw(bitmap, sizeof(bitmap), false);
+  }
+}
+
+void
+processChar(char c) {
+  static int dumpPos;
+  static char inputString[10 + 1];
+  int i;
+
+  drawLineH(5, 72, 1, 5);
+  lcd.setCursor(8, 1);
+  inputString[dumpPos] = c;
+  inputString[dumpPos + 1] = '\0';
+
+  if(c == '\n')
+    inputString[dumpPos] = ' ';
+  dumpPos++;
+  if(dumpPos > 10)
+    dumpPos = 0;
+
+  for(i = dumpPos + 1; i < 10; i++) inputString[i] = ' ';
+  inputString[10] = '\0';
+
+  if(c == '\n')
+    dumpPos = 0;
+
+  lcd.print(inputString);
+  processLine(inputString);
+}
+
+
+/**
+ * @brief      Setup routine
+ */
+void
+setup() {
+  x = 0;
+  y = 0;
+  z = 0;
+  r = 0;
+  offset = 0;
+  pos = 0;
+  numInterrupts = 0;
+  Serial.begin(38400);
+
+  pinMode(8, INPUT);
+  pinMode(9, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(13, OUTPUT);
+  /*  pinMode(A0, INPUT);
+    pinMode(A1, INPUT);*/
+
+  analogWrite(3, 120);
+  InitTimer1();
+  // InitTimer2();X
+
+  lcd.begin();         // Initialize the screen
+  lcd.setContrast(50); // Set the contrast; Good values are usualy between 40 and 60
+  lcd.clearDisplay();  // clears the screen and buffer
+  lcd.display();
+  delay(200);
+
+  /*  Serial.print("display dimensions: ");
+    Serial.print(lcd.width());
+    Serial.print("x");
+    Serial.println(lcd.width());
+  */
+  // lcd.drawBitmap(30, 16, logo16_glcd_bmp, 16, 16, 1);
+  lcd.display();
+  delay(200);
+
+  /* lcd.invertDisplay(true);
+   delay(1000);
+   lcd.invertDisplay(false);
+   delay(1000);*/
+
+  // lcd.clearDisplay();
+
+  lcd.setCursor(0, 0);
+  lcd.print("Meep Meep! ====>>");
+  lcd.display();
+  delay(200);
+
+  // Serial.println("Ind.Meter 1uH-1H");
+  Serial.println("Connect Inductor to Pin D8, D9");
+  Serial.println("Connect Capacitor to Pin 2, A2");
+  Serial.println("Connect Frequency to Pin D5");
+  Serial.println("Connect Voltage to Pin A0 - A3");
+  
+    attachInterrupt(digitalPinToInterrupt(A2), handleButton, FALLING);
+  
+  lcd.clear();
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+}
+
+
+void
+updateEncoder() {
+  int buttonState = digitalRead(A2);
+  static RotaryEncoder::Direction lastMovementDirection = RotaryEncoder::Direction::NOROTATION;
+  encoder.tick();
+
+
+  int newPos = encoder.getPosition();
+  if(pos != newPos) {
+
+    // compute linear acceleration
+    RotaryEncoder::Direction currentDirection = encoder.getDirection();
+    if(currentDirection == lastMovementDirection && currentDirection != RotaryEncoder::Direction::NOROTATION &&
+        lastMovementDirection != RotaryEncoder::Direction::NOROTATION) {
+      // ... but only of the direction of rotation matched and there
+      // actually was a previous rotation.
+      unsigned long deltat = encoder.getMillisBetweenRotations();
+
+      if(deltat < kAccelerationLongCutoffMillis) {
+        if(deltat < kAccelerationShortCutffMillis) {
+          // limit to maximum acceleration
+          deltat = kAccelerationShortCutffMillis;
+        }
+
+        float ticksActual_float = m * deltat + c;
+        // Round by adding 1
+        // Then again remove 1 to determine the actual delta to the encoder
+        // value, as the encoder already ticked by 1 tick in the correct
+        // direction. Thus, just cast to an integer type.
+        long deltaTicks = (long)ticksActual_float;
+
+        // Adjust sign: Needs to be inverted for counterclockwise operation
+        if(currentDirection == RotaryEncoder::Direction::COUNTERCLOCKWISE) {
+          deltaTicks = -(deltaTicks);
+        }
+
+        newPos = newPos + deltaTicks;
+        encoder.setPosition(newPos);
+      }
+    }
+    Serial.print("pos = ");
+    Serial.print(newPos);
+    Serial.println();
+    if(buttonState == LOW)
+      offset = newPos*60;
+    else
+    pos = newPos;
+  } // if
+}
+
+void
+loop() {
+  lcd.setCursor(0, 0);
+
+  updateEncoder();
+  if(1) {
+    x = digitalRead(A0) == LOW;
+    digitalWrite(3, x);
+    y = digitalRead(A1) == LOW;
+    digitalWrite(4, y);
+    z = digitalRead(A2) == LOW;
+   lcd.print(z);
+         lcd.print(" ");
+
+  /*    
+      lcd.print(" ");
+      lcd.print(y);------------------------------------------------------------
+      lcd.print(" ");*/
+    lcd.print((int)pos);
+    /*
+    lcd.print(" ");
+    lcd.print(bx);*/
+
+    r = 0;
+    x = 0;
+    y = 0;
+  }
+  while(Serial.available()) processChar((char)Serial.read());
+
+  if(timeElapsed > interval) {
+
+    while(timeElapsed >= interval) {
+      timeElapsed -= interval;
+      count++;
+      /*count %= 86400*4;
+      if(count < 0)
+        count += 86400*4;*/
+
+      lcd.setCursor(0, 1);
+      showTime("ZEIT", count / 4 + offset);
+      lcd.setCursor(0, 2);
+      showTime(" ON ", 7 * 60 * 60);
+      lcd.setCursor(0, 3);
+      showTime(" OFF", 23*60*60);
+    }
+    if(!busy) {
+
       mode++;
       if(mode == 3)
         mode = 0;
 
       Serial.print(modeNames[mode]);
       Serial.println(" measurement");
+      mode = -1;
 
       switch(mode) {
       case FREQUENCY:
@@ -398,7 +672,7 @@ loop() {
       float duty = (float(F1 - R1) / float(R2 - R1)) * 100;
       float freq = (1 / us) * 1000000;
 
-      printInductance(ton, freq, duty);
+      //    printInductance(ton, freq, duty);
 
       // delay(500);
       // clear flag
@@ -415,8 +689,6 @@ loop() {
       setBusy(false);
     }
   }
-  analogWrite(3, 120);
-  pinMode(3, OUTPUT);
 
-  animateProgress();
+  // animateProgress();
 }

@@ -12,7 +12,8 @@
 
 #include <Joystick.h>
 
-void setup() {
+void
+setup() {
   delay(3000);
   // Initialize Button Pins
   pinMode(9, INPUT_PULLUP);
@@ -38,7 +39,8 @@ const int pinToJoystickMap = 4;
 int lastButtonState[4] = {0, 0, 0, 0};
 int lastJoystickState[4] = {0, 0, 0, 0};
 
-void loop() {
+void
+loop() {
 
   // Read pin values
   for(int index = 0; index < 4; index++) {
@@ -81,7 +83,5 @@ void loop() {
     delay(20);
   }
 
-
-//  delay(50);
+  //  delay(50);
 }
-

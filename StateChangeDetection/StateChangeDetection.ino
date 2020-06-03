@@ -49,20 +49,20 @@ enum {
 };
 
 static uint8_t keyboardCodes[] = {
-    KEY_UP_ARROW,    // Up
-    KEY_DOWN_ARROW,  // Down
-    KEY_LEFT_ARROW,  // Left
-    KEY_RIGHT_ARROW, // Right
-    KEY_RETURN,      // Start
-    KEY_RIGHT_SHIFT, // Select
+  KEY_UP_ARROW,    // Up
+  KEY_DOWN_ARROW,  // Down
+  KEY_LEFT_ARROW,  // Left
+  KEY_RIGHT_ARROW, // Right
+  KEY_RETURN,      // Start
+  KEY_RIGHT_SHIFT, // Select
 
-    // Button 1-6
-    'x', // A
-    'z', // B
-    's', // X
-    'a', // Y
-    'd', // L
-    'c', // R
+  // Button 1-6
+  'x', // A
+  'z', // B
+  's', // X
+  'a', // Y
+  'd', // L
+  'c', // R
 };
 static uint8_t debounceCounts[12];
 static uint8_t debounceState[12];

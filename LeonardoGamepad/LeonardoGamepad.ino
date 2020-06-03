@@ -1,8 +1,6 @@
 
 
-
 #include "HID-Project.h"
-
 
 // this constant won't change:
 const int buttonPin = 3; // the pin that the pushbutton is attached to
@@ -22,8 +20,7 @@ setup() {
   // initialize the LED as an output:
   pinMode(ledPin, OUTPUT);
   // initialize serial communication:
-//  Serial.begin(38400);
-
+  //  Serial.begin(38400);
 
   // Sends a clean report to the host. This is important on any Arduino type.
   Gamepad.begin();
@@ -84,5 +81,4 @@ loop() {
   // Functions above only set the values.
   // This writes the report to the host.
   Gamepad.write();
-
 }
