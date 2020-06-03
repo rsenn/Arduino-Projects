@@ -568,15 +568,14 @@ updateEncoder() {
     Serial.print("pos = ");
     Serial.print(newPos);
     Serial.println();
-    if(buttonState == LOW){
-      int8_t seconds = count/4+offset % 60;
+    if(buttonState == LOW) {
+      int8_t seconds = count / 4 + offset % 60;
 
       offset = newPos * 60;
-      int32_t value = count/4 + offset;
-     offset -= value % 60;
-     offset += seconds;
-    }
-    else
+      int32_t value = count / 4 + offset;
+      offset -= value % 60;
+      offset += seconds;
+    } else
       pos = newPos;
   } // if
 }
