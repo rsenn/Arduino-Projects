@@ -123,7 +123,7 @@
 			"file": "Inductance_Capacitance_Meter/Inductance_Capacitance_Meter.ino",
 			"settings":
 			{
-				"buffer_size": 16691,
+				"buffer_size": 16738,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -412,7 +412,8 @@
 	},
 	"expanded_folders":
 	[
-		"/home/roman/Dokumente/Sources/Arduino-Projects"
+		"/home/roman/Dokumente/Sources/Arduino-Projects",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter"
 	],
 	"file_history":
 	[
@@ -654,7 +655,7 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -663,15 +664,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16691,
+						"buffer_size": 16738,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13725,
-								13725
+								16168,
+								16168
 							]
 						],
 						"settings":
@@ -681,10 +682,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11281.0,
+						"translation.y": 12079.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -714,7 +715,7 @@
 						"translation.y": 1021.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
