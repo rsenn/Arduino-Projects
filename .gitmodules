@@ -31,3 +31,7 @@
 [submodule "libraries/LeonardoJoystick"]
 	path = libraries/LeonardoJoystick
 	url = https://github.com/Cryocrat/LeonardoJoystick.git
+[submodule "joypad"]
+	path = joypad
+	url = https://github.com/dragaosemchama/joypad
+	branch = master
