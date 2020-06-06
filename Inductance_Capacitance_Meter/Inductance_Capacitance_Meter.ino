@@ -479,6 +479,8 @@ setup() {
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(13, OUTPUT);
+  pinMode(2, OUTPUT);
+  digitalWrite(2, HIGH);
   /*  pinMode(A0, INPUT);
     pinMode(A1, INPUT);*/
 
