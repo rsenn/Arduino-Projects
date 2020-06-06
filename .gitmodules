@@ -22,3 +22,19 @@
 [submodule "libraries/TimerTwo"]
 	path = libraries/TimerTwo
 	url = https://github.com/theAndreas/TimerTwo.git
+[submodule "joypad"]
+	path = joypad
+	url = https://github.com/dragaosemchama/joypad
+	branch = master
+[submodule "libraries/Arduino-Frequency-Counter-Library"]
+	path = libraries/Arduino-Frequency-Counter-Library
+	url = https://github.com/BlackBrix/Arduino-Frequency-Counter-Library.git
+	branch = master
+[submodule "libraries/LeonardoJoystick"]
+	path = libraries/LeonardoJoystick
+	url = https://github.com/Cryocrat/LeonardoJoystick.git
+	branch = master
+[submodule "libraries/TimerOne"]
+	path = libraries/TimerOne
+	url = https://github.com/PaulStoffregen/TimerOne.git
+	branch = master
