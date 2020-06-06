@@ -25,9 +25,6 @@
 [submodule "libraries/TimerOne"]
 	path = libraries/TimerOne
 	url = https://github.com/PaulStoffregen/TimerOne.git
-[submodule "libraries/Arduino-Frequency-Counter-Library"]
-	path = libraries/Arduino-Frequency-Counter-Library
-	url = https://github.com/BlackBrix/Arduino-Frequency-Counter-Library.git
 [submodule "libraries/LeonardoJoystick"]
 	path = libraries/LeonardoJoystick
 	url = https://github.com/Cryocrat/LeonardoJoystick.git
