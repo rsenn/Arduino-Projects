@@ -25,6 +25,3 @@
 [submodule "libraries/TimerOne"]
 	path = libraries/TimerOne
 	url = https://github.com/PaulStoffregen/TimerOne.git
-[submodule "libraries/LeonardoJoystick"]
-	path = libraries/LeonardoJoystick
-	url = https://github.com/Cryocrat/LeonardoJoystick.git
