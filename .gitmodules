@@ -38,3 +38,15 @@
 	path = libraries/TimerOne
 	url = https://github.com/PaulStoffregen/TimerOne.git
 	branch = master
+[submodule "Oscilloscope"]
+	path = Oscilloscope
+	url = https://github.com/bscholer/Oscilloscope
+[submodule "Nokia-5110-Oscilloscope"]
+	path = Nokia-5110-Oscilloscope
+	url = https://github.com/MKme/Nokia-5110-Oscilloscope
+[submodule "Arduino-Oscilloscope"]
+	path = Arduino-Oscilloscope
+	url = https://github.com/Jaycar-Electronics/Arduino-Oscilloscope
+[submodule "arduino-pultoscope"]
+	path = arduino-pultoscope
+	url = https://github.com/jmas/arduino-pultoscope
