@@ -65,7 +65,7 @@ serial_scope(int value) {
 
 void
 setup() {
-  Serial.begin(115200);
+  Serial.begin(38400);
   pinMode(pin, INPUT);
 
   // finds the zero of the scope graph

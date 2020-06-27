@@ -9,10 +9,10 @@
 	url = https://github.com/tigerw/Integrated-Component-Tester-Arduino
 [submodule "Base-Ohm-meter"]
 	path = Base-Ohm-meter
-	url = https://github.com/skndungu/Arduino-Base-Ohm-meter
+	url = https://github.com/skndungu/Arduino-Base-Ohm-meter.git
 [submodule "Ohmmeter"]
 	path = Ohmmeter
-	url = https://github.com/acchavanabhi/Ohmmeter
+	url = https://github.com/acchavanabhi/Ohmmeter.git
 [submodule "libraries/arduino-leonardo-joystick"]
 	path = libraries/arduino-leonardo-joystick
 	url = https://github.com/auron-muc/arduino-leonardo-joystick.git
@@ -22,10 +22,6 @@
 [submodule "libraries/TimerTwo"]
 	path = libraries/TimerTwo
 	url = https://github.com/theAndreas/TimerTwo.git
-[submodule "joypad"]
-	path = joypad
-	url = https://github.com/dragaosemchama/joypad
-	branch = master
 [submodule "libraries/Arduino-Frequency-Counter-Library"]
 	path = libraries/Arduino-Frequency-Counter-Library
 	url = https://github.com/BlackBrix/Arduino-Frequency-Counter-Library.git
@@ -40,13 +36,40 @@
 	branch = master
 [submodule "Oscilloscope"]
 	path = Oscilloscope
-	url = https://github.com/bscholer/Oscilloscope
+	url = https://github.com/Jaycar-Electronics/Arduino-Oscilloscope.git
+[submodule "arduino-pultoscope"]
+	path = pultoscope
+	url = https://github.com/jmas/arduino-pultoscope
+[submodule "mk"]
+	path = mk
+	url = https://github.com/littlebee/arduino-mk.git
+[submodule "Integrated-Component-Tester-Arduino"]
+	path = Integrated-Component-Tester-Arduino
+	url = https://github.com/tigerw/Integrated-Component-Tester-Arduino.git
+[submodule "leonardo-joystick"]
+	path = leonardo-joystick
+	url = https://github.com/auron-muc/arduino-leonardo-joystick.git
+[submodule "TimerThree"]
+	path = TimerThree
+	url = https://github.com/PaulStoffregen/TimerThree.git
+[submodule "TimerTwo"]
+	path = TimerTwo
+	url = https://github.com/theAndreas/TimerTwo.git
+[submodule "joypad"]
+	path = joypad
+	url = https://github.com/dragaosemchama/joypad.git
+[submodule "Frequency-Counter-Library"]
+	path = Frequency-Counter-Library
+	url = https://github.com/BlackBrix/Arduino-Frequency-Counter-Library.git
+[submodule "LeonardoJoystick"]
+	path = LeonardoJoystick
+	url = https://github.com/Cryocrat/LeonardoJoystick.git
+[submodule "TimerOne"]
+	path = TimerOne
+	url = https://github.com/PaulStoffregen/TimerOne.git
 [submodule "Nokia-5110-Oscilloscope"]
 	path = Nokia-5110-Oscilloscope
-	url = https://github.com/MKme/Nokia-5110-Oscilloscope
-[submodule "Arduino-Oscilloscope"]
-	path = Arduino-Oscilloscope
-	url = https://github.com/Jaycar-Electronics/Arduino-Oscilloscope
-[submodule "arduino-pultoscope"]
-	path = arduino-pultoscope
-	url = https://github.com/jmas/arduino-pultoscope
+	url = https://github.com/MKme/Nokia-5110-Oscilloscope.git
+[submodule "pultoscope"]
+	path = pultoscope
+	url = https://github.com/jmas/arduino-pultoscope.git

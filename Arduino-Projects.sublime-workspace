@@ -129,6 +129,15 @@
 			}
 		},
 		{
+			"file": "/home/roman/Dokumente/Sources/Arduino-Projects/pultoscope/pultoscope/pultoscope.ino",
+			"settings":
+			{
+				"buffer_size": 25127,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/AcceleratedRotator/AcceleratedRotator.ino",
 			"settings":
 			{
@@ -413,7 +422,14 @@
 	"expanded_folders":
 	[
 		"/home/roman/Dokumente/Sources/Arduino-Projects",
-		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter"
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Function_Generator",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/FunctionGenerator",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Inductance_Capacitance_Meter",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Oscilloscope",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/Oscilloscope/oscilloscope",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/pultoscope",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/pultoscope/libraries",
+		"/home/roman/Dokumente/Sources/Arduino-Projects/pultoscope/pultoscope"
 	],
 	"file_history":
 	[
@@ -548,7 +564,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -655,7 +671,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -685,11 +701,41 @@
 						"translation.y": 12079.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/home/roman/Dokumente/Sources/Arduino-Projects/pultoscope/pultoscope/pultoscope.ino",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 25127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								552,
+								552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C99/C99.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "/home/roman/Arduino/libraries/RotaryEncoder/examples/AcceleratedRotator/AcceleratedRotator.ino",
 					"semi_transient": false,
 					"settings":
@@ -715,7 +761,7 @@
 						"translation.y": 1021.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -723,7 +769,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 47.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -769,7 +815,7 @@
 	"project": "Arduino-Projects.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
