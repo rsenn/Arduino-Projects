@@ -567,9 +567,9 @@ updateEncoder() {
         encoder.setPosition(newPos);
       }
     }
-    Serial.print("pos = ");
+    /*Serial.print("pos = ");
     Serial.print(newPos);
-    Serial.println();
+    Serial.println();*/
     if(buttonState == LOW) {
       int8_t seconds = count / 4 + offset % 60;
 
