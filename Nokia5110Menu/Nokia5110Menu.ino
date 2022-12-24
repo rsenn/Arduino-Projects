@@ -18,7 +18,7 @@ int lastDownButtonState = 0;
 int lastSelectButtonState = 0;
 int lastUpButtonState = 0;
 
-Adafruit_PCD8544 display = Adafruit_PCD8544( 5, 4, 3);
+Adafruit_PCD8544 display = Adafruit_PCD8544( 5, 7,6);
 
 void setup() {
 
@@ -250,6 +250,3 @@ void checkIfSelectButtonIsPressed()
   {
     digitalWrite(7,HIGH);
   }
-
-
-

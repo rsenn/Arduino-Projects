@@ -18,7 +18,7 @@
 /*
     Modify the following to suite your needs!
 */
-int pin = A2;                // the pin to read
+int pin = A0;                // the pin to read
 int scope_range_min = -1000; // minimum value of the range [a]
 int scope_range_max = 1000;  // maximum value of the range [b]
 int sampling = 50;           // sampling time

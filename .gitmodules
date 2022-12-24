@@ -73,3 +73,12 @@
 [submodule "pultoscope"]
 	path = pultoscope
 	url = https://github.com/jmas/arduino-pultoscope.git
+[submodule "FreqPeriodCounter"]
+	path = FreqPeriodCounter
+	url = https://github.com/antoniosap/FreqPeriodCounter
+[submodule "FreqCount"]
+	path = FreqCount
+	url = https://github.com/PaulStoffregen/FreqCount
+[submodule "FreqMeasure"]
+	path = FreqMeasure
+	url = https://github.com/PaulStoffregen/FreqMeasure

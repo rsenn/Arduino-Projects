@@ -274,17 +274,16 @@ measureVoltage(int numChannels) {
 
 void
 drawColon(int b = 1) {
-  char bitmap[] = {
-      (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
-      (((count >> 1) + 1) & 1 == b) ? 0b00000100100 : 0b00000100000,
-      0b0000000,
-  };
+  unsigned char bitmap[3];
+      bitmap[0] = (((count >> 1) + 1) & 1) == b ? 0b000100100 : 0b000100000;
+      bitmap[1] = (((count >> 1) + 1) & 1) == b ? 0b000100100 : 0b000100000;
+      bitmap[2] = 0b0000000;
   lcd.draw(bitmap, sizeof(bitmap), false);
 }
 
 void
 drawZero() {
-  char bitmap[] = {
+  unsigned char bitmap[] = {
       0b00111110,
       0b01000001,
       0b01000001,
@@ -296,12 +295,12 @@ drawZero() {
 
 void
 drawChar(char c) {
-  char s[] = {c, 0};
+  unsigned char s[] = {c, 0};
   if(c == '0')
     drawZero();
   else
-    lcd.print(s);
-  char b = 0;
+    lcd.print((char*)s);
+  unsigned char b = 0;
   lcd.draw(&b, 1, false);
 }
 
